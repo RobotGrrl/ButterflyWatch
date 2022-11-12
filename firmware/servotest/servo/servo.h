@@ -1,3 +1,5 @@
+// by: https://github.com/KleistRobotics/Pico-Servo
+
 #ifndef servo_h
 #define servo_h
 

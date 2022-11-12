@@ -1,3 +1,5 @@
+// based on: https://github.com/KleistRobotics/Pico-Servo
+
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "servo.h"

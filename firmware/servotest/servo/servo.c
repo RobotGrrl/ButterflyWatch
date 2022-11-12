@@ -1,3 +1,4 @@
+// by: https://github.com/KleistRobotics/Pico-Servo
 // Control a servo by degrees or millis
 
 #include "pico/stdlib.h"
