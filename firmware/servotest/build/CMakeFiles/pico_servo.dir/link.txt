@@ -1,0 +1,2 @@
+/usr/local/bin/arm-none-eabi-ar qc libpico_servo.a CMakeFiles/pico_servo.dir/src/servo.c.obj
+/usr/local/bin/arm-none-eabi-ranlib libpico_servo.a
