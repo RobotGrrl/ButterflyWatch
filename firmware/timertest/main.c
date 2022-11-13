@@ -25,12 +25,14 @@ bool repeating_timer_callback(struct repeating_timer *t) {
 int main() {
     stdio_init_all();
 
+
+    printf("Hello Timer!\n");
+
+    // Call alarm_callback in 200 ms
+    add_alarm_in_ms(200, alarm_callback, NULL, false);
+
+
     while(true) {
-
-        printf("Hello Timer!\n");
-
-        // Call alarm_callback in 200 ms
-        add_alarm_in_ms(200, alarm_callback, NULL, false);
 
         // Wait for alarm callback to set timer_fired
         if(timer_fired) {
@@ -49,6 +51,9 @@ int main() {
             sleep_ms(2000);
 
             printf("Done\n");
+
+            // Call alarm_callback in 200 ms
+            add_alarm_in_ms(200, alarm_callback, NULL, false);
 
         }
 
