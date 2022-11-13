@@ -6,6 +6,7 @@
 // from Copyright (c) 2020 Raspberry Pi (Trading) Ltd.
 // SPDX-License-Identifier: BSD-3-Clause
 
+#define DEBUG false
 
 volatile uint8_t pressed = 0;
 volatile absolute_time_t debounce_start = 0;
@@ -20,7 +21,7 @@ void gpio_callback(uint gpio, uint32_t events) {
     // Put the GPIO event(s) that just happened into event_str
     // so we can print it
     gpio_event_string(event_str, events);
-    printf("GPIO %d %s %d\n", gpio, event_str, events);
+    if(DEBUG) printf("GPIO %d %s %d\r\n", gpio, event_str, events);
 
     if(events == 8) { // EDGE_RISE
         pressed = 1;
@@ -50,13 +51,13 @@ int main() {
 
         if(pressed == 1) {
 
-            if( absolute_time_diff_us(debounce_start, get_absolute_time()) >= 200*1000 ) {
+            if( absolute_time_diff_us(debounce_start, get_absolute_time()) >= 100*1000 ) {
                 
                 status = !status;
                 if(status) {
-                    printf("[+] activated");
+                    printf("[+] activated\r\n");
                 } else {
-                    printf("[-] deactivated");
+                    printf("[-] deactivated\r\n");
                 }
 
                 pressed = 0; // reset button val
