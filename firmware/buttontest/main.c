@@ -7,6 +7,10 @@
 // SPDX-License-Identifier: BSD-3-Clause
 
 
+volatile uint8_t pressed = 0;
+volatile absolute_time_t debounce_start = 0;
+bool status = false;
+
 
 static char event_str[128];
 
@@ -17,8 +21,15 @@ void gpio_callback(uint gpio, uint32_t events) {
     // so we can print it
     gpio_event_string(event_str, events);
     printf("GPIO %d %s %d\n", gpio, event_str, events);
-}
 
+    if(events == 8) { // EDGE_RISE
+        pressed = 1;
+        debounce_start = get_absolute_time();
+    } else {
+        pressed = 0;
+    }
+
+}
 
 
 
@@ -35,7 +46,26 @@ int main() {
     gpio_set_irq_enabled_with_callback(3, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true, &gpio_callback);
 
     // Wait forever
-    while (1);
+    while(true) {
+
+        if(pressed == 1) {
+
+            if( absolute_time_diff_us(debounce_start, get_absolute_time()) >= 200*1000 ) {
+                
+                status = !status;
+                if(status) {
+                    printf("[+] activated");
+                } else {
+                    printf("[-] deactivated");
+                }
+
+                pressed = 0; // reset button val
+                
+            }
+
+        }
+
+    }
 
     return 0;
 
