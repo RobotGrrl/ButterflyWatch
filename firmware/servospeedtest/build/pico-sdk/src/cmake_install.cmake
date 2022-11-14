@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/pico-sdk/src/common/cmake_install.cmake")
-  include("/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/pico-sdk/src/rp2_common/cmake_install.cmake")
-  include("/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/pico-sdk/src/rp2040/cmake_install.cmake")
+  include("/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/pico-sdk/src/common/cmake_install.cmake")
+  include("/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/pico-sdk/src/rp2_common/cmake_install.cmake")
+  include("/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/pico-sdk/src/rp2040/cmake_install.cmake")
 
 endif()
 

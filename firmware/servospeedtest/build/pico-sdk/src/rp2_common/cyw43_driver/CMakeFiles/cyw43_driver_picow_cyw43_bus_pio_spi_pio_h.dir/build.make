@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.24.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest
+CMAKE_SOURCE_DIR = /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build
+CMAKE_BINARY_DIR = /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build
 
 # Utility rule file for cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.
 
@@ -69,8 +69,8 @@ include pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43
 pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio.h
 
 pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio.h: /Users/frankenteddy/pico/pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating cyw43_bus_pio_spi.pio.h"
-	cd /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/pico-sdk/src/rp2_common/cyw43_driver && ../../../../pioasm/pioasm -o c-sdk /Users/frankenteddy/pico/pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating cyw43_bus_pio_spi.pio.h"
+	cd /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/pico-sdk/src/rp2_common/cyw43_driver && ../../../../pioasm/pioasm -o c-sdk /Users/frankenteddy/pico/pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio.h
 
 cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
 cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio.h
@@ -82,10 +82,10 @@ pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio
 .PHONY : pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 
 pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/clean:
-	cd /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/pico-sdk/src/rp2_common/cyw43_driver && $(CMAKE_COMMAND) -P CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/cmake_clean.cmake
+	cd /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/pico-sdk/src/rp2_common/cyw43_driver && $(CMAKE_COMMAND) -P CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/clean
 
 pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/depend:
-	cd /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest /Users/frankenteddy/pico/pico-sdk/src/rp2_common/cyw43_driver /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/pico-sdk/src/rp2_common/cyw43_driver /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest /Users/frankenteddy/pico/pico-sdk/src/rp2_common/cyw43_driver /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/pico-sdk/src/rp2_common/cyw43_driver /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/depend
 

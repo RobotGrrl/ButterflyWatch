@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.24.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest
+CMAKE_SOURCE_DIR = /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build
+CMAKE_BINARY_DIR = /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/CMakeFiles /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/CMakeFiles /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named timertest
+# Target rules for targets named servospeedtest
 
 # Build rule for target.
-timertest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 timertest
-.PHONY : timertest
+servospeedtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 servospeedtest
+.PHONY : servospeedtest
 
 # fast build rule for target.
-timertest/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/build
-.PHONY : timertest/fast
+servospeedtest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/build
+.PHONY : servospeedtest/fast
 
 #=============================================================================
 # Target rules for targets named ELF2UF2Build
@@ -220,12 +220,36 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
+Servo.obj: Servo.c.obj
+.PHONY : Servo.obj
+
+# target to build an object file
+Servo.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Servo.c.obj
+.PHONY : Servo.c.obj
+
+Servo.i: Servo.c.i
+.PHONY : Servo.i
+
+# target to preprocess a source file
+Servo.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Servo.c.i
+.PHONY : Servo.c.i
+
+Servo.s: Servo.c.s
+.PHONY : Servo.s
+
+# target to generate assembly for a file
+Servo.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Servo.c.s
+.PHONY : Servo.c.s
+
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
@@ -233,7 +257,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: Use
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
@@ -241,7 +265,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: Use
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
@@ -249,7 +273,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: Users
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
@@ -257,7 +281,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: Users/f
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
@@ -265,7 +289,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: Users/f
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
@@ -273,7 +297,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: Users
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
@@ -281,7 +305,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: Users/f
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
@@ -289,7 +313,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: Users/f
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
@@ -297,7 +321,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: Us
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
@@ -305,7 +329,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: User
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
@@ -313,7 +337,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: User
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
@@ -321,7 +345,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: Users
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
@@ -329,7 +353,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: Users/f
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
@@ -337,7 +361,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: Users/f
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
@@ -345,7 +369,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: Use
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
@@ -353,7 +377,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: Users
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
@@ -361,7 +385,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: Users
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
@@ -369,7 +393,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: Users
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
@@ -377,7 +401,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: Users/f
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
@@ -385,7 +409,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: Users/f
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
@@ -393,7 +417,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj:
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
@@ -401,7 +425,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: U
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
@@ -409,7 +433,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: U
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
@@ -417,7 +441,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: Users
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
@@ -425,7 +449,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: Users/f
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
@@ -433,7 +457,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: Users/f
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
@@ -441,7 +465,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj:
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
@@ -449,7 +473,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: U
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
@@ -457,7 +481,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: U
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
@@ -465,7 +489,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj:
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
@@ -473,7 +497,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: U
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
@@ -481,7 +505,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: U
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
@@ -489,7 +513,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj: U
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
@@ -497,7 +521,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i: Use
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
@@ -505,7 +529,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s: Use
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
@@ -513,7 +537,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: Users/fra
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
@@ -521,7 +545,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: Users/frank
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
@@ -529,7 +553,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: Users/frank
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
@@ -537,7 +561,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj: Users/frankent
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
@@ -545,7 +569,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: Users/frankented
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
@@ -553,7 +577,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: Users/frankented
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
@@ -561,7 +585,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: Users/
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
@@ -569,7 +593,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: Users/fr
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
@@ -577,7 +601,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: Users/fr
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
@@ -585,7 +609,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
@@ -593,7 +617,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
@@ -601,7 +625,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
@@ -609,7 +633,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
@@ -617,7 +641,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
@@ -625,7 +649,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.obj: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
@@ -633,7 +657,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.obj: Users/frankenteddy/pi
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.i: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
@@ -641,7 +665,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.i: Users/frankenteddy/pico
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.s: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
@@ -649,7 +673,7 @@ Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.s: Users/frankenteddy/pico
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.obj: Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
@@ -657,7 +681,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.obj: User
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.i: Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -665,7 +689,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.i: Users/
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.s: Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -673,7 +697,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.s: Users/
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.obj: Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -681,7 +705,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.obj: Users/frank
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.i: Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -689,7 +713,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.i: Users/franken
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.s: Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -697,7 +721,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.s: Users/franken
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.obj: Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -705,7 +729,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.obj: Users/frankente
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.i: Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -713,7 +737,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.i: Users/frankentedd
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.s: Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -721,7 +745,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.s: Users/frankentedd
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.obj: Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.c.obj
@@ -729,7 +753,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.obj: Users/frankentedd
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.i: Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.c.i
@@ -737,7 +761,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.i: Users/frankenteddy/
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.s: Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.c.s
@@ -745,7 +769,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.s: Users/frankenteddy/
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/sem.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.obj: Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
@@ -753,7 +777,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.obj: Users/frankented
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.i: Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.i
@@ -761,7 +785,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.i: Users/frankenteddy
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.s: Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.s
@@ -769,7 +793,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.s: Users/frankenteddy
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -777,7 +801,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: Users/
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.i: Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -785,7 +809,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.i: Users/fr
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.s: Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -793,7 +817,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.s: Users/fr
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.obj: Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -801,7 +825,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.obj: Users/franke
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.i: Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.c.i
@@ -809,7 +833,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.i: Users/frankent
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.s: Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.c.s
@@ -817,7 +841,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.s: Users/frankent
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.obj: Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
@@ -825,7 +849,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.obj: Users/frankente
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.i: Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.i
@@ -833,7 +857,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.i: Users/frankentedd
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.s: Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.s
@@ -841,7 +865,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.s: Users/frankentedd
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.obj: Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.c.obj
@@ -849,7 +873,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.obj: Users/frankente
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.i: Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.c.i
@@ -857,7 +881,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.i: Users/frankentedd
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.s: Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.c.s
@@ -865,7 +889,7 @@ Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.s: Users/frankentedd
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/common/pico_util/queue.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -873,7 +897,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: Users/
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -881,7 +905,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: Users/fr
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -889,7 +913,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: Users/fr
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -897,7 +921,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: User
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -905,7 +929,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: Users/
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -913,7 +937,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: Users/
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -921,7 +945,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: Us
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
@@ -929,7 +953,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: Users/
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
@@ -937,7 +961,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: Users/fr
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
@@ -945,7 +969,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: Users/fr
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -953,7 +977,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: Users/fr
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -961,7 +985,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: Users/fran
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -969,7 +993,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: Users/fran
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
@@ -977,7 +1001,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: Users/fran
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -985,7 +1009,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: Users/franke
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -993,7 +1017,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: Users/franke
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -1001,15 +1025,39 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+
+Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj
+
+# target to build an object file
+Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+
+Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i
+
+# target to preprocess a source file
+Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+
+Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s
+
+# target to generate assembly for a file
+Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -1017,7 +1065,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: Users/franke
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -1025,7 +1073,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: Users/franke
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -1033,7 +1081,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: Users/fr
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -1041,7 +1089,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: Users/fran
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -1049,7 +1097,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: Users/fran
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -1057,7 +1105,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: Users/
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -1065,7 +1113,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: Users/fr
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -1073,7 +1121,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: Users/fr
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -1081,7 +1129,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: Users/fr
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -1089,7 +1137,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: Users/fran
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -1097,7 +1145,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: Users/fran
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -1105,7 +1153,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: Users/fr
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -1113,7 +1161,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: Users/fran
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -1121,7 +1169,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: Users/fran
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -1129,7 +1177,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: 
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -1137,7 +1185,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: Us
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -1145,7 +1193,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: Us
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -1153,7 +1201,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: Users/fr
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -1161,7 +1209,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: Users/fran
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -1169,7 +1217,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: Users/fran
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -1177,7 +1225,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: 
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -1185,7 +1233,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: Users/
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -1193,7 +1241,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: Users/fr
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -1201,7 +1249,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: Users/fr
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
@@ -1209,7 +1257,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: Users/
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -1217,7 +1265,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: Us
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -1225,7 +1273,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj:
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -1233,7 +1281,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: U
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -1241,7 +1289,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: U
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -1249,7 +1297,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: Use
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -1257,7 +1305,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: Users
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -1265,7 +1313,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: Users
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -1273,7 +1321,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.o
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
@@ -1281,7 +1329,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enume
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
@@ -1289,7 +1337,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enume
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
@@ -1297,7 +1345,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enume
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
@@ -1305,7 +1353,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: User
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -1313,7 +1361,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: U
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -1321,7 +1369,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: Use
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -1329,7 +1377,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: Use
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -1337,7 +1385,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: Users
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -1345,7 +1393,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: Users/f
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -1353,7 +1401,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: Users/f
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -1361,7 +1409,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -1369,7 +1417,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_ae
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -1377,7 +1425,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: Use
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -1385,7 +1433,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: Users
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -1393,7 +1441,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: Users
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -1401,7 +1449,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: 
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -1409,7 +1457,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: User
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -1417,7 +1465,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: Users/
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -1425,7 +1473,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: Users/
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -1433,7 +1481,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: Users/fr
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1441,7 +1489,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: Users/fran
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1449,7 +1497,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: Users/fran
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
@@ -1457,7 +1505,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: Users/
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1465,7 +1513,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: Users/fr
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1473,7 +1521,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: Users/fr
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -1481,7 +1529,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.o
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -1489,7 +1537,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -1497,7 +1545,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1505,7 +1553,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: Use
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -1513,7 +1561,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.ob
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -1521,7 +1569,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i:
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -1529,7 +1577,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s:
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -1537,7 +1585,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: Users/fran
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1545,7 +1593,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: Users/franke
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1553,7 +1601,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: Users/franke
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
@@ -1561,7 +1609,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.o
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
@@ -1569,7 +1617,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
@@ -1577,7 +1625,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
@@ -1585,7 +1633,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: Us
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
@@ -1593,7 +1641,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: User
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
@@ -1601,7 +1649,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: User
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
@@ -1609,7 +1657,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descrip
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
@@ -1617,7 +1665,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descrip
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
@@ -1625,7 +1673,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descrip
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1633,7 +1681,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: Users/fr
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1641,7 +1689,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: Users/fran
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1649,7 +1697,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: Users/fran
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
@@ -1657,7 +1705,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: Us
 
 # target to build an object file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
@@ -1665,7 +1713,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: User
 
 # target to preprocess a source file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
@@ -1673,7 +1721,7 @@ Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: User
 
 # target to generate assembly for a file
 Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
 main.obj: main.c.obj
@@ -1681,7 +1729,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -1689,7 +1737,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -1697,7 +1745,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timertest.dir/build.make CMakeFiles/timertest.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servospeedtest.dir/build.make CMakeFiles/servospeedtest.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -1715,7 +1763,10 @@ help:
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... cyw43_firmware_package"
 	@echo "... bs2_default"
-	@echo "... timertest"
+	@echo "... servospeedtest"
+	@echo "... Servo.obj"
+	@echo "... Servo.i"
+	@echo "... Servo.s"
 	@echo "... Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
 	@echo "... Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
@@ -1814,6 +1865,9 @@ help:
 	@echo "... Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s"
 	@echo "... Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj"
+	@echo "... Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj"
+	@echo "... Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i"
+	@echo "... Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s"
 	@echo "... Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj"
 	@echo "... Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i"
 	@echo "... Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s"

@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.24.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest
+CMAKE_SOURCE_DIR = /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build
+CMAKE_BINARY_DIR = /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build
 
 # Utility rule file for bs2_default_bin.
 
@@ -69,8 +69,8 @@ include pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/progr
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin: pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin: pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default.bin"
-	cd /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/pico-sdk/src/rp2_common/boot_stage2 && /usr/local/bin/arm-none-eabi-objcopy -Obinary /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default.bin"
+	cd /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/pico-sdk/src/rp2_common/boot_stage2 && /usr/local/bin/arm-none-eabi-objcopy -Obinary /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 bs2_default_bin: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin
 bs2_default_bin: pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
@@ -82,10 +82,10 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build: bs2_de
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build
 
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean:
-	cd /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/pico-sdk/src/rp2_common/boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default_bin.dir/cmake_clean.cmake
+	cd /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/pico-sdk/src/rp2_common/boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default_bin.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean
 
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend:
-	cd /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest /Users/frankenteddy/pico/pico-sdk/src/rp2_common/boot_stage2 /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/pico-sdk/src/rp2_common/boot_stage2 /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest /Users/frankenteddy/pico/pico-sdk/src/rp2_common/boot_stage2 /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/pico-sdk/src/rp2_common/boot_stage2 /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend
 

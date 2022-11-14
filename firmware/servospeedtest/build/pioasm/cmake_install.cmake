@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/pioasm/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/pioasm/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

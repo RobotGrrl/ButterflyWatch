@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.24.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest
+CMAKE_SOURCE_DIR = /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build
+CMAKE_BINARY_DIR = /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build
 
 # Utility rule file for cyw43_firmware_package.
 
@@ -69,8 +69,8 @@ include pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.d
 pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package: pico-sdk/src/rp2_common/cyw43_driver/cyw43_resource.o
 
 pico-sdk/src/rp2_common/cyw43_driver/cyw43_resource.o: /Users/frankenteddy/pico/pico-sdk/lib/cyw43-driver/firmware/43439A0-7.95.49.00.combined
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating cyw43_resource.o"
-	cd /Users/frankenteddy/pico/pico-sdk/lib/cyw43-driver/firmware && /usr/local/bin/arm-none-eabi-objcopy -I binary -O elf32-littlearm -B arm --readonly-text --rename-section .data=.big_const,contents,alloc,load,readonly,data --redefine-sym _binary_43439A0_7_95_49_00_combined_start=fw_43439A0_7_95_49_00_start --redefine-sym _binary_43439A0_7_95_49_00_combined_end=fw_43439A0_7_95_49_00_end --redefine-sym _binary_43439A0_7_95_49_00_combined_size=fw_43439A0_7_95_49_00_size 43439A0-7.95.49.00.combined /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/pico-sdk/src/rp2_common/cyw43_driver/cyw43_resource.o
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating cyw43_resource.o"
+	cd /Users/frankenteddy/pico/pico-sdk/lib/cyw43-driver/firmware && /usr/local/bin/arm-none-eabi-objcopy -I binary -O elf32-littlearm -B arm --readonly-text --rename-section .data=.big_const,contents,alloc,load,readonly,data --redefine-sym _binary_43439A0_7_95_49_00_combined_start=fw_43439A0_7_95_49_00_start --redefine-sym _binary_43439A0_7_95_49_00_combined_end=fw_43439A0_7_95_49_00_end --redefine-sym _binary_43439A0_7_95_49_00_combined_size=fw_43439A0_7_95_49_00_size 43439A0-7.95.49.00.combined /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/pico-sdk/src/rp2_common/cyw43_driver/cyw43_resource.o
 
 cyw43_firmware_package: pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package
 cyw43_firmware_package: pico-sdk/src/rp2_common/cyw43_driver/cyw43_resource.o
@@ -82,10 +82,10 @@ pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/build
 .PHONY : pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/build
 
 pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/clean:
-	cd /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/pico-sdk/src/rp2_common/cyw43_driver && $(CMAKE_COMMAND) -P CMakeFiles/cyw43_firmware_package.dir/cmake_clean.cmake
+	cd /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/pico-sdk/src/rp2_common/cyw43_driver && $(CMAKE_COMMAND) -P CMakeFiles/cyw43_firmware_package.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/clean
 
 pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/depend:
-	cd /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest /Users/frankenteddy/pico/pico-sdk/src/rp2_common/cyw43_driver /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/pico-sdk/src/rp2_common/cyw43_driver /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest /Users/frankenteddy/pico/pico-sdk/src/rp2_common/cyw43_driver /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/pico-sdk/src/rp2_common/cyw43_driver /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/depend
 

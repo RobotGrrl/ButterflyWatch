@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/CMakeLists.txt"
+  "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/CMakeLists.txt"
   "CMakeFiles/3.24.3/CMakeASMCompiler.cmake"
   "CMakeFiles/3.24.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.24.3/CMakeCXXCompiler.cmake"
@@ -230,7 +230,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/timertest.dir/DependInfo.cmake"
+  "CMakeFiles/servospeedtest.dir/DependInfo.cmake"
   "CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake"

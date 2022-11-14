@@ -4,86 +4,23 @@
 #include "Board.h"
 #include "Servo.h"
 
+// servo related
 struct Servo wing_l;
 struct Servo wing_r;
-
 volatile uint32_t count = 0;
-
 struct repeating_timer servo_timer;
 bool servo_timer_callback(struct repeating_timer *t);
 void stopServoTimer();
 void startServoTimer();
 
+// led related
+absolute_time_t last_blink = 0;
+bool blink = false;
+void blinkLed();
 
-#define SERVO_MAX 2400
-#define SERVO_MIN 600
-
-uint16_t SERVO_HOME = 1600; // variable since we might want to change it through cli in the future
-
-struct Servo {
-    uint8_t pin;
-    volatile bool update;
-    volatile uint16_t pulse;
-    volatile bool direction;
-    uint16_t max;
-    uint16_t min;
-    uint16_t home;
-    uint8_t speed; // 1 = slow, 5 = regular, 10 = fast
-};
-
-// servo, pin, home position, speed
-void initServo(struct Servo *s, uint8_t p, uint8_t h, uint8_t v) {
-    s->pin = p;
-    s->update = false;
-    s->max = SERVO_MAX;
-    s->min = SERVO_MIN;
-    s->home = h;
-    s->speed = v;
-    s->pulse = h; // init to home pos
-
-    // TODO: set the pin, start the pwm
-}
-
-void updateServo(struct Servo *s) {
-    if(s->update) { // set from repeating timer interrupt
-
-        // increment pulse by step amount (speed)
-        if(s->direction) {
-            s->pulse += s->speed;
-        } else {
-            s->pulse -= s->speed;
-        }
-
-        // check it's within bounds and change direction
-        if(s->pulse > s->max) {
-            s->pulse = s->max;
-            s->direction = false;
-        }
-        if(s->pulse < s->min) {
-            s->pulse = s->min;
-            s->direction = true;
-        }
-
-        // update the position
-        setMillis(s->pin, s->pulse);
-
-        // reset the flag
-        s->update = false;
-    }
-}
-
-// speed max = 10, min = 1
-void setServoSpeed(struct Servo *s, uint8_t v) {
-    if(v > 10 || v == 0) return;
-    s->speed = v;
-}
-
-// position must be within min and max
-void setServoPosition(struct Servo *s, uint16_t pos) {
-    if(pos > s->max || pos < s->min) return;
-    s->pulse = pos;
-}
-
+// test related
+uint8_t speed_num = 0;
+absolute_time_t last_speed = 0;
 
 
 int main() {
@@ -96,12 +33,47 @@ int main() {
 
     printf("Servo speed test\r\n");
 
+    // init the servos
+    initServo(&wing_l, SERVO_L_PIN, SERVO_HOME, 5);
+    initServo(&wing_r, SERVO_R_PIN, SERVO_HOME, 5);
+    wing_l.direction = false;
+    wing_r.direction = true;
     startServoTimer();
+
+    printf("Servos started\r\n");
 
     while(true) {
 
+        // update the servos
         updateServo(&wing_l);
         updateServo(&wing_r);
+
+        // blinky slice
+        blinkLed();
+
+        // change the speed
+        if( absolute_time_diff_us(last_speed, get_absolute_time()) >= 2000*1000 ) {
+            speed_num++;
+            uint8_t speed_val = 0;
+            switch(speed_num) {
+                case 0:
+                    speed_val = 5;
+                break;
+                case 1:
+                    speed_val = 7;
+                break;
+                case 2:
+                    speed_val = 1;
+                break;
+                case 3:
+                    speed_val = 3;
+                    speed_num = 0;
+                break;
+            }
+            wing_l.speed = speed_val;
+            wing_r.speed = speed_val;
+            last_speed = get_absolute_time();
+        }
 
     }
 
@@ -109,7 +81,7 @@ int main() {
 }
 
 
-
+// --- servo timer related ---
 bool servo_timer_callback(struct repeating_timer *t) {
     
     wing_l.update = true;
@@ -127,4 +99,15 @@ void stopServoTimer() {
 void startServoTimer() {
     add_repeating_timer_ms(10, servo_timer_callback, NULL, &servo_timer); // 10 ms
 }
+// --------------------------
 
+
+// --- led related ---
+void blinkLed() {
+    if( absolute_time_diff_us(last_blink, get_absolute_time()) >= 1000*1000 ) {
+        gpio_put(LED_PIN, blink);
+        blink = !blink;
+        last_blink = get_absolute_time();
+    }
+}
+// --------------------------

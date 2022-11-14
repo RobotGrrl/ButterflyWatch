@@ -5,18 +5,18 @@ cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
   "/Users/frankenteddy/pico/pico-sdk/tools/elf2uf2"
-  "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/elf2uf2"
-  "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/elf2uf2"
-  "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/elf2uf2/tmp"
-  "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/elf2uf2/src/ELF2UF2Build-stamp"
-  "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/elf2uf2/src"
-  "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/elf2uf2/src/ELF2UF2Build-stamp"
+  "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/elf2uf2"
+  "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/elf2uf2"
+  "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/elf2uf2/tmp"
+  "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/elf2uf2/src/ELF2UF2Build-stamp"
+  "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/elf2uf2/src"
+  "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/elf2uf2/src/ELF2UF2Build-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/elf2uf2/src/ELF2UF2Build-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/elf2uf2/src/ELF2UF2Build-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/timertest/build/elf2uf2/src/ELF2UF2Build-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/servospeedtest/build/elf2uf2/src/ELF2UF2Build-stamp${cfgdir}") # cfgdir has leading slash
 endif()

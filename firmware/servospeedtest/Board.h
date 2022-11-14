@@ -5,3 +5,6 @@
 #define SERVO_R_PIN     6
 
 #define NUM_PIXELS      8
+#define SERVO_MAX       2400
+#define SERVO_MIN       600
+#define SERVO_HOME      1600
