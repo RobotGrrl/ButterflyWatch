@@ -17,6 +17,8 @@ pico_sdk_init()
 add_executable(${PROJECT_NAME} 
     main.c
     Board.h
+    UltrasonicSensor.h
+    UltrasonicSensor.c
 )
 
 # Create C header file with the name <pio program>.pio.h

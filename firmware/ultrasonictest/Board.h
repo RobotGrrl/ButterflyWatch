@@ -10,4 +10,6 @@
 #define SERVO_MAX           2400
 #define SERVO_MIN           600
 #define SERVO_HOME          1600
-#define ULTRASONIC_STARTUP  400     // ms to delay for sensor warm up
+#define ULTRASONIC_WARMUP   400     // ms to delay for sensor warm up
+#define ULTRASONIC_RATE     50      // sample every X ms
+#define ULTRASONIC_SAMPLES  20      // number of samples in 1 second
