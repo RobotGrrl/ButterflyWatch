@@ -220,6 +220,30 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
+UltrasonicSensor.obj: UltrasonicSensor.c.obj
+.PHONY : UltrasonicSensor.obj
+
+# target to build an object file
+UltrasonicSensor.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonictest.dir/build.make CMakeFiles/ultrasonictest.dir/UltrasonicSensor.c.obj
+.PHONY : UltrasonicSensor.c.obj
+
+UltrasonicSensor.i: UltrasonicSensor.c.i
+.PHONY : UltrasonicSensor.i
+
+# target to preprocess a source file
+UltrasonicSensor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonictest.dir/build.make CMakeFiles/ultrasonictest.dir/UltrasonicSensor.c.i
+.PHONY : UltrasonicSensor.c.i
+
+UltrasonicSensor.s: UltrasonicSensor.c.s
+.PHONY : UltrasonicSensor.s
+
+# target to generate assembly for a file
+UltrasonicSensor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonictest.dir/build.make CMakeFiles/ultrasonictest.dir/UltrasonicSensor.c.s
+.PHONY : UltrasonicSensor.c.s
+
 Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
 
@@ -1740,6 +1764,9 @@ help:
 	@echo "... cyw43_firmware_package"
 	@echo "... bs2_default"
 	@echo "... ultrasonictest"
+	@echo "... UltrasonicSensor.obj"
+	@echo "... UltrasonicSensor.i"
+	@echo "... UltrasonicSensor.s"
 	@echo "... Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
 	@echo "... Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"

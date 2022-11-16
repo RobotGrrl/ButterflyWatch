@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ultrasonictest.dir/UltrasonicSensor.c.obj"
+  "CMakeFiles/ultrasonictest.dir/UltrasonicSensor.c.obj.d"
   "CMakeFiles/ultrasonictest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
   "CMakeFiles/ultrasonictest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d"
   "CMakeFiles/ultrasonictest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"

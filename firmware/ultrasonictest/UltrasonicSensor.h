@@ -7,15 +7,15 @@
 struct UltrasonicSensor {
     volatile bool warmedup;
     volatile bool ready;
-    bool active;
+    volatile bool active;
     volatile uint16_t raw;
     volatile uint8_t sample_count;
+    volatile uint32_t sum; // all raw added
+    uint16_t val; // after avg
+    float cm; // after avg
 };
 
-s->warmedup = false;
-s->ready = false;
-s->active = false;
-s->raw = 0;
-s->sample_count = 0;
+void initUltrasonicSensor(struct UltrasonicSensor *s);
+void updateUltrasonicSensor(struct UltrasonicSensor *s);
 
 #endif

@@ -4,14 +4,16 @@
 #include "hardware/adc.h"
 
 #include "Board.h"
+#include "UltrasonicSensor.h"
 
+#define DEBUG false
 
+// -- ultrasonic sensor related --
 struct UltrasonicSensor sen;
-
 int64_t ultrasonic_warmup_callback(alarm_id_t id, void *user_data);
-
-struct repeating_timer timer;
-bool repeating_timer_callback(struct repeating_timer *t);
+struct repeating_timer ultrasonic_timer;
+bool ultrasonic_daq_callback(struct repeating_timer *t);
+// -------------
 
 int main() {
     stdio_init_all();
@@ -23,37 +25,51 @@ int main() {
 
     printf("Ultrasonic sensor test\r\n");
 
+    initUltrasonicSensor(&sen);
+
     // ultrasonic sensor warm up time
     add_alarm_in_ms(ULTRASONIC_WARMUP, ultrasonic_warmup_callback, NULL, false);
 
+    printf("Sensor initialised\r\n");
+
     while(true) {
-
-        // once the sensor is warmed up, start the timer interrupt 20 Hz
-        if(sen.warmedup == true && sen.active == false) {
-            add_repeating_timer_ms(ULTRASONIC_RATE, repeating_timer_callback, NULL, &timer);
-            sen.active = true;
-        }
-
-        updateUltrasonicSensor(&sen);
-
-
         
-        sleep_ms(100);
+        if(DEBUG) {
+            if(sen.ready) {
+                printf("%d raw val: %d\r\n", sen.sample_count, sen.raw);
+            }
+        }
+        
+        updateUltrasonicSensor(&sen);
     }
 
     return 0;
 }
 
 
-
-
 int64_t ultrasonic_warmup_callback(alarm_id_t id, void *user_data) {
     sen.warmedup = true;
+    sen.active = true;
+    // once the sensor is warmed up, start the timer interrupt 20 Hz
+    // TODO: does calling this from a callback work?
+    add_repeating_timer_ms(ULTRASONIC_RATE, ultrasonic_daq_callback, NULL, &ultrasonic_timer);
     return 0;
 }
 
+bool ultrasonic_daq_callback(struct repeating_timer *t) {
+    // acquire the raw value
+    uint16_t result = adc_read();
+    sen.raw = result;
+    // sen.raw = 1.0;
+    sen.sum += sen.raw;
+    sen.sample_count++;
 
-// Q: is this an unwise design?
+    // flag it's ready for processing
+    sen.ready = true;
+    return true;
+}
+
+// Q: ^ is this an unwise design?
 //  it gets the value in the interrupt, and will process it in the main loop.
 //  what if the timing of the main loop is delayed more than the sampling rate?
 //  though, the value average is based on the count not the time...
@@ -66,16 +82,4 @@ int64_t ultrasonic_warmup_callback(alarm_id_t id, void *user_data) {
 //    intervals.
 //  conclusion: getting the raw sensor reading in the interrupt so that these are
 //    acquired at the same time interval, which is needed if calculating velocity.
-
-bool repeating_timer_callback(struct repeating_timer *t) {
-    // acquire the raw value
-    uint16_t result = adc_read();
-    sen.raw = result;
-    sen.sample_count++;
-
-    // flag it's ready for processing
-    sen.ready = true;
-    return true;
-}
-
 

@@ -120,6 +120,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/ultrasonictest/UltrasonicSensor.c" "CMakeFiles/ultrasonictest.dir/UltrasonicSensor.c.obj" "gcc" "CMakeFiles/ultrasonictest.dir/UltrasonicSensor.c.obj.d"
   "/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "CMakeFiles/ultrasonictest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj" "gcc" "CMakeFiles/ultrasonictest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d"
   "/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c" "CMakeFiles/ultrasonictest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj" "gcc" "CMakeFiles/ultrasonictest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj.d"
   "/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c" "CMakeFiles/ultrasonictest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj" "gcc" "CMakeFiles/ultrasonictest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj.d"
