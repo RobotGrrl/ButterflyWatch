@@ -7,7 +7,6 @@
 // servo related
 struct Servo wing_l;
 struct Servo wing_r;
-volatile uint32_t count = 0;
 struct repeating_timer servo_timer;
 bool servo_timer_callback(struct repeating_timer *t);
 void stopServoTimer();
@@ -21,6 +20,7 @@ void blinkLed();
 // test related
 uint8_t speed_num = 0;
 absolute_time_t last_speed = 0;
+void servoPosTest();
 
 
 int main() {
@@ -34,30 +34,17 @@ int main() {
     printf("Servo speed test\r\n");
 
     // init the servos
-    initServo(&wing_l, SERVO_L_PIN, SERVO_HOME, 5);
-    initServo(&wing_r, SERVO_R_PIN, SERVO_HOME, 5);
-    wing_l.direction = true;
+    initServo(&wing_l, SERVO_L_PIN, SERVO_MAX, 5);
+    initServo(&wing_r, SERVO_R_PIN, SERVO_MIN, 5);
+    wing_l.direction = false;
     wing_r.direction = true;
     
-    setServoPosition(&wing_l, SERVO_MAX);
-    setServoPosition(&wing_r, SERVO_MIN);
-    sleep_ms(3000);
-
-    setServoPosition(&wing_l, SERVO_MIN);
-    setServoPosition(&wing_r, SERVO_MAX);
-    sleep_ms(3000);
-
-    setServoPosition(&wing_l, SERVO_HOME);
-    setServoPosition(&wing_r, SERVO_HOME);
-    sleep_ms(3000);
+    servoPosTest();
 
     startServoTimer();
     printf("Servos started\r\n");
 
     while(true) {
-
-        // TODO: position bug here
-        // the servo positions have to be out of phase with each other
 
         // update the servos
         updateServo(&wing_l);
@@ -101,12 +88,8 @@ int main() {
 
 // --- servo timer related ---
 bool servo_timer_callback(struct repeating_timer *t) {
-    
     wing_l.update = true;
     wing_r.update = true;
-    
-    //printf("%d Repeat at %lld\n", count, time_us_64());
-    //count++;
     return true;
 }
 
@@ -129,3 +112,17 @@ void blinkLed() {
     }
 }
 // --------------------------
+
+
+// --- test related ---
+void servoPosTest() {
+    setServoPosition(&wing_l, SERVO_MAX);
+    setServoPosition(&wing_r, SERVO_MIN);
+    sleep_ms(5000);
+
+    setServoPosition(&wing_l, SERVO_MIN);
+    setServoPosition(&wing_r, SERVO_MAX);
+    sleep_ms(5000);
+}
+// --------------------------
+

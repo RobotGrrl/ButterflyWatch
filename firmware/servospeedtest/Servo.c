@@ -36,11 +36,11 @@ void updateServo(struct Servo *s) {
         }
 
         // check it's within bounds and change direction
-        if(s->pulse > s->max) {
+        if(s->pulse >= s->max) {
             s->pulse = s->max;
             s->direction = false;
         }
-        if(s->pulse < s->min) {
+        if(s->pulse <= s->min) {
             s->pulse = s->min;
             s->direction = true;
         }
