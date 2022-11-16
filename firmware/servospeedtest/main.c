@@ -36,13 +36,28 @@ int main() {
     // init the servos
     initServo(&wing_l, SERVO_L_PIN, SERVO_HOME, 5);
     initServo(&wing_r, SERVO_R_PIN, SERVO_HOME, 5);
-    wing_l.direction = false;
+    wing_l.direction = true;
     wing_r.direction = true;
-    startServoTimer();
+    
+    setServoPosition(&wing_l, SERVO_MAX);
+    setServoPosition(&wing_r, SERVO_MIN);
+    sleep_ms(3000);
 
+    setServoPosition(&wing_l, SERVO_MIN);
+    setServoPosition(&wing_r, SERVO_MAX);
+    sleep_ms(3000);
+
+    setServoPosition(&wing_l, SERVO_HOME);
+    setServoPosition(&wing_r, SERVO_HOME);
+    sleep_ms(3000);
+
+    startServoTimer();
     printf("Servos started\r\n");
 
     while(true) {
+
+        // TODO: position bug here
+        // the servo positions have to be out of phase with each other
 
         // update the servos
         updateServo(&wing_l);
@@ -57,16 +72,19 @@ int main() {
             uint8_t speed_val = 0;
             switch(speed_num) {
                 case 0:
-                    speed_val = 5;
-                break;
-                case 1:
-                    speed_val = 7;
-                break;
-                case 2:
                     speed_val = 1;
                 break;
-                case 3:
+                case 1:
                     speed_val = 3;
+                break;
+                case 2:
+                    speed_val = 5;
+                break;
+                case 3:
+                    speed_val = 7;
+                break;
+                case 4:
+                    speed_val = 10;
                     speed_num = 0;
                 break;
             }
@@ -87,8 +105,8 @@ bool servo_timer_callback(struct repeating_timer *t) {
     wing_l.update = true;
     wing_r.update = true;
     
-    printf("%d Repeat at %lld\n", count, time_us_64());
-    count++;
+    //printf("%d Repeat at %lld\n", count, time_us_64());
+    //count++;
     return true;
 }
 

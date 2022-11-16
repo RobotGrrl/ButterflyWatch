@@ -59,13 +59,12 @@ Discarded input sections
                 0x0000000000000000       0x2c CMakeFiles/servospeedtest.dir/main.c.obj
  .text.blinkLed
                 0x0000000000000000       0x50 CMakeFiles/servospeedtest.dir/main.c.obj
+ .bss.count     0x0000000000000000        0x4 CMakeFiles/servospeedtest.dir/main.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/servospeedtest.dir/Servo.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/servospeedtest.dir/Servo.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/servospeedtest.dir/Servo.c.obj
  .text.setServoSpeed
                 0x0000000000000000        0xc CMakeFiles/servospeedtest.dir/Servo.c.obj
- .text.setServoPosition
-                0x0000000000000000       0x70 CMakeFiles/servospeedtest.dir/Servo.c.obj
  .text.setMillis
                 0x0000000000000000       0x5c CMakeFiles/servospeedtest.dir/Servo.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -245,12 +244,8 @@ Discarded input sections
                 0x0000000000000000       0x8c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_dump
                 0x0000000000000000       0x34 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
- .text.sleep_until
-                0x0000000000000000       0xac CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.sleep_us
                 0x0000000000000000       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
- .text.sleep_ms
-                0x0000000000000000       0x38 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.at_the_end_of_time
                 0x0000000000000000        0x8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.nil_time
@@ -282,8 +277,6 @@ Discarded input sections
                 0x0000000000000000       0x54 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.busy_wait_ms
                 0x0000000000000000       0x88 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .text.busy_wait_until
-                0x0000000000000000       0x20 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -475,14 +468,34 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_buffer
                 0x0000000000000000        0x8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._out_null
+                0x0000000000000000        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._out_rev
+                0x0000000000000000       0x9c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ntoa_format
+                0x0000000000000000      0x1cc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._out_fct
+                0x0000000000000000       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._etoa    0x0000000000000000      0x44c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .rodata._ftoa.str1.4
+                0x0000000000000000       0x15 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x0000000000000000      0x398 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._vsnprintf
+                0x0000000000000000      0xb04 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .rodata._vsnprintf
+                0x0000000000000000      0x1e0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.__wrap_sprintf
                 0x0000000000000000       0x28 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.__wrap_snprintf
                 0x0000000000000000       0x28 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.__wrap_vsnprintf
                 0x0000000000000000       0x1c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text.vfctprintf
+                0x0000000000000000       0x20 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.weak_raw_printf
                 0x0000000000000000       0x40 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .rodata.pow10.0
+                0x0000000000000000       0x50 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.clzsi    0x0000000000000000        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -503,6 +516,10 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .data          0x0000000000000000        0x0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .text.__wrap___aeabi_idiv
+                0x0000000000000000       0x50 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .text.__wrap___aeabi_ldiv
+                0x0000000000000000      0x434 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .text.divmod_s64s64_rem
                 0x0000000000000000        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .text.divmod_u64u64_rem
@@ -514,11 +531,31 @@ Discarded input sections
                 0x0000000000000000        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.pop_r8_r11
                 0x0000000000000000        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_darithmetic
+                0x0000000000000000       0x80 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_cdcmple
+                0x0000000000000000       0x6c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.__wrap___aeabi_dcmpeq
                 0x0000000000000000       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_dcmplt
+                0x0000000000000000        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_dcmple
+                0x0000000000000000       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_dcmpge
+                0x0000000000000000       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_dcmpgt
+                0x0000000000000000        0xa CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_dcmpun
+                0x0000000000000000       0x1c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.__wrap___aeabi_ui2d
                 0x0000000000000000       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_i2d
+                0x0000000000000000       0x38 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_d2iz
+                0x0000000000000000       0x48 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.double2int
+                0x0000000000000000       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_d2uiz
                 0x0000000000000000       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.fix2double
                 0x0000000000000000       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -642,6 +679,14 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .data          0x0000000000000000        0x0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .text.__wrap___aeabi_dsub
+                0x0000000000000000       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .text.dadd_shim
+                0x0000000000000000      0x15c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .text.dmul_shim
+                0x0000000000000000      0x15c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .text.ddiv_shim
+                0x0000000000000000      0x1b0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.dsqrt_shim
                 0x0000000000000000      0x1a8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.dcordic_vec_step
@@ -650,12 +695,18 @@ Discarded input sections
                 0x0000000000000000       0x76 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.double2int_shim
                 0x0000000000000000        0xe CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .text.double2uint_shim
+                0x0000000000000000        0xe CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.double2int64_shim
                 0x0000000000000000       0x1a CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .text.double2uint64_shim
+                0x0000000000000000       0x70 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.double2float_shim
                 0x0000000000000000       0x5c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.x2double_shims
                 0x0000000000000000       0x90 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .text.dunpacks
+                0x0000000000000000       0x3c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.dreduce  0x0000000000000000       0x82 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.dtan_shim
                 0x0000000000000000       0x20 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -865,6 +916,8 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .text.stdio_buffered_printer
+                0x0000000000000000       0x64 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdout_serialize_begin
                 0x0000000000000000       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdout_serialize_end
@@ -877,6 +930,10 @@ Discarded input sections
  .text._write   0x0000000000000000       0xb0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_flush
                 0x0000000000000000       0x28 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .text.__wrap_vprintf
+                0x0000000000000000       0xd8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .text.__wrap_printf
+                0x0000000000000000       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_getchar
                 0x0000000000000000       0x74 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.getchar_timeout_us
@@ -1136,9 +1193,9 @@ Discarded input sections
  .comment       0x0000000000000000       0x4a CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .ARM.attributes
                 0x0000000000000000       0x2c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
- .text          0x0000000000000000        0x0 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccgVZ4cU.o
- .data          0x0000000000000000        0x0 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccgVZ4cU.o
- .bss           0x0000000000000000        0x0 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccgVZ4cU.o
+ .text          0x0000000000000000        0x0 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccU3PSDf.o
+ .data          0x0000000000000000        0x0 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccU3PSDf.o
+ .bss           0x0000000000000000        0x0 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccU3PSDf.o
  .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-calloc.o)
@@ -1354,11 +1411,11 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccgVZ4cU.o
+ .boot2         0x0000000010000000      0x100 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccU3PSDf.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x0000000010000100     0x75b0
+.text           0x0000000010000100     0x54e0
                 0x0000000010000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x0000000010000100       0xd4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1421,608 +1478,511 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .text*)
  .text          0x00000000100002c4       0x48 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .text.servo_timer_callback
-                0x000000001000030c       0x3c CMakeFiles/servospeedtest.dir/main.c.obj
+                0x000000001000030c       0x18 CMakeFiles/servospeedtest.dir/main.c.obj
                 0x000000001000030c                servo_timer_callback
  .text.startup.main
-                0x0000000010000348      0x158 CMakeFiles/servospeedtest.dir/main.c.obj
-                0x0000000010000348                main
+                0x0000000010000324      0x1b4 CMakeFiles/servospeedtest.dir/main.c.obj
+                0x0000000010000324                main
  .text.updateServo
-                0x00000000100004a0       0xa4 CMakeFiles/servospeedtest.dir/Servo.c.obj
-                0x00000000100004a0                updateServo
+                0x00000000100004d8       0xa4 CMakeFiles/servospeedtest.dir/Servo.c.obj
+                0x00000000100004d8                updateServo
+ .text.setServoPosition
+                0x000000001000057c       0x70 CMakeFiles/servospeedtest.dir/Servo.c.obj
+                0x000000001000057c                setServoPosition
  .text.setServo
-                0x0000000010000544      0x168 CMakeFiles/servospeedtest.dir/Servo.c.obj
-                0x0000000010000544                setServo
+                0x00000000100005ec      0x168 CMakeFiles/servospeedtest.dir/Servo.c.obj
+                0x00000000100005ec                setServo
  .text.initServo
-                0x00000000100006ac       0x30 CMakeFiles/servospeedtest.dir/Servo.c.obj
-                0x00000000100006ac                initServo
+                0x0000000010000754       0x30 CMakeFiles/servospeedtest.dir/Servo.c.obj
+                0x0000000010000754                initServo
  .text.gpio_set_function
-                0x00000000100006dc       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x00000000100006dc                gpio_set_function
+                0x0000000010000784       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010000784                gpio_set_function
  .text.gpio_init
-                0x000000001000070c       0x3c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x000000001000070c                gpio_init
+                0x00000000100007b4       0x3c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x00000000100007b4                gpio_init
  .text.hw_claim_or_assert
-                0x0000000010000748       0x44 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x0000000010000748                hw_claim_or_assert
+                0x00000000100007f0       0x44 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x00000000100007f0                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x000000001000078c       0x9c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x000000001000078c                hw_claim_unused_from_range
+                0x0000000010000834       0x9c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x0000000010000834                hw_claim_unused_from_range
  .text.running_on_fpga
-                0x0000000010000828       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x0000000010000828                running_on_fpga
+                0x00000000100008d0       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x00000000100008d0                running_on_fpga
  .text.spin_locks_reset
-                0x0000000010000838       0x1c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010000838                spin_locks_reset
+                0x00000000100008e0       0x1c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100008e0                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x0000000010000854       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010000854                next_striped_spin_lock_num
+                0x00000000100008fc       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100008fc                next_striped_spin_lock_num
  .text.spin_lock_claim_unused
-                0x000000001000086c       0x20 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x000000001000086c                spin_lock_claim_unused
+                0x0000000010000914       0x20 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x0000000010000914                spin_lock_claim_unused
  .text.irq_set_enabled
-                0x000000001000088c       0x24 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x000000001000088c                irq_set_enabled
+                0x0000000010000934       0x24 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000934                irq_set_enabled
  .text.irq_set_pending
-                0x00000000100008b0       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100008b0                irq_set_pending
+                0x0000000010000958       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000958                irq_set_pending
  .text.irq_has_shared_handler
-                0x00000000100008c0       0x2c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100008c0                irq_has_shared_handler
+                0x0000000010000968       0x2c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000968                irq_has_shared_handler
  .text.irq_get_vtable_handler
-                0x00000000100008ec       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100008ec                irq_get_vtable_handler
+                0x0000000010000994       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000994                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x00000000100008fc       0x54 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100008fc                irq_set_exclusive_handler
+                0x00000000100009a4       0x54 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100009a4                irq_set_exclusive_handler
  .text.irq_add_shared_handler
-                0x0000000010000950      0x1e4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000950                irq_add_shared_handler
+                0x00000000100009f8      0x1e4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100009f8                irq_add_shared_handler
  .text.irq_remove_handler
-                0x0000000010000b34      0x1b4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000b34                irq_remove_handler
+                0x0000000010000bdc      0x1b4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000bdc                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x0000000010000ce8       0xb4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000ce8                irq_add_tail_to_free_list
+                0x0000000010000d90       0xb4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000d90                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x0000000010000d9c       0x24 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000d9c                irq_init_priorities
+                0x0000000010000e44       0x24 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000e44                irq_init_priorities
  .text.user_irq_claim_unused
-                0x0000000010000dc0       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000dc0                user_irq_claim_unused
+                0x0000000010000e68       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000e68                user_irq_claim_unused
  .text.lock_init
-                0x0000000010000df0       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x0000000010000df0                lock_init
+                0x0000000010000e98       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x0000000010000e98                lock_init
  .text.timer_pool_entry_comparator
-                0x0000000010000e00       0x34 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000e00                timer_pool_entry_comparator
+                0x0000000010000ea8       0x34 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000ea8                timer_pool_entry_comparator
  .text.repeating_timer_callback
-                0x0000000010000e34       0x1c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000edc       0x1c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.sleep_until_callback
-                0x0000000010000e50       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000ef8       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock.isra.0
-                0x0000000010000e80      0x100 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000f28      0x100 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x0000000010000f80      0x1c8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001028      0x1c8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_add_alarm_at.constprop.0
-                0x0000000010001148      0x11c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100011f0      0x11c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x0000000010001264       0x64 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001264                alarm_pool_init_default
+                0x000000001000130c       0x64 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000001000130c                alarm_pool_init_default
  .text.alarm_pool_get_default
-                0x00000000100012c8        0x8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x00000000100012c8                alarm_pool_get_default
+                0x0000000010001370        0x8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001370                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at
-                0x00000000100012d0      0x194 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x00000000100012d0                alarm_pool_add_alarm_at
+                0x0000000010001378      0x194 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001378                alarm_pool_add_alarm_at
  .text.alarm_pool_add_repeating_timer_us
-                0x0000000010001464      0x22c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001464                alarm_pool_add_repeating_timer_us
+                0x000000001000150c      0x22c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000001000150c                alarm_pool_add_repeating_timer_us
+ .text.sleep_until
+                0x0000000010001738       0xac CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001738                sleep_until
+ .text.sleep_ms
+                0x00000000100017e4       0x38 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100017e4                sleep_ms
  .text.best_effort_wfe_or_timeout
-                0x0000000010001690       0xd4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001690                best_effort_wfe_or_timeout
+                0x000000001000181c       0xd4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000001000181c                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x0000000010001764       0xb8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100018f0       0xb8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x000000001000181c       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x000000001000181c                hardware_alarm_claim
+                0x00000000100019a8       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100019a8                hardware_alarm_claim
  .text.time_us_64
-                0x0000000010001834       0x14 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001834                time_us_64
+                0x00000000100019c0       0x14 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100019c0                time_us_64
+ .text.busy_wait_until
+                0x00000000100019d4       0x20 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100019d4                busy_wait_until
  .text.hardware_alarm_set_callback
-                0x0000000010001848       0x8c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001848                hardware_alarm_set_callback
+                0x00000000100019f4       0x8c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100019f4                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x00000000100018d4       0xe0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100018d4                hardware_alarm_set_target
+                0x0000000010001a80       0xe0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001a80                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x00000000100019b4       0x3c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100019b4                hardware_alarm_cancel
+                0x0000000010001b60       0x3c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001b60                hardware_alarm_cancel
  .text.ph_merge_nodes
-                0x00000000100019f0       0x68 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001b9c       0x68 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x0000000010001a58       0x3c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001a58                ph_post_alloc_init
+                0x0000000010001c04       0x3c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001c04                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x0000000010001a94       0x90 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001a94                ph_merge_two_pass
+                0x0000000010001c40       0x90 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001c40                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x0000000010001b24       0xf8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001cd0       0xf8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x0000000010001c1c       0xfc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001c1c                ph_remove_head
+                0x0000000010001dc8       0xfc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001dc8                ph_remove_head
  .text.ph_remove_and_free_node
-                0x0000000010001d18       0x7c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001d18                ph_remove_and_free_node
+                0x0000000010001ec4       0x7c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001ec4                ph_remove_and_free_node
  .text.mutex_init
-                0x0000000010001d94       0x1c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000010001d94                mutex_init
+                0x0000000010001f40       0x1c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010001f40                mutex_init
  .text.recursive_mutex_init
-                0x0000000010001db0       0x1c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000010001db0                recursive_mutex_init
+                0x0000000010001f5c       0x1c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010001f5c                recursive_mutex_init
  .text.critical_section_init
-                0x0000000010001dcc       0x20 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x0000000010001dcc                critical_section_init
+                0x0000000010001f78       0x20 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x0000000010001f78                critical_section_init
  .text.runtime_init
-                0x0000000010001dec       0xf0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001dec                runtime_init
- .text.exit     0x0000000010001edc        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001edc                exit
- .text.panic    0x0000000010001ee0       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001ee0                panic
+                0x0000000010001f98       0xf0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001f98                runtime_init
+ .text.exit     0x0000000010002088        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010002088                exit
+ .text.panic    0x000000001000208c       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x000000001000208c                panic
  .text.hard_assertion_failure
-                0x0000000010001f10        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001f10                hard_assertion_failure
+                0x00000000100020bc        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100020bc                hard_assertion_failure
  .text.clocks_init
-                0x0000000010001f1c      0x2bc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x0000000010001f1c                clocks_init
+                0x00000000100020c8      0x2bc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00000000100020c8                clocks_init
  .text.clock_get_hz
-                0x00000000100021d8        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x00000000100021d8                clock_get_hz
+                0x0000000010002384        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000000010002384                clock_get_hz
  .text.pll_init
-                0x00000000100021e4       0xb0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x00000000100021e4                pll_init
+                0x0000000010002390       0xb0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x0000000010002390                pll_init
  .text.watchdog_start_tick
-                0x0000000010002294       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010002294                watchdog_start_tick
+                0x0000000010002440       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010002440                watchdog_start_tick
  .text.watchdog_reboot
-                0x00000000100022a4       0x98 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x00000000100022a4                watchdog_reboot
+                0x0000000010002450       0x98 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010002450                watchdog_reboot
  .text.xosc_init
-                0x000000001000233c       0x28 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x000000001000233c                xosc_init
- .text._out_null
-                0x0000000010002364        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._out_rev
-                0x0000000010002368       0x9c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ntoa_format
-                0x0000000010002404      0x1cc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100024e8       0x28 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x00000000100024e8                xosc_init
  .text._out_char
-                0x00000000100025d0       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._out_fct
-                0x00000000100025e0       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._etoa    0x00000000100025f0      0x44c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x0000000010002a3c      0x398 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._vsnprintf
-                0x0000000010002dd4      0xb04 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text.vfctprintf
-                0x00000000100038d8       0x20 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x00000000100038d8                vfctprintf
+                0x0000000010002510       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.weak_raw_vprintf
-                0x00000000100038f8       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x00000000100038f8                weak_raw_vprintf
- .text          0x0000000010003928       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x0000000010002520       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002520                weak_raw_vprintf
+ .text          0x0000000010002550       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x0000000010003938       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010003938                rom_func_lookup
+                0x0000000010002560       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010002560                rom_func_lookup
  .text.rom_data_lookup
-                0x0000000010003948       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010003948                rom_data_lookup
+                0x0000000010002570       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010002570                rom_data_lookup
  .text.rom_funcs_lookup
-                0x0000000010003958       0x44 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010003958                rom_funcs_lookup
- .text.__wrap___aeabi_idiv
-                0x000000001000399c       0x50 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x000000001000399c                __wrap___aeabi_idivmod
-                0x000000001000399c                divmod_s32s32
-                0x000000001000399c                div_s32s32
-                0x000000001000399c                __wrap___aeabi_idiv
-                0x00000000100039a4                divmod_s32s32_unsafe
-                0x00000000100039d0                divmod_s32s32_savestate
+                0x0000000010002580       0x44 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010002580                rom_funcs_lookup
  .text.__wrap___aeabi_uidiv
-                0x00000000100039ec       0x4c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x00000000100039ec                __wrap___aeabi_uidiv
-                0x00000000100039ec                __wrap___aeabi_uidivmod
-                0x00000000100039ec                div_u32u32
-                0x00000000100039ec                divmod_u32u32
-                0x00000000100039f4                divmod_u32u32_unsafe
-                0x0000000010003a1c                divmod_u32u32_savestate
- .text.__wrap___aeabi_ldiv
-                0x0000000010003a38      0x434 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010003a38                __wrap___aeabi_ldivmod
-                0x0000000010003a38                div_s64s64
-                0x0000000010003a38                divmod_s64s64
-                0x0000000010003a70                divmod_u64u64
-                0x0000000010003a70                div_u64u64
-                0x0000000010003a70                __wrap___aeabi_uldivmod
-                0x0000000010003a80                divmod_u64u64_savestate
-                0x0000000010003aa8                divmod_s64s64_unsafe
-                0x0000000010003b30                divmod_u64u64_unsafe
- .text.__wrap___aeabi_darithmetic
-                0x0000000010003e6c       0x80 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003e6c                __wrap___aeabi_drsub
-                0x0000000010003e72                __wrap___aeabi_dsub
-                0x0000000010003e84                __wrap___aeabi_dadd
-                0x0000000010003e96                __wrap___aeabi_ddiv
-                0x0000000010003ed2                __wrap___aeabi_dmul
- .text.__wrap___aeabi_cdcmple
-                0x0000000010003eec       0x6c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003eec                __wrap___aeabi_cdrcmple
-                0x0000000010003efc                __wrap___aeabi_cdcmple
-                0x0000000010003efc                __wrap___aeabi_cdcmpeq
- .text.__wrap___aeabi_dcmplt
-                0x0000000010003f58        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003f58                __wrap___aeabi_dcmplt
- .text.__wrap___aeabi_dcmple
-                0x0000000010003f64       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003f64                __wrap___aeabi_dcmple
- .text.__wrap___aeabi_dcmpge
-                0x0000000010003f74       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003f74                __wrap___aeabi_dcmpge
- .text.__wrap___aeabi_dcmpgt
-                0x0000000010003f84        0xa CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003f84                __wrap___aeabi_dcmpgt
- .text.__wrap___aeabi_dcmpun
-                0x0000000010003f8e       0x1c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003f8e                __wrap___aeabi_dcmpun
- *fill*         0x0000000010003faa        0x2 
- .text.__wrap___aeabi_i2d
-                0x0000000010003fac       0x38 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003fac                __wrap___aeabi_ui2d
-                0x0000000010003fb4                __wrap___aeabi_i2d
- .text.__wrap___aeabi_d2iz
-                0x0000000010003fe4       0x48 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003fe4                __wrap___aeabi_d2iz
-                0x0000000010003fe4                double2int_z
- .text.__wrap___aeabi_d2uiz
-                0x000000001000402c       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x000000001000402c                double2uint
-                0x000000001000402c                __wrap___aeabi_d2uiz
+                0x00000000100025c4       0x4c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x00000000100025c4                __wrap___aeabi_uidiv
+                0x00000000100025c4                __wrap___aeabi_uidivmod
+                0x00000000100025c4                div_u32u32
+                0x00000000100025c4                divmod_u32u32
+                0x00000000100025cc                divmod_u32u32_unsafe
+                0x00000000100025f4                divmod_u32u32_savestate
  .text.__aeabi_double_init
-                0x0000000010004044       0x94 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000010004044                __aeabi_double_init
+                0x0000000010002610       0x94 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000010002610                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x00000000100040d8       0x2c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100040d8                double_table_shim_on_use_helper
- .text.__wrap___aeabi_dsub
-                0x0000000010004104       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004104                drsub_shim
-                0x000000001000410a                dsub_shim
- .text.dadd_shim
-                0x0000000010004114      0x15c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004114                dadd_shim
- .text.dmul_shim
-                0x0000000010004270      0x15c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004270                dmul_shim
- .text.ddiv_shim
-                0x00000000100043cc      0x1b0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100043cc                ddiv_shim
- .text.double2uint_shim
-                0x000000001000457c        0xe CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x000000001000457c                double2uint_shim
-                0x000000001000457e                double2ufix_shim
- *fill*         0x000000001000458a        0x2 
- .text.double2uint64_shim
-                0x000000001000458c       0x70 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x000000001000458c                double2uint64_shim
-                0x000000001000458e                double2ufix64_shim
-                0x00000000100045ae                d2fix_a
- .text.dunpacks
-                0x00000000100045fc       0x3c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100045fc                dunpacks
+                0x00000000100026a4       0x2c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100026a4                double_table_shim_on_use_helper
  .text.__aeabi_lmul
-                0x0000000010004638       0x32 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x0000000010004638                __wrap___aeabi_lmul
- *fill*         0x000000001000466a        0x2 
+                0x00000000100026d0       0x32 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x00000000100026d0                __wrap___aeabi_lmul
+ *fill*         0x0000000010002702        0x2 
  .text.__wrap___aeabi_farithmetic
-                0x000000001000466c       0x48 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x000000001000466c                __wrap___aeabi_frsub
-                0x0000000010004672                __wrap___aeabi_fsub
-                0x0000000010004678                __wrap___aeabi_fadd
-                0x000000001000467e                __wrap___aeabi_fdiv
-                0x00000000100046a6                __wrap___aeabi_fmul
+                0x0000000010002704       0x48 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x0000000010002704                __wrap___aeabi_frsub
+                0x000000001000270a                __wrap___aeabi_fsub
+                0x0000000010002710                __wrap___aeabi_fadd
+                0x0000000010002716                __wrap___aeabi_fdiv
+                0x000000001000273e                __wrap___aeabi_fmul
  .text.__wrap___aeabi_cfcmple
-                0x00000000100046b4       0x50 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x00000000100046b4                __wrap___aeabi_cfrcmple
-                0x00000000100046c0                __wrap___aeabi_cfcmpeq
-                0x00000000100046c0                __wrap___aeabi_cfcmple
+                0x000000001000274c       0x50 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x000000001000274c                __wrap___aeabi_cfrcmple
+                0x0000000010002758                __wrap___aeabi_cfcmpeq
+                0x0000000010002758                __wrap___aeabi_cfcmple
  .text.__wrap___aeabi_fcmpgt
-                0x0000000010004704        0xa CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x0000000010004704                __wrap___aeabi_fcmpgt
+                0x000000001000279c        0xa CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x000000001000279c                __wrap___aeabi_fcmpgt
  .text.__wrap___aeabi_ui2f
-                0x000000001000470e        0xa CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x000000001000470e                __wrap___aeabi_ui2f
+                0x00000000100027a6        0xa CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x00000000100027a6                __wrap___aeabi_ui2f
  .text.__wrap___aeabi_i2f
-                0x0000000010004718       0x44 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x0000000010004718                __wrap___aeabi_i2f
+                0x00000000100027b0       0x44 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x00000000100027b0                __wrap___aeabi_i2f
  .text.__wrap___aeabi_f2uiz
-                0x000000001000475c        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x000000001000475c                __wrap___aeabi_f2uiz
+                0x00000000100027f4        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x00000000100027f4                __wrap___aeabi_f2uiz
  .text.__aeabi_float_init
-                0x0000000010004768       0x64 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x0000000010004768                __aeabi_float_init
+                0x0000000010002800       0x64 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000010002800                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x00000000100047cc       0x2c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x00000000100047cc                float_table_shim_on_use_helper
- .text          0x00000000100047f8       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x00000000100047f8                __aeabi_mem_init
- .text.memset   0x0000000010004808        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010004808                __wrap_memset
- .text.memcpy   0x0000000010004814        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010004814                __wrap___aeabi_memcpy
-                0x0000000010004814                __wrap_memcpy
+                0x0000000010002864       0x2c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x0000000010002864                float_table_shim_on_use_helper
+ .text          0x0000000010002890       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010002890                __aeabi_mem_init
+ .text.memset   0x00000000100028a0        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x00000000100028a0                __wrap_memset
+ .text.memcpy   0x00000000100028ac        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x00000000100028ac                __wrap___aeabi_memcpy
+                0x00000000100028ac                __wrap_memcpy
  .text.stdio_out_chars_no_crlf
-                0x0000000010004820       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100028b8       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x0000000010004830       0xb4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .text.stdio_buffered_printer
-                0x00000000100048e4       0x64 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100028c8       0xb4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string.isra.0
-                0x0000000010004948       0xfc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x000000001000297c       0xfc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x0000000010004a44       0xa0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004a44                __wrap_putchar
+                0x0000000010002a78       0xa0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010002a78                __wrap_putchar
  .text.__wrap_puts
-                0x0000000010004ae4       0x3c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004ae4                __wrap_puts
+                0x0000000010002b18       0x3c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010002b18                __wrap_puts
  .text.stdio_set_driver_enabled
-                0x0000000010004b20       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004b20                stdio_set_driver_enabled
- .text.__wrap_vprintf
-                0x0000000010004b50       0xd8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004b50                __wrap_vprintf
- .text.__wrap_printf
-                0x0000000010004c28       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004c28                __wrap_printf
+                0x0000000010002b54       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010002b54                stdio_set_driver_enabled
  .text.stdio_init_all
-                0x0000000010004c40        0x8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004c40                stdio_init_all
+                0x0000000010002b84        0x8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010002b84                stdio_init_all
  .text.resetd_init
-                0x0000000010004c48        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010002b8c        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_reset
-                0x0000000010004c4c        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010002b90        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_open
-                0x0000000010004c58       0x28 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010002b9c       0x28 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_xfer_cb
-                0x0000000010004c80        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010002bc4        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_control_xfer_cb
-                0x0000000010004c84       0x64 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010002bc8       0x64 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.usbd_app_driver_get_cb
-                0x0000000010004ce8        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x0000000010004ce8                usbd_app_driver_get_cb
+                0x0000000010002c2c        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010002c2c                usbd_app_driver_get_cb
  .text.tud_cdc_line_coding_cb
-                0x0000000010004cf4       0x34 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x0000000010004cf4                tud_cdc_line_coding_cb
+                0x0000000010002c38       0x34 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010002c38                tud_cdc_line_coding_cb
  .text.stdio_usb_in_chars
-                0x0000000010004d28       0x68 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010004d28                stdio_usb_in_chars
+                0x0000000010002c6c       0x68 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010002c6c                stdio_usb_in_chars
  .text.stdio_usb_out_chars
-                0x0000000010004d90       0xe4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010002cd4       0xe4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.timer_task
-                0x0000000010004e74       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .text.usb_irq  0x0000000010004e8c       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010002db8       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .text.usb_irq  0x0000000010002dd0       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.low_priority_worker_irq
-                0x0000000010004e9c       0x24 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010002de0       0x24 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.stdio_usb_init
-                0x0000000010004ec0       0xb0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010004ec0                stdio_usb_init
+                0x0000000010002e04       0xb0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010002e04                stdio_usb_init
  .text.tud_descriptor_device_cb
-                0x0000000010004f70        0x8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010004f70                tud_descriptor_device_cb
+                0x0000000010002eb4        0x8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010002eb4                tud_descriptor_device_cb
  .text.tud_descriptor_configuration_cb
-                0x0000000010004f78        0x8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010004f78                tud_descriptor_configuration_cb
+                0x0000000010002ebc        0x8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010002ebc                tud_descriptor_configuration_cb
  .text.tud_descriptor_string_cb
-                0x0000000010004f80       0x74 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010004f80                tud_descriptor_string_cb
+                0x0000000010002ec4       0x74 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010002ec4                tud_descriptor_string_cb
  .text.dcd_rp2040_irq
-                0x0000000010004ff4      0x21c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010002f38      0x21c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .text.dcd_int_enable
-                0x0000000010005210        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005210                dcd_int_enable
+                0x0000000010003154        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010003154                dcd_int_enable
  .text.dcd_set_address
-                0x000000001000521c       0x14 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x000000001000521c                dcd_set_address
+                0x0000000010003160       0x14 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010003160                dcd_set_address
  .text.dcd_connect
-                0x0000000010005230       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005230                dcd_connect
+                0x0000000010003174       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010003174                dcd_connect
  .text.dcd_init
-                0x0000000010005240      0x144 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005240                dcd_init
+                0x0000000010003184      0x144 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010003184                dcd_init
  .text.dcd_edpt0_status_complete
-                0x0000000010005384       0x1c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005384                dcd_edpt0_status_complete
+                0x00000000100032c8       0x1c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100032c8                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x00000000100053a0       0xf0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100053a0                dcd_edpt_open
+                0x00000000100032e4       0xf0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100032e4                dcd_edpt_open
  .text.dcd_edpt_close_all
-                0x0000000010005490       0xbc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005490                dcd_edpt_close_all
+                0x00000000100033d4       0xbc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100033d4                dcd_edpt_close_all
  .text.dcd_edpt_xfer
-                0x000000001000554c       0x24 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x000000001000554c                dcd_edpt_xfer
+                0x0000000010003490       0x24 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010003490                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x0000000010005570       0x38 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005570                dcd_edpt_stall
+                0x00000000100034b4       0x38 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100034b4                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x00000000100055a8       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100055a8                dcd_edpt_clear_stall
+                0x00000000100034ec       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100034ec                dcd_edpt_clear_stall
  .text._hw_endpoint_buffer_control_update32.part.0.isra.0
-                0x00000000100055d8       0x1c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x000000001000351c       0x1c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
  .text.rp2040_usb_init
-                0x00000000100055f4       0x4c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x00000000100055f4                rp2040_usb_init
+                0x0000000010003538       0x4c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010003538                rp2040_usb_init
  .text.hw_endpoint_reset_transfer
-                0x0000000010005640        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000010005640                hw_endpoint_reset_transfer
+                0x0000000010003584        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010003584                hw_endpoint_reset_transfer
  .text._hw_endpoint_buffer_control_update32
-                0x000000001000564c       0x44 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x000000001000564c                _hw_endpoint_buffer_control_update32
+                0x0000000010003590       0x44 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010003590                _hw_endpoint_buffer_control_update32
  .text.hw_endpoint_xfer_start
-                0x0000000010005690      0x138 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000010005690                hw_endpoint_xfer_start
+                0x00000000100035d4      0x138 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x00000000100035d4                hw_endpoint_xfer_start
  .text.hw_endpoint_xfer_continue
-                0x00000000100057c8      0x1e4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x00000000100057c8                hw_endpoint_xfer_continue
+                0x000000001000370c      0x1e4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x000000001000370c                hw_endpoint_xfer_continue
  .text.tud_mounted
-                0x00000000100059ac       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100059ac                tud_mounted
+                0x00000000100038f0       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100038f0                tud_mounted
  .text.tud_suspended
-                0x00000000100059bc       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100059bc                tud_suspended
+                0x0000000010003900       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010003900                tud_suspended
  .text.tud_inited
-                0x00000000100059cc        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100059cc                tud_inited
+                0x0000000010003910        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010003910                tud_inited
  .text.tud_init
-                0x00000000100059d8       0xd8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100059d8                tud_init
+                0x000000001000391c       0xd8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000001000391c                tud_init
  .text.tud_task
-                0x0000000010005ab0      0x8ec CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005ab0                tud_task
+                0x00000000100039f4      0x8ec CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100039f4                tud_task
  .text.dcd_event_bus_signal
-                0x000000001000639c      0x120 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x000000001000639c                dcd_event_bus_signal
+                0x00000000100042e0      0x120 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100042e0                dcd_event_bus_signal
  .text.dcd_event_bus_reset
-                0x00000000100064bc       0x54 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100064bc                dcd_event_bus_reset
+                0x0000000010004400       0x54 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010004400                dcd_event_bus_reset
  .text.dcd_event_setup_received
-                0x0000000010006510       0x50 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006510                dcd_event_setup_received
+                0x0000000010004454       0x50 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010004454                dcd_event_setup_received
  .text.dcd_event_xfer_complete
-                0x0000000010006560       0x68 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006560                dcd_event_xfer_complete
+                0x00000000100044a4       0x68 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100044a4                dcd_event_xfer_complete
  .text.usbd_open_edpt_pair
-                0x00000000100065c8       0x80 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100065c8                usbd_open_edpt_pair
+                0x000000001000450c       0x80 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000001000450c                usbd_open_edpt_pair
  .text.usbd_edpt_open
-                0x0000000010006648       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006648                usbd_edpt_open
+                0x000000001000458c       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000001000458c                usbd_edpt_open
  .text.usbd_edpt_claim
-                0x0000000010006678       0x64 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006678                usbd_edpt_claim
+                0x00000000100045bc       0x64 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100045bc                usbd_edpt_claim
  .text.usbd_edpt_release
-                0x00000000100066dc       0x4c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100066dc                usbd_edpt_release
+                0x0000000010004620       0x4c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010004620                usbd_edpt_release
  .text.usbd_edpt_xfer
-                0x0000000010006728       0x48 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006728                usbd_edpt_xfer
+                0x000000001000466c       0x48 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000001000466c                usbd_edpt_xfer
  .text.tud_control_status
-                0x0000000010006770       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006770                tud_control_status
+                0x00000000100046b4       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x00000000100046b4                tud_control_status
  .text.tud_control_xfer
-                0x00000000100067a0       0xbc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x00000000100067a0                tud_control_xfer
+                0x00000000100046e4       0xbc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x00000000100046e4                tud_control_xfer
  .text.usbd_control_reset
-                0x000000001000685c       0x14 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x000000001000685c                usbd_control_reset
+                0x00000000100047a0       0x14 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x00000000100047a0                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x0000000010006870        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006870                usbd_control_set_complete_callback
+                0x00000000100047b4        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x00000000100047b4                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x000000001000687c       0x1c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x000000001000687c                usbd_control_set_request
+                0x00000000100047c0       0x1c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x00000000100047c0                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x0000000010006898       0xfc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006898                usbd_control_xfer_cb
+                0x00000000100047dc       0xfc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x00000000100047dc                usbd_control_xfer_cb
  .text.tud_cdc_n_connected
-                0x0000000010006994       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006994                tud_cdc_n_connected
+                0x00000000100048d8       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100048d8                tud_cdc_n_connected
  .text.tud_cdc_n_available
-                0x00000000100069c4       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100069c4                tud_cdc_n_available
+                0x0000000010004908       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010004908                tud_cdc_n_available
  .text.tud_cdc_n_read
-                0x00000000100069dc       0x70 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100069dc                tud_cdc_n_read
+                0x0000000010004920       0x70 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010004920                tud_cdc_n_read
  .text.tud_cdc_n_write_flush
-                0x0000000010006a4c       0x78 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006a4c                tud_cdc_n_write_flush
+                0x0000000010004990       0x78 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010004990                tud_cdc_n_write_flush
  .text.tud_cdc_n_write
-                0x0000000010006ac4       0x34 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006ac4                tud_cdc_n_write
+                0x0000000010004a08       0x34 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010004a08                tud_cdc_n_write
  .text.tud_cdc_n_write_available
-                0x0000000010006af8       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006af8                tud_cdc_n_write_available
+                0x0000000010004a3c       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010004a3c                tud_cdc_n_write_available
  .text.cdcd_init
-                0x0000000010006b10       0x7c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006b10                cdcd_init
+                0x0000000010004a54       0x7c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010004a54                cdcd_init
  .text.cdcd_reset
-                0x0000000010006b8c       0x2c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006b8c                cdcd_reset
+                0x0000000010004ad0       0x2c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010004ad0                cdcd_reset
  .text.cdcd_open
-                0x0000000010006bb8       0xe4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006bb8                cdcd_open
+                0x0000000010004afc       0xe4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010004afc                cdcd_open
  .text.cdcd_control_xfer_cb
-                0x0000000010006c9c       0xe4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006c9c                cdcd_control_xfer_cb
+                0x0000000010004be0       0xe4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010004be0                cdcd_control_xfer_cb
  .text.cdcd_xfer_cb
-                0x0000000010006d80      0x148 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006d80                cdcd_xfer_cb
+                0x0000000010004cc4      0x148 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010004cc4                cdcd_xfer_cb
  .text.tusb_init
-                0x0000000010006ec8        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006ec8                tusb_init
+                0x0000000010004e0c        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010004e0c                tusb_init
  .text.tusb_inited
-                0x0000000010006ed4        0x8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006ed4                tusb_inited
+                0x0000000010004e18        0x8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010004e18                tusb_inited
  .text.tu_edpt_validate
-                0x0000000010006edc       0x78 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006edc                tu_edpt_validate
+                0x0000000010004e20       0x78 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010004e20                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x0000000010006f54       0x2c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006f54                tu_edpt_bind_driver
+                0x0000000010004e98       0x2c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010004e98                tu_edpt_bind_driver
  .text.tu_fifo_config
-                0x0000000010006f80       0x78 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006f80                tu_fifo_config
+                0x0000000010004ec4       0x78 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010004ec4                tu_fifo_config
  .text.tu_fifo_count
-                0x0000000010006ff8       0x20 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006ff8                tu_fifo_count
+                0x0000000010004f3c       0x20 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010004f3c                tu_fifo_count
  .text.tu_fifo_empty
-                0x0000000010007018       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007018                tu_fifo_empty
+                0x0000000010004f5c       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010004f5c                tu_fifo_empty
  .text.tu_fifo_remaining
-                0x0000000010007028       0x1c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007028                tu_fifo_remaining
+                0x0000000010004f6c       0x1c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010004f6c                tu_fifo_remaining
  .text.tu_fifo_read
-                0x0000000010007044       0x9c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007044                tu_fifo_read
+                0x0000000010004f88       0x9c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010004f88                tu_fifo_read
  .text.tu_fifo_read_n
-                0x00000000100070e0      0x100 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100070e0                tu_fifo_read_n
+                0x0000000010005024      0x100 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010005024                tu_fifo_read_n
  .text.tu_fifo_write
-                0x00000000100071e0       0x7c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100071e0                tu_fifo_write
+                0x0000000010005124       0x7c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010005124                tu_fifo_write
  .text.tu_fifo_write_n
-                0x000000001000725c      0x100 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x000000001000725c                tu_fifo_write_n
+                0x00000000100051a0      0x100 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100051a0                tu_fifo_write_n
  .text.tu_fifo_clear
-                0x000000001000735c       0x4c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x000000001000735c                tu_fifo_clear
+                0x00000000100052a0       0x4c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100052a0                tu_fifo_clear
  .text.tu_fifo_set_overwritable
-                0x00000000100073a8       0x3c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100073a8                tu_fifo_set_overwritable
+                0x00000000100052ec       0x3c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100052ec                tu_fifo_set_overwritable
  .text.startup._retrieve_unique_id_on_boot
-                0x00000000100073e4       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010005328       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.pico_get_unique_board_id_string
-                0x00000000100073f4      0x1a8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                0x00000000100073f4                pico_get_unique_board_id_string
+                0x0000000010005338      0x1a8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010005338                pico_get_unique_board_id_string
  .text.flash_get_unique_id
-                0x000000001000759c       0x40 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x000000001000759c                flash_get_unique_id
- .text.strlen   0x00000000100075dc       0x5c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x00000000100075dc                strlen
+                0x00000000100054e0       0x40 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x00000000100054e0                flash_get_unique_id
+ .text.strlen   0x0000000010005520       0x5c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x0000000010005520                strlen
  *(.fini)
- .fini          0x0000000010007638        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x0000000010007638                _fini
- *fill*         0x000000001000763c        0x4 
- .fini.__stub   0x0000000010007640       0x70 linker stubs
+ .fini          0x000000001000557c        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x000000001000557c                _fini
+ .fini.__stub   0x0000000010005580       0x60 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2034,135 +1994,125 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x00000000100076b0        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x00000000100076b0                . = ALIGN (0x4)
+ .eh_frame      0x00000000100055e0        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x00000000100055e0                . = ALIGN (0x4)
 
-.glue_7         0x00000000100076b0        0x0
- .glue_7        0x00000000100076b0        0x0 linker stubs
+.glue_7         0x00000000100055e0        0x0
+ .glue_7        0x00000000100055e0        0x0 linker stubs
 
-.glue_7t        0x00000000100076b0        0x0
- .glue_7t       0x00000000100076b0        0x0 linker stubs
+.glue_7t        0x00000000100055e0        0x0
+ .glue_7t       0x00000000100055e0        0x0 linker stubs
 
-.vfp11_veneer   0x00000000100076b0        0x0
- .vfp11_veneer  0x00000000100076b0        0x0 linker stubs
+.vfp11_veneer   0x00000000100055e0        0x0
+ .vfp11_veneer  0x00000000100055e0        0x0 linker stubs
 
-.v4_bx          0x00000000100076b0        0x0
- .v4_bx         0x00000000100076b0        0x0 linker stubs
+.v4_bx          0x00000000100055e0        0x0
+ .v4_bx         0x00000000100055e0        0x0 linker stubs
 
-.iplt           0x00000000100076b0        0x0
- .iplt          0x00000000100076b0        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x00000000100055e0        0x0
+ .iplt          0x00000000100055e0        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x00000000100076b0      0x55c
+.rodata         0x00000000100055e0      0x310
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
- .rodata.servo_timer_callback.str1.4
-                0x00000000100076b0       0x13 CMakeFiles/servospeedtest.dir/main.c.obj
- *fill*         0x00000000100076c3        0x1 
  .rodata.main.str1.4
-                0x00000000100076c4       0x24 CMakeFiles/servospeedtest.dir/main.c.obj
+                0x00000000100055e0       0x24 CMakeFiles/servospeedtest.dir/main.c.obj
+ .rodata.main   0x0000000010005604       0x14 CMakeFiles/servospeedtest.dir/main.c.obj
  .rodata.spin_lock_claim_unused.str1.4
-                0x00000000100076e8       0x1b CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x0000000010007703        0x1 
+                0x0000000010005618       0x1b CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x0000000010005633        0x1 
  .rodata.user_irq_claim_unused.str1.4
-                0x0000000010007704       0x1b CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x000000001000771f        0x1 
+                0x0000000010005634       0x1b CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x000000001000564f        0x1 
  .rodata.hardware_alarm_claim.str1.4
-                0x0000000010007720       0x22 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x0000000010007742        0x2 
+                0x0000000010005650       0x22 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x0000000010005672        0x2 
  .rodata.panic.str1.4
-                0x0000000010007744       0x12 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x0000000010007756        0x2 
+                0x0000000010005674       0x12 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x0000000010005686        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x0000000010007758        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .rodata._ftoa.str1.4
-                0x0000000010007764       0x15 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x0000000010007779        0x3 
- .rodata._vsnprintf
-                0x000000001000777c      0x1e0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x000000001000795c        0x4 
- .rodata.pow10.0
-                0x0000000010007960       0x50 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010005688        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.str1.4
-                0x00000000100079b0       0x44 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010005694       0x44 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x00000000100079f4        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100056d8        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x0000000010007a00        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100056e4        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x0000000010007a0c        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100056f0        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x0000000010007a18        0x2 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x0000000010007a1a        0x2 
+                0x00000000100056fc        0x2 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x00000000100056fe        0x2 
  .rodata._resetd_driver
-                0x0000000010007a1c       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010005700       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .rodata.str1.4
-                0x0000000010007a34       0x13 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- *fill*         0x0000000010007a47        0x1 
+                0x0000000010005718       0x13 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ *fill*         0x000000001000572b        0x1 
  .rodata.__bi_118.0
-                0x0000000010007a48        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x000000001000572c        0xc CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.str1.4
-                0x0000000010007a54       0x2a CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x0000000010007a7e        0x2 
+                0x0000000010005738       0x2a CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x0000000010005762        0x2 
  .rodata.usbd_desc_cfg
-                0x0000000010007a80       0x54 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010005764       0x54 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_device
-                0x0000000010007ad4       0x12 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x0000000010007ae6        0x2 
+                0x00000000100057b8       0x12 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x00000000100057ca        0x2 
  .rodata.usbd_desc_str
-                0x0000000010007ae8       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x00000000100057cc       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.dcd_rp2040_irq.str1.4
-                0x0000000010007b00       0x14 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100057e4       0x14 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata._hw_endpoint_buffer_control_update32.part.0.isra.0.str1.4
-                0x0000000010007b14       0x1f CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x0000000010007b33        0x1 
+                0x00000000100057f8       0x1f CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x0000000010005817        0x1 
  .rodata.hw_endpoint_xfer_continue.str1.4
-                0x0000000010007b34       0x29 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x0000000010007b5d        0x3 
+                0x0000000010005818       0x29 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x0000000010005841        0x3 
  .rodata.str1.4
-                0x0000000010007b60        0x7 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x0000000010007b67        0x1 
+                0x0000000010005844        0x7 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x000000001000584b        0x1 
  .rodata.tud_task
-                0x0000000010007b68       0x8c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000001000584c       0x8c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata._usbd_driver
-                0x0000000010007bf4       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010007c0c                . = ALIGN (0x4)
+                0x00000000100058d8       0x18 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100058f0                . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x0000000010007c0c                . = ALIGN (0x4)
+                0x00000000100058f0                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000010007c0c        0x0
- .rel.iplt      0x0000000010007c0c        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x00000000100058f0        0x0
+ .rel.iplt      0x00000000100058f0        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000010007c0c                __exidx_start = .
+                0x00000000100058f0                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000000010007c0c                __exidx_end = .
-                0x0000000010007c0c                . = ALIGN (0x4)
-                0x0000000010007c0c                __binary_info_start = .
+                0x00000000100058f0                __exidx_end = .
+                0x00000000100058f0                . = ALIGN (0x4)
+                0x00000000100058f0                __binary_info_start = .
 
-.binary_info    0x0000000010007c0c       0x20
+.binary_info    0x00000000100058f0       0x20
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x0000000010007c0c        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100058f0        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x0000000010007c10        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100058f4        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x0000000010007c14        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100058f8        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x0000000010007c18        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100058fc        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x0000000010007c1c        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010005900        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x0000000010007c20        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010005904        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x0000000010007c24        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010005908        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr118
-                0x0000000010007c28        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010007c2c                __binary_info_end = .
-                0x0000000010007c2c                . = ALIGN (0x4)
-                0x0000000010007c2c                __etext = .
+                0x000000001000590c        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010005910                __binary_info_end = .
+                0x0000000010005910                . = ALIGN (0x4)
+                0x0000000010005910                __etext = .
 
 .ram_vector_table
                 0x0000000020000000       0xc0
@@ -2171,7 +2121,7 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
                 0x0000000020000000       0xc0 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0      0x3d0 load address 0x0000000010007c2c
+.data           0x00000000200000c0      0x3d0 load address 0x0000000010005910
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2277,29 +2227,29 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
                 0x0000000020000490                . = ALIGN (0x4)
                 0x0000000020000490                __data_end__ = .
 
-.igot.plt       0x0000000020000490        0x0 load address 0x0000000010007ffc
+.igot.plt       0x0000000020000490        0x0 load address 0x0000000010005ce0
  .igot.plt      0x0000000020000490        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x0000000020000490        0x0 load address 0x0000000010007ffc
+                0x0000000020000490        0x0 load address 0x0000000010005ce0
                 0x0000000020000490                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x0000000010007ffc
+.scratch_x      0x0000000020040000        0x0 load address 0x0000000010005ce0
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x0000000010007ffc                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x0000000010005ce0                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x0000000010007ffc
+.scratch_y      0x0000000020041000        0x0 load address 0x0000000010005ce0
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x0000000010007ffc                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x0000000010005ce0                __scratch_y_source__ = LOADADDR (.scratch_y)
 
-.bss            0x0000000020000490      0xdd4
+.bss            0x0000000020000490      0xdd0
                 0x0000000020000490                . = ALIGN (0x4)
                 0x0000000020000490                __bss_start__ = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -2347,76 +2297,74 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
  .bss.claimed   0x0000000020000d40        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
  .bss.configured_freq
                 0x0000000020000d44       0x28 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .bss.count     0x0000000020000d6c        0x4 CMakeFiles/servospeedtest.dir/main.c.obj
-                0x0000000020000d6c                count
  .bss.default_alarm_pool_entry_ids_high
-                0x0000000020000d70       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000d6c       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.default_alarm_pool_heap_nodes
-                0x0000000020000d80       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000d7c       0x30 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.desc_str.0
-                0x0000000020000db0       0x28 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .bss.drivers   0x0000000020000dd8        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .bss.filter    0x0000000020000ddc        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000020000dac       0x28 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .bss.drivers   0x0000000020000dd4        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .bss.filter    0x0000000020000dd8        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .bss.hw_endpoints
-                0x0000000020000de0      0x400 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000020000ddc      0x400 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .bss.lazy_vsnprintf
-                0x00000000200011e0        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000200011dc        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .bss.load_value
-                0x00000000200011e4        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x00000000200011e0        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
  .bss.next_buffer_ptr
-                0x00000000200011e8        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .bss.pools     0x00000000200011ec       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000200011e4        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .bss.pools     0x00000000200011e8       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.retrieved_id
-                0x00000000200011fc        0x8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x00000000200011f8        0x8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .bss.sf_clz_func
-                0x0000000020001204        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000020001204                sf_clz_func
+                0x0000000020001200        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000020001200                sf_clz_func
  .bss.sleep_notifier
-                0x0000000020001208        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020001204        0x4 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.stdio_usb_mutex
-                0x000000002000120c        0x8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000020001208        0x8 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .bss.target_hi
-                0x0000000020001214       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020001210       0x10 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.usbd_serial_str
-                0x0000000020001224       0x11 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x0000000020001235        0x3 
+                0x0000000020001220       0x11 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x0000000020001231        0x3 
  .bss.user_irq_claimed
-                0x0000000020001238        0x2 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x000000002000123a        0x2 
- .bss.wing_l    0x000000002000123c        0xe CMakeFiles/servospeedtest.dir/main.c.obj
-                0x000000002000123c                wing_l
- *fill*         0x000000002000124a        0x2 
- .bss.wing_r    0x000000002000124c        0xe CMakeFiles/servospeedtest.dir/main.c.obj
-                0x000000002000124c                wing_r
+                0x0000000020001234        0x2 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x0000000020001236        0x2 
+ .bss.wing_l    0x0000000020001238        0xe CMakeFiles/servospeedtest.dir/main.c.obj
+                0x0000000020001238                wing_l
+ *fill*         0x0000000020001246        0x2 
+ .bss.wing_r    0x0000000020001248        0xe CMakeFiles/servospeedtest.dir/main.c.obj
+                0x0000000020001248                wing_r
  .bss._app_driver_count
-                0x000000002000125a        0x1 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020001256        0x1 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .bss._usbd_initialized
-                0x000000002000125b        0x1 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .bss.blink     0x000000002000125c        0x1 CMakeFiles/servospeedtest.dir/main.c.obj
-                0x000000002000125c                blink
+                0x0000000020001257        0x1 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .bss.blink     0x0000000020001258        0x1 CMakeFiles/servospeedtest.dir/main.c.obj
+                0x0000000020001258                blink
  .bss.boot2_copyout_valid
-                0x000000002000125d        0x1 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .bss.claimed   0x000000002000125e        0x1 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020001259        0x1 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .bss.claimed   0x000000002000125a        0x1 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.irq_hander_chain_free_slot_head
-                0x000000002000125f        0x1 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .bss.itf_num   0x0000000020001260        0x1 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x000000002000125b        0x1 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .bss.itf_num   0x000000002000125c        0x1 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .bss.low_priority_irq_num
-                0x0000000020001261        0x1 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x000000002000125d        0x1 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .bss.speed_num
-                0x0000000020001262        0x1 CMakeFiles/servospeedtest.dir/main.c.obj
-                0x0000000020001262                speed_num
+                0x000000002000125e        0x1 CMakeFiles/servospeedtest.dir/main.c.obj
+                0x000000002000125e                speed_num
  .bss.timer_callbacks_pending
-                0x0000000020001263        0x1 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x000000002000125f        0x1 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  *(COMMON)
-                0x0000000020001264                . = ALIGN (0x4)
-                0x0000000020001264                __bss_end__ = .
+                0x0000000020001260                . = ALIGN (0x4)
+                0x0000000020001260                __bss_end__ = .
 
-.heap           0x0000000020001264      0x800
-                0x0000000020001264                __end__ = .
-                0x0000000020001264                end = __end__
+.heap           0x0000000020001260      0x800
+                0x0000000020001260                __end__ = .
+                0x0000000020001260                end = __end__
  *(.heap*)
- .heap          0x0000000020001264      0x800 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-                0x0000000020001a64                __HeapLimit = .
+ .heap          0x0000000020001260      0x800 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                0x0000000020001a60                __HeapLimit = .
 
 .stack1_dummy   0x0000000020040000        0x0
  *(.stack1*)
@@ -2425,8 +2373,8 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x0000000010007ffc        0x0
-                0x0000000010007ffc                __flash_binary_end = .
+.flash_end      0x0000000010005ce0        0x0
+                0x0000000010005ce0                __flash_binary_end = .
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2506,7 +2454,7 @@ LOAD CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_comm
 LOAD CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 LOAD CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 LOAD CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-LOAD /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccgVZ4cU.o
+LOAD /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccU3PSDf.o
 LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2622,7 +2570,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000000000007a8       0x2c CMakeFiles/servospeedtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .ARM.attributes
-                0x00000000000007d4       0x22 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccgVZ4cU.o
+                0x00000000000007d4       0x22 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccU3PSDf.o
  .ARM.attributes
                 0x00000000000007f6       0x1e /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
