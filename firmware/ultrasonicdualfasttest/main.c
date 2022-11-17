@@ -83,9 +83,9 @@ void second_core_code() {
             // map the distance to 8
             // use the raw value for better responsiveness
             uint8_t cm_val = (uint8_t)sen.raw_cm;
-            if(cm_val < 7) cm_val = 7;
-            if(cm_val > 40) cm_val = 40;
-            uint32_t dist_val = map(sen.raw_cm, 7, 40, 0, 8);
+            if(cm_val < ULTRASONIC_MIN) cm_val = ULTRASONIC_MIN;
+            if(cm_val > ULTRASONIC_MAX) cm_val = ULTRASONIC_MAX;
+            uint32_t dist_val = map(sen.raw_cm, ULTRASONIC_MIN, ULTRASONIC_MAX, 0, 8);
             
             // small timeout because the "fifo" is going to be emptied anyway
             multicore_fifo_push_timeout_us(dist_val, 10*1000);

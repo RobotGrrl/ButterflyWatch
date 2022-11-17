@@ -13,3 +13,5 @@
 #define ULTRASONIC_WARMUP   400     // ms to delay for sensor warm up
 #define ULTRASONIC_RATE     50      // sample every X ms
 #define ULTRASONIC_SAMPLES  20      // number of samples in 1 second
+#define ULTRASONIC_MIN      7       // min cm to map to 8 pixels
+#define ULTRASONIC_MAX      40      // max cm to map to 8 pixels
