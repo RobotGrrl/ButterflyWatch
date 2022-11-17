@@ -35,10 +35,6 @@ float convertValue(uint16_t result) {
 
 void updateUltrasonicSensor(struct UltrasonicSensor *s) {
 
-    // acquire the sensor reading
-    adc_select_input(ULTRASONIC_ADC); // select ADC input
-    s->val = adc_read();
-
     // convert and add to avg
     s->raw_cm = convertValue(s->val);
     s->sum += s->val;

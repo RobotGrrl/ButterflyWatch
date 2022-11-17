@@ -122,7 +122,12 @@ int64_t ultrasonic_warmup_callback(alarm_id_t id, void *user_data) {
 }
 
 bool ultrasonic_daq_callback(struct repeating_timer *t) {
-    // flag it's ready for reading
+    
+    // acquire the sensor reading
+    adc_select_input(ULTRASONIC_ADC); // select ADC input
+    sen.val = adc_read();
+    
+    // flag it's ready for processing
     sen.ready = true;
     return true;
 }
