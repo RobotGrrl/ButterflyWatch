@@ -678,6 +678,10 @@ Discarded input sections
                 0x0000000000000000       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .text.__wrap___aeabi_ui2f
                 0x0000000000000000        0xa CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .text.__wrap___aeabi_f2iz
+                0x0000000000000000       0x4e CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .text.float2int
+                0x0000000000000000       0x14 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .text.float2fix
                 0x0000000000000000       0x14 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .text.float2ufix
@@ -805,6 +809,8 @@ Discarded input sections
                 0x0000000000000000       0x44 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
  .text.fatan2_shim
                 0x0000000000000000       0x88 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .text.float232_shims
+                0x0000000000000000       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
  .text.float264_shims
                 0x0000000000000000       0x4c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
  .text.d2fix_a_float
@@ -1081,10 +1087,10 @@ Discarded input sections
                 0x0000000000000000       0x5c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.multicore_lockout_handshake
                 0x0000000000000000      0x11c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- .text.multicore_fifo_push_timeout_us
-                0x0000000000000000       0x64 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- .text.multicore_fifo_pop_timeout_us
-                0x0000000000000000       0x78 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .text.multicore_fifo_push_blocking
+                0x0000000000000000       0x14 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .text.multicore_fifo_pop_blocking
+                0x0000000000000000       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.multicore_reset_core1
                 0x0000000000000000       0x24 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.multicore_launch_core1_with_stack
@@ -1103,9 +1109,9 @@ Discarded input sections
                 0x0000000000000000        0x1 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .bss.lockout_mutex
                 0x0000000000000000        0x8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- .text          0x0000000000000000        0x0 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccdqGuWh.o
- .data          0x0000000000000000        0x0 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccdqGuWh.o
- .bss           0x0000000000000000        0x0 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccdqGuWh.o
+ .text          0x0000000000000000        0x0 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//cc2TUzXs.o
+ .data          0x0000000000000000        0x0 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//cc2TUzXs.o
+ .bss           0x0000000000000000        0x0 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//cc2TUzXs.o
  .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-calloc.o)
@@ -1321,11 +1327,11 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccdqGuWh.o
+ .boot2         0x0000000010000000      0x100 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//cc2TUzXs.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x0000000010000100     0x75a0
+.text           0x0000000010000100     0x7630
                 0x0000000010000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x0000000010000100       0xd4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1391,631 +1397,619 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
                 0x000000001000030c       0x40 CMakeFiles/ultrasonicdualtest.dir/main.c.obj
                 0x000000001000030c                ultrasonic_daq_callback
  .text.second_core_code
-                0x000000001000034c       0xbc CMakeFiles/ultrasonicdualtest.dir/main.c.obj
+                0x000000001000034c       0xcc CMakeFiles/ultrasonicdualtest.dir/main.c.obj
                 0x000000001000034c                second_core_code
  .text.ultrasonic_warmup_callback
-                0x0000000010000408       0x3c CMakeFiles/ultrasonicdualtest.dir/main.c.obj
-                0x0000000010000408                ultrasonic_warmup_callback
+                0x0000000010000418       0x3c CMakeFiles/ultrasonicdualtest.dir/main.c.obj
+                0x0000000010000418                ultrasonic_warmup_callback
  .text.startup.main
-                0x0000000010000444       0x8c CMakeFiles/ultrasonicdualtest.dir/main.c.obj
-                0x0000000010000444                main
+                0x0000000010000454       0xb0 CMakeFiles/ultrasonicdualtest.dir/main.c.obj
+                0x0000000010000454                main
  .text.initUltrasonicSensor
-                0x00000000100004d0       0x18 CMakeFiles/ultrasonicdualtest.dir/UltrasonicSensor.c.obj
-                0x00000000100004d0                initUltrasonicSensor
+                0x0000000010000504       0x1c CMakeFiles/ultrasonicdualtest.dir/UltrasonicSensor.c.obj
+                0x0000000010000504                initUltrasonicSensor
  .text.updateUltrasonicSensor
-                0x00000000100004e8       0x60 CMakeFiles/ultrasonicdualtest.dir/UltrasonicSensor.c.obj
-                0x00000000100004e8                updateUltrasonicSensor
+                0x0000000010000520       0x88 CMakeFiles/ultrasonicdualtest.dir/UltrasonicSensor.c.obj
+                0x0000000010000520                updateUltrasonicSensor
  .text.gpio_set_function
-                0x0000000010000548       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010000548                gpio_set_function
+                0x00000000100005a8       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x00000000100005a8                gpio_set_function
  .text.gpio_set_pulls
-                0x0000000010000578       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010000578                gpio_set_pulls
+                0x00000000100005d8       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x00000000100005d8                gpio_set_pulls
  .text.gpio_set_input_enabled
-                0x00000000100005a8       0x28 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x00000000100005a8                gpio_set_input_enabled
+                0x0000000010000608       0x28 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010000608                gpio_set_input_enabled
  .text.hw_claim_or_assert
-                0x00000000100005d0       0x44 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x00000000100005d0                hw_claim_or_assert
+                0x0000000010000630       0x44 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x0000000010000630                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x0000000010000614       0x9c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x0000000010000614                hw_claim_unused_from_range
+                0x0000000010000674       0x9c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x0000000010000674                hw_claim_unused_from_range
  .text.running_on_fpga
-                0x00000000100006b0       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x00000000100006b0                running_on_fpga
+                0x0000000010000710       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x0000000010000710                running_on_fpga
  .text.spin_locks_reset
-                0x00000000100006c0       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x00000000100006c0                spin_locks_reset
+                0x0000000010000720       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x0000000010000720                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x00000000100006dc       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x00000000100006dc                next_striped_spin_lock_num
+                0x000000001000073c       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x000000001000073c                next_striped_spin_lock_num
  .text.spin_lock_claim_unused
-                0x00000000100006f4       0x20 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x00000000100006f4                spin_lock_claim_unused
+                0x0000000010000754       0x20 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x0000000010000754                spin_lock_claim_unused
  .text.irq_set_enabled
-                0x0000000010000714       0x24 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000714                irq_set_enabled
+                0x0000000010000774       0x24 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000774                irq_set_enabled
  .text.irq_is_enabled
-                0x0000000010000738       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000738                irq_is_enabled
+                0x0000000010000798       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000798                irq_is_enabled
  .text.irq_set_pending
-                0x0000000010000750       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000750                irq_set_pending
+                0x00000000100007b0       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100007b0                irq_set_pending
  .text.irq_has_shared_handler
-                0x0000000010000760       0x2c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000760                irq_has_shared_handler
+                0x00000000100007c0       0x2c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100007c0                irq_has_shared_handler
  .text.irq_get_vtable_handler
-                0x000000001000078c       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x000000001000078c                irq_get_vtable_handler
+                0x00000000100007ec       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100007ec                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x000000001000079c       0x54 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x000000001000079c                irq_set_exclusive_handler
+                0x00000000100007fc       0x54 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100007fc                irq_set_exclusive_handler
  .text.irq_add_shared_handler
-                0x00000000100007f0      0x1e4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100007f0                irq_add_shared_handler
+                0x0000000010000850      0x1e4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000850                irq_add_shared_handler
  .text.irq_remove_handler
-                0x00000000100009d4      0x1b4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100009d4                irq_remove_handler
+                0x0000000010000a34      0x1b4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000a34                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x0000000010000b88       0xb4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000b88                irq_add_tail_to_free_list
+                0x0000000010000be8       0xb4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000be8                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x0000000010000c3c       0x24 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000c3c                irq_init_priorities
+                0x0000000010000c9c       0x24 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000c9c                irq_init_priorities
  .text.user_irq_claim_unused
-                0x0000000010000c60       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000c60                user_irq_claim_unused
+                0x0000000010000cc0       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000cc0                user_irq_claim_unused
  .text.lock_init
-                0x0000000010000c90       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x0000000010000c90                lock_init
+                0x0000000010000cf0       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x0000000010000cf0                lock_init
  .text.timer_pool_entry_comparator
-                0x0000000010000ca0       0x34 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000ca0                timer_pool_entry_comparator
+                0x0000000010000d00       0x34 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000d00                timer_pool_entry_comparator
  .text.repeating_timer_callback
-                0x0000000010000cd4       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000d34       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.sleep_until_callback
-                0x0000000010000cf0       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000d50       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock.isra.0
-                0x0000000010000d20      0x100 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000d80      0x100 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x0000000010000e20      0x1c8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000e80      0x1c8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_add_alarm_at.constprop.0
-                0x0000000010000fe8      0x11c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001048      0x11c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x0000000010001104       0x64 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001104                alarm_pool_init_default
+                0x0000000010001164       0x64 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001164                alarm_pool_init_default
  .text.alarm_pool_get_default
-                0x0000000010001168        0x8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001168                alarm_pool_get_default
+                0x00000000100011c8        0x8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100011c8                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at
-                0x0000000010001170      0x194 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001170                alarm_pool_add_alarm_at
+                0x00000000100011d0      0x194 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100011d0                alarm_pool_add_alarm_at
  .text.alarm_pool_add_repeating_timer_us
-                0x0000000010001304      0x22c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001304                alarm_pool_add_repeating_timer_us
+                0x0000000010001364      0x22c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001364                alarm_pool_add_repeating_timer_us
  .text.best_effort_wfe_or_timeout
-                0x0000000010001530       0xd4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001530                best_effort_wfe_or_timeout
+                0x0000000010001590       0xd4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001590                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x0000000010001604       0xb8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001664       0xb8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x00000000100016bc       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100016bc                hardware_alarm_claim
+                0x000000001000171c       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x000000001000171c                hardware_alarm_claim
  .text.time_us_64
-                0x00000000100016d4       0x14 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100016d4                time_us_64
+                0x0000000010001734       0x14 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001734                time_us_64
  .text.hardware_alarm_set_callback
-                0x00000000100016e8       0x8c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100016e8                hardware_alarm_set_callback
+                0x0000000010001748       0x8c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001748                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x0000000010001774       0xe0 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001774                hardware_alarm_set_target
+                0x00000000100017d4       0xe0 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100017d4                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x0000000010001854       0x3c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001854                hardware_alarm_cancel
+                0x00000000100018b4       0x3c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100018b4                hardware_alarm_cancel
  .text.ph_merge_nodes
-                0x0000000010001890       0x68 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100018f0       0x68 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x00000000100018f8       0x3c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000100018f8                ph_post_alloc_init
+                0x0000000010001958       0x3c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001958                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x0000000010001934       0x90 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001934                ph_merge_two_pass
+                0x0000000010001994       0x90 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001994                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x00000000100019c4       0xf8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001a24       0xf8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x0000000010001abc       0xfc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001abc                ph_remove_head
+                0x0000000010001b1c       0xfc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001b1c                ph_remove_head
  .text.ph_remove_and_free_node
-                0x0000000010001bb8       0x7c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001bb8                ph_remove_and_free_node
+                0x0000000010001c18       0x7c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001c18                ph_remove_and_free_node
  .text.mutex_init
-                0x0000000010001c34       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000010001c34                mutex_init
+                0x0000000010001c94       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010001c94                mutex_init
  .text.recursive_mutex_init
-                0x0000000010001c50       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000010001c50                recursive_mutex_init
+                0x0000000010001cb0       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010001cb0                recursive_mutex_init
  .text.critical_section_init
-                0x0000000010001c6c       0x20 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x0000000010001c6c                critical_section_init
+                0x0000000010001ccc       0x20 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x0000000010001ccc                critical_section_init
  .text.runtime_init
-                0x0000000010001c8c       0xf0 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001c8c                runtime_init
- .text.exit     0x0000000010001d7c        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001d7c                exit
- .text.panic    0x0000000010001d80       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001d80                panic
+                0x0000000010001cec       0xf0 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001cec                runtime_init
+ .text.exit     0x0000000010001ddc        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001ddc                exit
+ .text.panic    0x0000000010001de0       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001de0                panic
  .text.hard_assertion_failure
-                0x0000000010001db0        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001db0                hard_assertion_failure
+                0x0000000010001e10        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001e10                hard_assertion_failure
  .text.clocks_init
-                0x0000000010001dbc      0x2bc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x0000000010001dbc                clocks_init
+                0x0000000010001e1c      0x2bc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000000010001e1c                clocks_init
  .text.pll_init
-                0x0000000010002078       0xb0 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x0000000010002078                pll_init
+                0x00000000100020d8       0xb0 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x00000000100020d8                pll_init
  .text.watchdog_start_tick
-                0x0000000010002128       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010002128                watchdog_start_tick
+                0x0000000010002188       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010002188                watchdog_start_tick
  .text.watchdog_reboot
-                0x0000000010002138       0x98 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010002138                watchdog_reboot
+                0x0000000010002198       0x98 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010002198                watchdog_reboot
  .text.xosc_init
-                0x00000000100021d0       0x28 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x00000000100021d0                xosc_init
+                0x0000000010002230       0x28 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x0000000010002230                xosc_init
  .text._out_null
-                0x00000000100021f8        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002258        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x00000000100021fc       0x9c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x000000001000225c       0x9c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x0000000010002298      0x1cc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100022f8      0x1cc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_char
-                0x0000000010002464       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100024c4       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x0000000010002474       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._etoa    0x0000000010002484      0x44c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x00000000100028d0      0x398 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100024d4       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._etoa    0x00000000100024e4      0x44c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x0000000010002930      0x398 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x0000000010002c68      0xb04 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002cc8      0xb04 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.vfctprintf
-                0x000000001000376c       0x20 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x000000001000376c                vfctprintf
+                0x00000000100037cc       0x20 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100037cc                vfctprintf
  .text.weak_raw_vprintf
-                0x000000001000378c       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x000000001000378c                weak_raw_vprintf
- .text          0x00000000100037bc       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x00000000100037ec       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100037ec                weak_raw_vprintf
+ .text          0x000000001000381c       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x00000000100037cc       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x00000000100037cc                rom_func_lookup
+                0x000000001000382c       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x000000001000382c                rom_func_lookup
  .text.rom_data_lookup
-                0x00000000100037dc       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x00000000100037dc                rom_data_lookup
+                0x000000001000383c       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x000000001000383c                rom_data_lookup
  .text.rom_funcs_lookup
-                0x00000000100037ec       0x44 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x00000000100037ec                rom_funcs_lookup
+                0x000000001000384c       0x44 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x000000001000384c                rom_funcs_lookup
  .text.__wrap___aeabi_idiv
-                0x0000000010003830       0x50 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010003830                __wrap___aeabi_idivmod
-                0x0000000010003830                divmod_s32s32
-                0x0000000010003830                div_s32s32
-                0x0000000010003830                __wrap___aeabi_idiv
-                0x0000000010003838                divmod_s32s32_unsafe
-                0x0000000010003864                divmod_s32s32_savestate
+                0x0000000010003890       0x50 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010003890                __wrap___aeabi_idivmod
+                0x0000000010003890                divmod_s32s32
+                0x0000000010003890                div_s32s32
+                0x0000000010003890                __wrap___aeabi_idiv
+                0x0000000010003898                divmod_s32s32_unsafe
+                0x00000000100038c4                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x0000000010003880       0x4c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010003880                __wrap___aeabi_uidiv
-                0x0000000010003880                __wrap___aeabi_uidivmod
-                0x0000000010003880                div_u32u32
-                0x0000000010003880                divmod_u32u32
-                0x0000000010003888                divmod_u32u32_unsafe
-                0x00000000100038b0                divmod_u32u32_savestate
+                0x00000000100038e0       0x4c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x00000000100038e0                __wrap___aeabi_uidiv
+                0x00000000100038e0                __wrap___aeabi_uidivmod
+                0x00000000100038e0                div_u32u32
+                0x00000000100038e0                divmod_u32u32
+                0x00000000100038e8                divmod_u32u32_unsafe
+                0x0000000010003910                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x00000000100038cc      0x434 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x00000000100038cc                __wrap___aeabi_ldivmod
-                0x00000000100038cc                div_s64s64
-                0x00000000100038cc                divmod_s64s64
-                0x0000000010003904                divmod_u64u64
-                0x0000000010003904                div_u64u64
-                0x0000000010003904                __wrap___aeabi_uldivmod
-                0x0000000010003914                divmod_u64u64_savestate
-                0x000000001000393c                divmod_s64s64_unsafe
-                0x00000000100039c4                divmod_u64u64_unsafe
+                0x000000001000392c      0x434 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x000000001000392c                __wrap___aeabi_ldivmod
+                0x000000001000392c                div_s64s64
+                0x000000001000392c                divmod_s64s64
+                0x0000000010003964                divmod_u64u64
+                0x0000000010003964                div_u64u64
+                0x0000000010003964                __wrap___aeabi_uldivmod
+                0x0000000010003974                divmod_u64u64_savestate
+                0x000000001000399c                divmod_s64s64_unsafe
+                0x0000000010003a24                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x0000000010003d00       0x80 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003d00                __wrap___aeabi_drsub
-                0x0000000010003d06                __wrap___aeabi_dsub
-                0x0000000010003d18                __wrap___aeabi_dadd
-                0x0000000010003d2a                __wrap___aeabi_ddiv
-                0x0000000010003d66                __wrap___aeabi_dmul
+                0x0000000010003d60       0x80 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003d60                __wrap___aeabi_drsub
+                0x0000000010003d66                __wrap___aeabi_dsub
+                0x0000000010003d78                __wrap___aeabi_dadd
+                0x0000000010003d8a                __wrap___aeabi_ddiv
+                0x0000000010003dc6                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x0000000010003d80       0x6c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003d80                __wrap___aeabi_cdrcmple
-                0x0000000010003d90                __wrap___aeabi_cdcmple
-                0x0000000010003d90                __wrap___aeabi_cdcmpeq
+                0x0000000010003de0       0x6c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003de0                __wrap___aeabi_cdrcmple
+                0x0000000010003df0                __wrap___aeabi_cdcmple
+                0x0000000010003df0                __wrap___aeabi_cdcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x0000000010003dec        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003dec                __wrap___aeabi_dcmplt
+                0x0000000010003e4c        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003e4c                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x0000000010003df8       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003df8                __wrap___aeabi_dcmple
+                0x0000000010003e58       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003e58                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x0000000010003e08       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003e08                __wrap___aeabi_dcmpge
+                0x0000000010003e68       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003e68                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x0000000010003e18        0xa CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003e18                __wrap___aeabi_dcmpgt
+                0x0000000010003e78        0xa CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003e78                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x0000000010003e22       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003e22                __wrap___aeabi_dcmpun
- *fill*         0x0000000010003e3e        0x2 
+                0x0000000010003e82       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003e82                __wrap___aeabi_dcmpun
+ *fill*         0x0000000010003e9e        0x2 
  .text.__wrap___aeabi_i2d
-                0x0000000010003e40       0x38 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003e40                __wrap___aeabi_ui2d
-                0x0000000010003e48                __wrap___aeabi_i2d
+                0x0000000010003ea0       0x38 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003ea0                __wrap___aeabi_ui2d
+                0x0000000010003ea8                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x0000000010003e78       0x48 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003e78                __wrap___aeabi_d2iz
-                0x0000000010003e78                double2int_z
+                0x0000000010003ed8       0x48 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003ed8                __wrap___aeabi_d2iz
+                0x0000000010003ed8                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x0000000010003ec0       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003ec0                double2uint
-                0x0000000010003ec0                __wrap___aeabi_d2uiz
+                0x0000000010003f20       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003f20                double2uint
+                0x0000000010003f20                __wrap___aeabi_d2uiz
  .text.__aeabi_double_init
-                0x0000000010003ed8       0x94 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000010003ed8                __aeabi_double_init
+                0x0000000010003f38       0x94 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000010003f38                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x0000000010003f6c       0x2c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003f6c                double_table_shim_on_use_helper
+                0x0000000010003fcc       0x2c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003fcc                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x0000000010003f98       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003f98                drsub_shim
-                0x0000000010003f9e                dsub_shim
+                0x0000000010003ff8       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003ff8                drsub_shim
+                0x0000000010003ffe                dsub_shim
  .text.dadd_shim
-                0x0000000010003fa8      0x15c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003fa8                dadd_shim
+                0x0000000010004008      0x15c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004008                dadd_shim
  .text.dmul_shim
-                0x0000000010004104      0x15c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004104                dmul_shim
+                0x0000000010004164      0x15c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004164                dmul_shim
  .text.ddiv_shim
-                0x0000000010004260      0x1b0 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004260                ddiv_shim
+                0x00000000100042c0      0x1b0 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100042c0                ddiv_shim
  .text.double2uint_shim
-                0x0000000010004410        0xe CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004410                double2uint_shim
-                0x0000000010004412                double2ufix_shim
- *fill*         0x000000001000441e        0x2 
+                0x0000000010004470        0xe CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004470                double2uint_shim
+                0x0000000010004472                double2ufix_shim
+ *fill*         0x000000001000447e        0x2 
  .text.double2uint64_shim
-                0x0000000010004420       0x70 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004420                double2uint64_shim
-                0x0000000010004422                double2ufix64_shim
-                0x0000000010004442                d2fix_a
+                0x0000000010004480       0x70 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004480                double2uint64_shim
+                0x0000000010004482                double2ufix64_shim
+                0x00000000100044a2                d2fix_a
  .text.dunpacks
-                0x0000000010004490       0x3c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004490                dunpacks
+                0x00000000100044f0       0x3c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100044f0                dunpacks
  .text.__aeabi_lmul
-                0x00000000100044cc       0x32 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x00000000100044cc                __wrap___aeabi_lmul
- *fill*         0x00000000100044fe        0x2 
+                0x000000001000452c       0x32 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x000000001000452c                __wrap___aeabi_lmul
+ *fill*         0x000000001000455e        0x2 
  .text.__wrap___aeabi_farithmetic
-                0x0000000010004500       0x48 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x0000000010004500                __wrap___aeabi_frsub
-                0x0000000010004506                __wrap___aeabi_fsub
-                0x000000001000450c                __wrap___aeabi_fadd
-                0x0000000010004512                __wrap___aeabi_fdiv
-                0x000000001000453a                __wrap___aeabi_fmul
+                0x0000000010004560       0x48 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x0000000010004560                __wrap___aeabi_frsub
+                0x0000000010004566                __wrap___aeabi_fsub
+                0x000000001000456c                __wrap___aeabi_fadd
+                0x0000000010004572                __wrap___aeabi_fdiv
+                0x000000001000459a                __wrap___aeabi_fmul
  .text.__wrap___aeabi_i2f
-                0x0000000010004548       0x44 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x0000000010004548                __wrap___aeabi_i2f
- .text.__wrap___aeabi_f2iz
-                0x000000001000458c       0x4e CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x000000001000458c                __wrap___aeabi_f2iz
-                0x000000001000458c                float2int_z
- *fill*         0x00000000100045da        0x2 
- .text.float2int
-                0x00000000100045dc       0x14 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x00000000100045dc                float2int
+                0x00000000100045a8       0x44 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x00000000100045a8                __wrap___aeabi_i2f
  .text.__wrap___aeabi_f2uiz
-                0x00000000100045f0        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x00000000100045f0                __wrap___aeabi_f2uiz
+                0x00000000100045ec        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x00000000100045ec                __wrap___aeabi_f2uiz
  .text.__aeabi_float_init
-                0x00000000100045fc       0x64 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x00000000100045fc                __aeabi_float_init
+                0x00000000100045f8       0x64 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x00000000100045f8                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x0000000010004660       0x2c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x0000000010004660                float_table_shim_on_use_helper
- .text.float232_shims
-                0x000000001000468c       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x000000001000468c                float2int_shim
-                0x000000001000468e                float2fix_shim
- .text          0x00000000100046a4       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x00000000100046a4                __aeabi_mem_init
- .text.memset   0x00000000100046b4        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x00000000100046b4                __wrap_memset
- .text.memcpy   0x00000000100046c0        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x00000000100046c0                __wrap___aeabi_memcpy
-                0x00000000100046c0                __wrap_memcpy
+                0x000000001000465c       0x2c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x000000001000465c                float_table_shim_on_use_helper
+ .text          0x0000000010004688       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010004688                __aeabi_mem_init
+ .text.memset   0x0000000010004698        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010004698                __wrap_memset
+ .text.memcpy   0x00000000100046a4        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x00000000100046a4                __wrap___aeabi_memcpy
+                0x00000000100046a4                __wrap_memcpy
  .text.stdio_out_chars_no_crlf
-                0x00000000100046cc       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100046b0       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x00000000100046dc       0xb4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100046c0       0xb4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x0000000010004790       0x64 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004774       0x64 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string.isra.0
-                0x00000000100047f4       0xfc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100047d8       0xfc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x00000000100048f0       0xa0 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000100048f0                __wrap_putchar
+                0x00000000100048d4       0xa0 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100048d4                __wrap_putchar
  .text.__wrap_puts
-                0x0000000010004990       0x3c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004990                __wrap_puts
+                0x0000000010004974       0x3c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004974                __wrap_puts
  .text.stdio_set_driver_enabled
-                0x00000000100049cc       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000100049cc                stdio_set_driver_enabled
+                0x00000000100049b0       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100049b0                stdio_set_driver_enabled
  .text.__wrap_vprintf
-                0x00000000100049fc       0xd8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000100049fc                __wrap_vprintf
+                0x00000000100049e0       0xd8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100049e0                __wrap_vprintf
  .text.__wrap_printf
-                0x0000000010004ad4       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004ad4                __wrap_printf
+                0x0000000010004ab8       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004ab8                __wrap_printf
  .text.stdio_init_all
-                0x0000000010004aec        0x8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004aec                stdio_init_all
+                0x0000000010004ad0        0x8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004ad0                stdio_init_all
  .text.resetd_init
-                0x0000000010004af4        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004ad8        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_reset
-                0x0000000010004af8        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004adc        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_open
-                0x0000000010004b04       0x28 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004ae8       0x28 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_xfer_cb
-                0x0000000010004b2c        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004b10        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_control_xfer_cb
-                0x0000000010004b30       0x64 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004b14       0x64 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.usbd_app_driver_get_cb
-                0x0000000010004b94        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x0000000010004b94                usbd_app_driver_get_cb
+                0x0000000010004b78        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004b78                usbd_app_driver_get_cb
  .text.tud_cdc_line_coding_cb
-                0x0000000010004ba0       0x34 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x0000000010004ba0                tud_cdc_line_coding_cb
+                0x0000000010004b84       0x34 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004b84                tud_cdc_line_coding_cb
  .text.stdio_usb_in_chars
-                0x0000000010004bd4       0x68 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010004bd4                stdio_usb_in_chars
+                0x0000000010004bb8       0x68 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004bb8                stdio_usb_in_chars
  .text.stdio_usb_out_chars
-                0x0000000010004c3c       0xe4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004c20       0xe4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.timer_task
-                0x0000000010004d20       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .text.usb_irq  0x0000000010004d38       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004d04       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .text.usb_irq  0x0000000010004d1c       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.low_priority_worker_irq
-                0x0000000010004d48       0x24 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004d2c       0x24 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.stdio_usb_init
-                0x0000000010004d6c       0xb0 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010004d6c                stdio_usb_init
+                0x0000000010004d50       0xb0 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004d50                stdio_usb_init
  .text.tud_descriptor_device_cb
-                0x0000000010004e1c        0x8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010004e1c                tud_descriptor_device_cb
+                0x0000000010004e00        0x8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010004e00                tud_descriptor_device_cb
  .text.tud_descriptor_configuration_cb
-                0x0000000010004e24        0x8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010004e24                tud_descriptor_configuration_cb
+                0x0000000010004e08        0x8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010004e08                tud_descriptor_configuration_cb
  .text.tud_descriptor_string_cb
-                0x0000000010004e2c       0x74 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010004e2c                tud_descriptor_string_cb
+                0x0000000010004e10       0x74 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010004e10                tud_descriptor_string_cb
  .text.dcd_rp2040_irq
-                0x0000000010004ea0      0x21c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004e84      0x21c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .text.dcd_int_enable
-                0x00000000100050bc        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100050bc                dcd_int_enable
+                0x00000000100050a0        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100050a0                dcd_int_enable
  .text.dcd_set_address
-                0x00000000100050c8       0x14 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100050c8                dcd_set_address
+                0x00000000100050ac       0x14 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100050ac                dcd_set_address
  .text.dcd_connect
-                0x00000000100050dc       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100050dc                dcd_connect
+                0x00000000100050c0       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100050c0                dcd_connect
  .text.dcd_init
-                0x00000000100050ec      0x144 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100050ec                dcd_init
+                0x00000000100050d0      0x144 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100050d0                dcd_init
  .text.dcd_edpt0_status_complete
-                0x0000000010005230       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005230                dcd_edpt0_status_complete
+                0x0000000010005214       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005214                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x000000001000524c       0xf0 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x000000001000524c                dcd_edpt_open
+                0x0000000010005230       0xf0 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005230                dcd_edpt_open
  .text.dcd_edpt_close_all
-                0x000000001000533c       0xbc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x000000001000533c                dcd_edpt_close_all
+                0x0000000010005320       0xbc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005320                dcd_edpt_close_all
  .text.dcd_edpt_xfer
-                0x00000000100053f8       0x24 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100053f8                dcd_edpt_xfer
+                0x00000000100053dc       0x24 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100053dc                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x000000001000541c       0x38 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x000000001000541c                dcd_edpt_stall
+                0x0000000010005400       0x38 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005400                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x0000000010005454       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005454                dcd_edpt_clear_stall
+                0x0000000010005438       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005438                dcd_edpt_clear_stall
  .text._hw_endpoint_buffer_control_update32.part.0.isra.0
-                0x0000000010005484       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010005468       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
  .text.rp2040_usb_init
-                0x00000000100054a0       0x4c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x00000000100054a0                rp2040_usb_init
+                0x0000000010005484       0x4c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010005484                rp2040_usb_init
  .text.hw_endpoint_reset_transfer
-                0x00000000100054ec        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x00000000100054ec                hw_endpoint_reset_transfer
+                0x00000000100054d0        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x00000000100054d0                hw_endpoint_reset_transfer
  .text._hw_endpoint_buffer_control_update32
-                0x00000000100054f8       0x44 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x00000000100054f8                _hw_endpoint_buffer_control_update32
+                0x00000000100054dc       0x44 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x00000000100054dc                _hw_endpoint_buffer_control_update32
  .text.hw_endpoint_xfer_start
-                0x000000001000553c      0x138 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x000000001000553c                hw_endpoint_xfer_start
+                0x0000000010005520      0x138 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010005520                hw_endpoint_xfer_start
  .text.hw_endpoint_xfer_continue
-                0x0000000010005674      0x1e4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000010005674                hw_endpoint_xfer_continue
+                0x0000000010005658      0x1e4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010005658                hw_endpoint_xfer_continue
  .text.tud_mounted
-                0x0000000010005858       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005858                tud_mounted
+                0x000000001000583c       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000001000583c                tud_mounted
  .text.tud_suspended
-                0x0000000010005868       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005868                tud_suspended
+                0x000000001000584c       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000001000584c                tud_suspended
  .text.tud_inited
-                0x0000000010005878        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005878                tud_inited
+                0x000000001000585c        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000001000585c                tud_inited
  .text.tud_init
-                0x0000000010005884       0xd8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005884                tud_init
+                0x0000000010005868       0xd8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005868                tud_init
  .text.tud_task
-                0x000000001000595c      0x8ec CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x000000001000595c                tud_task
+                0x0000000010005940      0x8ec CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005940                tud_task
  .text.dcd_event_bus_signal
-                0x0000000010006248      0x120 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006248                dcd_event_bus_signal
+                0x000000001000622c      0x120 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000001000622c                dcd_event_bus_signal
  .text.dcd_event_bus_reset
-                0x0000000010006368       0x54 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006368                dcd_event_bus_reset
+                0x000000001000634c       0x54 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000001000634c                dcd_event_bus_reset
  .text.dcd_event_setup_received
-                0x00000000100063bc       0x50 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100063bc                dcd_event_setup_received
+                0x00000000100063a0       0x50 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100063a0                dcd_event_setup_received
  .text.dcd_event_xfer_complete
-                0x000000001000640c       0x68 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x000000001000640c                dcd_event_xfer_complete
+                0x00000000100063f0       0x68 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100063f0                dcd_event_xfer_complete
  .text.usbd_open_edpt_pair
-                0x0000000010006474       0x80 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006474                usbd_open_edpt_pair
+                0x0000000010006458       0x80 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006458                usbd_open_edpt_pair
  .text.usbd_edpt_open
-                0x00000000100064f4       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100064f4                usbd_edpt_open
+                0x00000000100064d8       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100064d8                usbd_edpt_open
  .text.usbd_edpt_claim
-                0x0000000010006524       0x64 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006524                usbd_edpt_claim
+                0x0000000010006508       0x64 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006508                usbd_edpt_claim
  .text.usbd_edpt_release
-                0x0000000010006588       0x4c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006588                usbd_edpt_release
+                0x000000001000656c       0x4c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000001000656c                usbd_edpt_release
  .text.usbd_edpt_xfer
-                0x00000000100065d4       0x48 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100065d4                usbd_edpt_xfer
+                0x00000000100065b8       0x48 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100065b8                usbd_edpt_xfer
  .text.tud_control_status
-                0x000000001000661c       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x000000001000661c                tud_control_status
+                0x0000000010006600       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006600                tud_control_status
  .text.tud_control_xfer
-                0x000000001000664c       0xbc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x000000001000664c                tud_control_xfer
+                0x0000000010006630       0xbc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006630                tud_control_xfer
  .text.usbd_control_reset
-                0x0000000010006708       0x14 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006708                usbd_control_reset
+                0x00000000100066ec       0x14 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x00000000100066ec                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x000000001000671c        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x000000001000671c                usbd_control_set_complete_callback
+                0x0000000010006700        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006700                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x0000000010006728       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006728                usbd_control_set_request
+                0x000000001000670c       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x000000001000670c                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x0000000010006744       0xfc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006744                usbd_control_xfer_cb
+                0x0000000010006728       0xfc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006728                usbd_control_xfer_cb
  .text.tud_cdc_n_connected
-                0x0000000010006840       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006840                tud_cdc_n_connected
+                0x0000000010006824       0x30 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006824                tud_cdc_n_connected
  .text.tud_cdc_n_available
-                0x0000000010006870       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006870                tud_cdc_n_available
+                0x0000000010006854       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006854                tud_cdc_n_available
  .text.tud_cdc_n_read
-                0x0000000010006888       0x70 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006888                tud_cdc_n_read
+                0x000000001000686c       0x70 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x000000001000686c                tud_cdc_n_read
  .text.tud_cdc_n_write_flush
-                0x00000000100068f8       0x78 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100068f8                tud_cdc_n_write_flush
+                0x00000000100068dc       0x78 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100068dc                tud_cdc_n_write_flush
  .text.tud_cdc_n_write
-                0x0000000010006970       0x34 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006970                tud_cdc_n_write
+                0x0000000010006954       0x34 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006954                tud_cdc_n_write
  .text.tud_cdc_n_write_available
-                0x00000000100069a4       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100069a4                tud_cdc_n_write_available
+                0x0000000010006988       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006988                tud_cdc_n_write_available
  .text.cdcd_init
-                0x00000000100069bc       0x7c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100069bc                cdcd_init
+                0x00000000100069a0       0x7c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100069a0                cdcd_init
  .text.cdcd_reset
-                0x0000000010006a38       0x2c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006a38                cdcd_reset
+                0x0000000010006a1c       0x2c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006a1c                cdcd_reset
  .text.cdcd_open
-                0x0000000010006a64       0xe4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006a64                cdcd_open
+                0x0000000010006a48       0xe4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006a48                cdcd_open
  .text.cdcd_control_xfer_cb
-                0x0000000010006b48       0xe4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006b48                cdcd_control_xfer_cb
+                0x0000000010006b2c       0xe4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006b2c                cdcd_control_xfer_cb
  .text.cdcd_xfer_cb
-                0x0000000010006c2c      0x148 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006c2c                cdcd_xfer_cb
+                0x0000000010006c10      0x148 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006c10                cdcd_xfer_cb
  .text.tusb_init
-                0x0000000010006d74        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006d74                tusb_init
+                0x0000000010006d58        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010006d58                tusb_init
  .text.tusb_inited
-                0x0000000010006d80        0x8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006d80                tusb_inited
+                0x0000000010006d64        0x8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010006d64                tusb_inited
  .text.tu_edpt_validate
-                0x0000000010006d88       0x78 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006d88                tu_edpt_validate
+                0x0000000010006d6c       0x78 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010006d6c                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x0000000010006e00       0x2c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006e00                tu_edpt_bind_driver
+                0x0000000010006de4       0x2c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010006de4                tu_edpt_bind_driver
  .text.tu_fifo_config
-                0x0000000010006e2c       0x78 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006e2c                tu_fifo_config
+                0x0000000010006e10       0x78 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006e10                tu_fifo_config
  .text.tu_fifo_count
-                0x0000000010006ea4       0x20 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006ea4                tu_fifo_count
+                0x0000000010006e88       0x20 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006e88                tu_fifo_count
  .text.tu_fifo_empty
-                0x0000000010006ec4       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006ec4                tu_fifo_empty
+                0x0000000010006ea8       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006ea8                tu_fifo_empty
  .text.tu_fifo_remaining
-                0x0000000010006ed4       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006ed4                tu_fifo_remaining
+                0x0000000010006eb8       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006eb8                tu_fifo_remaining
  .text.tu_fifo_read
-                0x0000000010006ef0       0x9c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006ef0                tu_fifo_read
+                0x0000000010006ed4       0x9c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006ed4                tu_fifo_read
  .text.tu_fifo_read_n
-                0x0000000010006f8c      0x100 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006f8c                tu_fifo_read_n
+                0x0000000010006f70      0x100 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006f70                tu_fifo_read_n
  .text.tu_fifo_write
-                0x000000001000708c       0x7c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x000000001000708c                tu_fifo_write
+                0x0000000010007070       0x7c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007070                tu_fifo_write
  .text.tu_fifo_write_n
-                0x0000000010007108      0x100 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007108                tu_fifo_write_n
+                0x00000000100070ec      0x100 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100070ec                tu_fifo_write_n
  .text.tu_fifo_clear
-                0x0000000010007208       0x4c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007208                tu_fifo_clear
+                0x00000000100071ec       0x4c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100071ec                tu_fifo_clear
  .text.tu_fifo_set_overwritable
-                0x0000000010007254       0x3c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007254                tu_fifo_set_overwritable
+                0x0000000010007238       0x3c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007238                tu_fifo_set_overwritable
  .text.startup._retrieve_unique_id_on_boot
-                0x0000000010007290       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010007274       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.pico_get_unique_board_id_string
-                0x00000000100072a0      0x1a8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                0x00000000100072a0                pico_get_unique_board_id_string
+                0x0000000010007284      0x1a8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010007284                pico_get_unique_board_id_string
  .text.flash_get_unique_id
-                0x0000000010007448       0x40 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x0000000010007448                flash_get_unique_id
+                0x000000001000742c       0x40 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x000000001000742c                flash_get_unique_id
  .text.adc_init
-                0x0000000010007488       0x38 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
-                0x0000000010007488                adc_init
+                0x000000001000746c       0x38 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+                0x000000001000746c                adc_init
  .text.core1_trampoline
-                0x00000000100074c0        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x00000000100074a4        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.core1_wrapper
-                0x00000000100074c4        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x00000000100074c4                core1_wrapper
- .text.multicore_fifo_push_blocking
-                0x00000000100074d0       0x14 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x00000000100074d0                multicore_fifo_push_blocking
- .text.multicore_fifo_pop_blocking
-                0x00000000100074e4       0x1c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x00000000100074e4                multicore_fifo_pop_blocking
+                0x00000000100074a8        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x00000000100074a8                core1_wrapper
+ .text.multicore_fifo_push_timeout_us
+                0x00000000100074b4       0x64 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x00000000100074b4                multicore_fifo_push_timeout_us
+ .text.multicore_fifo_pop_timeout_us
+                0x0000000010007518       0x78 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010007518                multicore_fifo_pop_timeout_us
  .text.multicore_launch_core1_raw
-                0x0000000010007500       0x84 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x0000000010007500                multicore_launch_core1_raw
+                0x0000000010007590       0x84 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010007590                multicore_launch_core1_raw
  .text.multicore_launch_core1
-                0x0000000010007584       0x4c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x0000000010007584                multicore_launch_core1
- .text.strlen   0x00000000100075d0       0x5c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x00000000100075d0                strlen
+                0x0000000010007614       0x4c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010007614                multicore_launch_core1
+ .text.strlen   0x0000000010007660       0x5c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x0000000010007660                strlen
  *(.fini)
- .fini          0x000000001000762c        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x000000001000762c                _fini
- .fini.__stub   0x0000000010007630       0x70 linker stubs
+ .fini          0x00000000100076bc        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x00000000100076bc                _fini
+ .fini.__stub   0x00000000100076c0       0x70 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2027,135 +2021,134 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x00000000100076a0        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x00000000100076a0                . = ALIGN (0x4)
+ .eh_frame      0x0000000010007730        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000010007730                . = ALIGN (0x4)
 
-.glue_7         0x00000000100076a0        0x0
- .glue_7        0x00000000100076a0        0x0 linker stubs
+.glue_7         0x0000000010007730        0x0
+ .glue_7        0x0000000010007730        0x0 linker stubs
 
-.glue_7t        0x00000000100076a0        0x0
- .glue_7t       0x00000000100076a0        0x0 linker stubs
+.glue_7t        0x0000000010007730        0x0
+ .glue_7t       0x0000000010007730        0x0 linker stubs
 
-.vfp11_veneer   0x00000000100076a0        0x0
- .vfp11_veneer  0x00000000100076a0        0x0 linker stubs
+.vfp11_veneer   0x0000000010007730        0x0
+ .vfp11_veneer  0x0000000010007730        0x0 linker stubs
 
-.v4_bx          0x00000000100076a0        0x0
- .v4_bx         0x00000000100076a0        0x0 linker stubs
+.v4_bx          0x0000000010007730        0x0
+ .v4_bx         0x0000000010007730        0x0 linker stubs
 
-.iplt           0x00000000100076a0        0x0
- .iplt          0x00000000100076a0        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x0000000010007730        0x0
+ .iplt          0x0000000010007730        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x00000000100076a0      0x560
+.rodata         0x0000000010007730      0x560
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.second_core_code.str1.4
-                0x00000000100076a0       0x2c CMakeFiles/ultrasonicdualtest.dir/main.c.obj
+                0x0000000010007730       0x2c CMakeFiles/ultrasonicdualtest.dir/main.c.obj
  .rodata.main.str1.4
-                0x00000000100076cc        0xa CMakeFiles/ultrasonicdualtest.dir/main.c.obj
- *fill*         0x00000000100076d6        0x2 
+                0x000000001000775c        0xe CMakeFiles/ultrasonicdualtest.dir/main.c.obj
+ *fill*         0x000000001000776a        0x2 
  .rodata.spin_lock_claim_unused.str1.4
-                0x00000000100076d8       0x1b CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x00000000100076f3        0x1 
+                0x000000001000776c       0x1b CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x0000000010007787        0x1 
  .rodata.user_irq_claim_unused.str1.4
-                0x00000000100076f4       0x1b CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x000000001000770f        0x1 
+                0x0000000010007788       0x1b CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x00000000100077a3        0x1 
  .rodata.hardware_alarm_claim.str1.4
-                0x0000000010007710       0x22 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x0000000010007732        0x2 
+                0x00000000100077a4       0x22 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x00000000100077c6        0x2 
  .rodata.panic.str1.4
-                0x0000000010007734       0x12 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x0000000010007746        0x2 
+                0x00000000100077c8       0x12 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x00000000100077da        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x0000000010007748        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100077dc        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata._ftoa.str1.4
-                0x0000000010007754       0x15 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x0000000010007769        0x3 
+                0x00000000100077e8       0x15 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x00000000100077fd        0x3 
  .rodata._vsnprintf
-                0x000000001000776c      0x1e0 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x000000001000794c        0x4 
+                0x0000000010007800      0x1e0 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.pow10.0
-                0x0000000010007950       0x50 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100079e0       0x50 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.str1.4
-                0x00000000100079a0       0x48 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007a30       0x48 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x00000000100079e8        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007a78        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x00000000100079f4        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007a84        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x0000000010007a00        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007a90        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x0000000010007a0c        0x2 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x0000000010007a0e        0x2 
+                0x0000000010007a9c        0x2 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x0000000010007a9e        0x2 
  .rodata._resetd_driver
-                0x0000000010007a10       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010007aa0       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .rodata.str1.4
-                0x0000000010007a28       0x13 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- *fill*         0x0000000010007a3b        0x1 
+                0x0000000010007ab8       0x13 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ *fill*         0x0000000010007acb        0x1 
  .rodata.__bi_118.0
-                0x0000000010007a3c        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010007acc        0xc CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.str1.4
-                0x0000000010007a48       0x2a CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x0000000010007a72        0x2 
+                0x0000000010007ad8       0x2a CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x0000000010007b02        0x2 
  .rodata.usbd_desc_cfg
-                0x0000000010007a74       0x54 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010007b04       0x54 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_device
-                0x0000000010007ac8       0x12 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x0000000010007ada        0x2 
+                0x0000000010007b58       0x12 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x0000000010007b6a        0x2 
  .rodata.usbd_desc_str
-                0x0000000010007adc       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010007b6c       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.dcd_rp2040_irq.str1.4
-                0x0000000010007af4       0x14 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010007b84       0x14 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata._hw_endpoint_buffer_control_update32.part.0.isra.0.str1.4
-                0x0000000010007b08       0x1f CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x0000000010007b27        0x1 
+                0x0000000010007b98       0x1f CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x0000000010007bb7        0x1 
  .rodata.hw_endpoint_xfer_continue.str1.4
-                0x0000000010007b28       0x29 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x0000000010007b51        0x3 
+                0x0000000010007bb8       0x29 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x0000000010007be1        0x3 
  .rodata.str1.4
-                0x0000000010007b54        0x7 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x0000000010007b5b        0x1 
+                0x0000000010007be4        0x7 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x0000000010007beb        0x1 
  .rodata.tud_task
-                0x0000000010007b5c       0x8c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010007bec       0x8c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata._usbd_driver
-                0x0000000010007be8       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010007c00                . = ALIGN (0x4)
+                0x0000000010007c78       0x18 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010007c90                . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x0000000010007c00                . = ALIGN (0x4)
+                0x0000000010007c90                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000010007c00        0x0
- .rel.iplt      0x0000000010007c00        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x0000000010007c90        0x0
+ .rel.iplt      0x0000000010007c90        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000010007c00                __exidx_start = .
+                0x0000000010007c90                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000000010007c00                __exidx_end = .
-                0x0000000010007c00                . = ALIGN (0x4)
-                0x0000000010007c00                __binary_info_start = .
+                0x0000000010007c90                __exidx_end = .
+                0x0000000010007c90                . = ALIGN (0x4)
+                0x0000000010007c90                __binary_info_start = .
 
-.binary_info    0x0000000010007c00       0x20
+.binary_info    0x0000000010007c90       0x20
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x0000000010007c00        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007c90        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x0000000010007c04        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007c94        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x0000000010007c08        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007c98        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x0000000010007c0c        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007c9c        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x0000000010007c10        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007ca0        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x0000000010007c14        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007ca4        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x0000000010007c18        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007ca8        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr118
-                0x0000000010007c1c        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010007c20                __binary_info_end = .
-                0x0000000010007c20                . = ALIGN (0x4)
-                0x0000000010007c20                __etext = .
+                0x0000000010007cac        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010007cb0                __binary_info_end = .
+                0x0000000010007cb0                . = ALIGN (0x4)
+                0x0000000010007cb0                __etext = .
 
 .ram_vector_table
                 0x0000000020000000       0xc0
@@ -2164,7 +2157,7 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
                 0x0000000020000000       0xc0 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0      0x3c8 load address 0x0000000010007c20
+.data           0x00000000200000c0      0x3c8 load address 0x0000000010007cb0
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2266,29 +2259,29 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
                 0x0000000020000488                . = ALIGN (0x4)
                 0x0000000020000488                __data_end__ = .
 
-.igot.plt       0x0000000020000488        0x0 load address 0x0000000010007fe8
+.igot.plt       0x0000000020000488        0x0 load address 0x0000000010008078
  .igot.plt      0x0000000020000488        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x0000000020000488        0x0 load address 0x0000000010007fe8
+                0x0000000020000488        0x0 load address 0x0000000010008078
                 0x0000000020000488                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x0000000010007fe8
+.scratch_x      0x0000000020040000        0x0 load address 0x0000000010008078
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x0000000010007fe8                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x0000000010008078                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x0000000010007fe8
+.scratch_y      0x0000000020041000        0x0 load address 0x0000000010008078
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x0000000010007fe8                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x0000000010008078                __scratch_y_source__ = LOADADDR (.scratch_y)
 
-.bss            0x0000000020000488      0xdbc
+.bss            0x0000000020000488      0xdc0
                 0x0000000020000488                . = ALIGN (0x4)
                 0x0000000020000488                __bss_start__ = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -2352,47 +2345,47 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
  .bss.pools     0x00000000200011d8       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.retrieved_id
                 0x00000000200011e8        0x8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .bss.sen       0x00000000200011f0       0x14 CMakeFiles/ultrasonicdualtest.dir/main.c.obj
+ .bss.sen       0x00000000200011f0       0x18 CMakeFiles/ultrasonicdualtest.dir/main.c.obj
                 0x00000000200011f0                sen
  .bss.sf_clz_func
-                0x0000000020001204        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000020001204                sf_clz_func
+                0x0000000020001208        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000020001208                sf_clz_func
  .bss.sleep_notifier
-                0x0000000020001208        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000002000120c        0x4 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.stdio_usb_mutex
-                0x000000002000120c        0x8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000020001210        0x8 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .bss.target_hi
-                0x0000000020001214       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020001218       0x10 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.usbd_serial_str
-                0x0000000020001224       0x11 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x0000000020001235        0x3 
+                0x0000000020001228       0x11 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x0000000020001239        0x3 
  .bss.user_irq_claimed
-                0x0000000020001238        0x2 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x000000002000123c        0x2 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .bss._app_driver_count
-                0x000000002000123a        0x1 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000002000123e        0x1 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .bss._usbd_initialized
-                0x000000002000123b        0x1 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000002000123f        0x1 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .bss.boot2_copyout_valid
-                0x000000002000123c        0x1 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .bss.claimed   0x000000002000123d        0x1 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020001240        0x1 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .bss.claimed   0x0000000020001241        0x1 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.irq_hander_chain_free_slot_head
-                0x000000002000123e        0x1 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .bss.itf_num   0x000000002000123f        0x1 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000020001242        0x1 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .bss.itf_num   0x0000000020001243        0x1 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .bss.low_priority_irq_num
-                0x0000000020001240        0x1 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000020001244        0x1 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .bss.timer_callbacks_pending
-                0x0000000020001241        0x1 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020001245        0x1 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  *(COMMON)
-                0x0000000020001244                . = ALIGN (0x4)
- *fill*         0x0000000020001242        0x2 
-                0x0000000020001244                __bss_end__ = .
+                0x0000000020001248                . = ALIGN (0x4)
+ *fill*         0x0000000020001246        0x2 
+                0x0000000020001248                __bss_end__ = .
 
-.heap           0x0000000020001244      0x800
-                0x0000000020001244                __end__ = .
-                0x0000000020001244                end = __end__
+.heap           0x0000000020001248      0x800
+                0x0000000020001248                __end__ = .
+                0x0000000020001248                end = __end__
  *(.heap*)
- .heap          0x0000000020001244      0x800 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-                0x0000000020001a44                __HeapLimit = .
+ .heap          0x0000000020001248      0x800 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                0x0000000020001a48                __HeapLimit = .
 
 .stack1_dummy   0x0000000020040000      0x800
  *(.stack1*)
@@ -2402,8 +2395,8 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x0000000010007fe8        0x0
-                0x0000000010007fe8                __flash_binary_end = .
+.flash_end      0x0000000010008078        0x0
+                0x0000000010008078                __flash_binary_end = .
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2484,7 +2477,7 @@ LOAD CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_
 LOAD CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 LOAD CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 LOAD CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-LOAD /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccdqGuWh.o
+LOAD /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//cc2TUzXs.o
 LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2606,7 +2599,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x000000000000082c       0x2c CMakeFiles/ultrasonicdualtest.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .ARM.attributes
-                0x0000000000000858       0x22 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccdqGuWh.o
+                0x0000000000000858       0x22 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//cc2TUzXs.o
  .ARM.attributes
                 0x000000000000087a       0x1e /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes

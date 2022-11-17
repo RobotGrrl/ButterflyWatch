@@ -12,6 +12,7 @@ void initUltrasonicSensor(struct UltrasonicSensor *s) {
     s->sum = 0;
     s->val = 0;
     s->cm = 0.0f; // Q: is this the correct way to set a float to 0?
+    s->raw_cm = 0.0f;
 
     // 4096*20 = 81,920
     // max of uint16_t = 65,535
@@ -20,6 +21,17 @@ void initUltrasonicSensor(struct UltrasonicSensor *s) {
 }
 
 void updateUltrasonicSensor(struct UltrasonicSensor *s) {
+
+    // convert the raw cm
+    // 12-bit conversion, assume max value == ADC_VREF == 3.3 V
+    const float conversion_factor = 3.3f / (1 << 12);
+    uint16_t result = s->val;
+    float adc_volts = result*conversion_factor;
+    float adc_mv = adc_volts*1000; // in mV
+    float scale_factor = 6.4; // mV per in
+    float distance = adc_mv * scale_factor / 100.0f;
+    s->raw_cm = distance*2.54f;
+
 
     // ready to average
     if(s->sample_count >= ULTRASONIC_SAMPLES) { // -1) {  // yikes

@@ -13,6 +13,7 @@ struct UltrasonicSensor {
     volatile uint32_t sum; // all raw added
     uint16_t val; // after avg
     float cm; // after avg
+    volatile float raw_cm; // raw value converted
 };
 
 void initUltrasonicSensor(struct UltrasonicSensor *s);

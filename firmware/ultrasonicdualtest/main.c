@@ -30,7 +30,9 @@ int main() {
     while(true) {
         
         if( absolute_time_diff_us(last_print, get_absolute_time()) >= 100*1000 ) {
-            uint32_t dist_val = multicore_fifo_pop_blocking();
+            //uint32_t dist_val = multicore_fifo_pop_blocking();
+            uint32_t dist_val = 0;
+            multicore_fifo_pop_timeout_us(50*1000, &dist_val);
             for(uint8_t i=0; i<8; i++) {
                 if(i > dist_val) {
                     printf(". ");
@@ -38,6 +40,7 @@ int main() {
                     printf("* ");
                 }
             }
+            printf(" %d", dist_val);
             printf("\r\n");
             last_print = get_absolute_time();
         }
@@ -69,11 +72,13 @@ void second_core_code() {
         updateUltrasonicSensor(&sen);
 
         // map the distance to 8
-        uint8_t cm_val = (uint8_t)sen.cm;
+        // use the raw value for better responsiveness
+        uint8_t cm_val = (uint8_t)sen.raw_cm;
         if(cm_val < 10) cm_val = 10;
-        if(cm_val > 100) cm_val = 100;
-        uint32_t dist_val = map(sen.cm, 10, 100, 0, 8);
-        multicore_fifo_push_blocking(dist_val);
+        if(cm_val > 60) cm_val = 60;
+        uint32_t dist_val = map(sen.raw_cm, 10, 60, 0, 8);
+        //multicore_fifo_push_blocking(dist_val);
+        multicore_fifo_push_timeout_us(cm_val, 50*1000);
 
         if(DEBUG) {
             if(sen.ready) {
