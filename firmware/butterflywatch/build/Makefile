@@ -257,6 +257,30 @@ Button.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/butterflywatch.dir/build.make CMakeFiles/butterflywatch.dir/Button.c.s
 .PHONY : Button.c.s
 
+Servo.obj: Servo.c.obj
+.PHONY : Servo.obj
+
+# target to build an object file
+Servo.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/butterflywatch.dir/build.make CMakeFiles/butterflywatch.dir/Servo.c.obj
+.PHONY : Servo.c.obj
+
+Servo.i: Servo.c.i
+.PHONY : Servo.i
+
+# target to preprocess a source file
+Servo.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/butterflywatch.dir/build.make CMakeFiles/butterflywatch.dir/Servo.c.i
+.PHONY : Servo.c.i
+
+Servo.s: Servo.c.s
+.PHONY : Servo.s
+
+# target to generate assembly for a file
+Servo.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/butterflywatch.dir/build.make CMakeFiles/butterflywatch.dir/Servo.c.s
+.PHONY : Servo.c.s
+
 UltrasonicSensor.obj: UltrasonicSensor.c.obj
 .PHONY : UltrasonicSensor.obj
 
@@ -1925,6 +1949,9 @@ help:
 	@echo "... Button.obj"
 	@echo "... Button.i"
 	@echo "... Button.s"
+	@echo "... Servo.obj"
+	@echo "... Servo.i"
+	@echo "... Servo.s"
 	@echo "... UltrasonicSensor.obj"
 	@echo "... UltrasonicSensor.i"
 	@echo "... UltrasonicSensor.s"

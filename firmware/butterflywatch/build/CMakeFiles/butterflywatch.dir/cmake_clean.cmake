@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/butterflywatch.dir/Button.c.obj"
   "CMakeFiles/butterflywatch.dir/Button.c.obj.d"
+  "CMakeFiles/butterflywatch.dir/Servo.c.obj"
+  "CMakeFiles/butterflywatch.dir/Servo.c.obj.d"
   "CMakeFiles/butterflywatch.dir/UltrasonicSensor.c.obj"
   "CMakeFiles/butterflywatch.dir/UltrasonicSensor.c.obj.d"
   "CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"

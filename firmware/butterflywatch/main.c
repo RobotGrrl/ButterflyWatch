@@ -11,6 +11,7 @@
 #include "Board.h"
 #include "UltrasonicSensor.h"
 #include "Button.h"
+#include "Servo.h"
 
 #define DEBUG false
 
@@ -21,6 +22,17 @@ TODO:
 - integrate sleeptest code later
 */
 
+
+// -- servo related --
+struct Servo wing_l;
+struct Servo wing_r;
+struct repeating_timer servo_timer;
+bool servo_timer_callback(struct repeating_timer *t);
+void stopServoTimer();
+void startServoTimer();
+uint8_t speed_num = 0;
+absolute_time_t last_speed = 0;
+// -------------
 
 // -- button related --
 struct Button btn;
@@ -76,10 +88,51 @@ int main() {
     gpio_set_irq_enabled_with_callback(BTN_PIN, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true, &button_callback);
     printf("Button ready\r\n");
     
+    // servo related
+    initServo(&wing_l, SERVO_L_PIN, SERVO_MAX, 5);
+    initServo(&wing_r, SERVO_R_PIN, SERVO_MIN, 5);
+    wing_l.direction = false;
+    wing_r.direction = true;
+
+    startServoTimer();
+    printf("Servos ready\r\n");
 
 
 
     while(true) {
+
+
+        // update the servos
+        updateServo(&wing_l);
+        updateServo(&wing_r);
+
+        // change the speed
+        if( absolute_time_diff_us(last_speed, get_absolute_time()) >= 2000*1000 ) {
+            speed_num++;
+            uint8_t speed_val = 0;
+            switch(speed_num) {
+                case 0:
+                    speed_val = 1;
+                break;
+                case 1:
+                    speed_val = 3;
+                break;
+                case 2:
+                    speed_val = 5;
+                break;
+                case 3:
+                    speed_val = 7;
+                break;
+                case 4:
+                    speed_val = 10;
+                    speed_num = 0;
+                break;
+            }
+            wing_l.speed = speed_val;
+            wing_r.speed = speed_val;
+            last_speed = get_absolute_time();
+        }
+
 
 
 
@@ -198,6 +251,23 @@ int main() {
 
 
 
+// --- servo related ---
+bool servo_timer_callback(struct repeating_timer *t) {
+    wing_l.update = true;
+    wing_r.update = true;
+    return true;
+}
+
+void stopServoTimer() {
+    bool cancelled = cancel_repeating_timer(&servo_timer);
+}
+
+void startServoTimer() {
+    add_repeating_timer_ms(10, servo_timer_callback, NULL, &servo_timer); // 10 ms
+}
+// -------------
+
+
 // --- dual core related ---
 void second_core_code() {
     adc_init();
@@ -272,6 +342,7 @@ bool ultrasonic_daq_callback(struct repeating_timer *t) {
 }
 // -------------
 
+
 // --- button related ---
 int64_t debounce_callback(alarm_id_t id, void *user_data) {
     btn.prev_status = btn.status;
@@ -291,6 +362,7 @@ void button_callback(uint gpio, uint32_t events) {
     }
 }
 // -------------
+
 
 // --- neopixel related ---
 static inline void put_pixel(uint32_t pixel_grb) {

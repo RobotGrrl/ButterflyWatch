@@ -25,6 +25,8 @@ add_executable(${PROJECT_NAME}
     hardware_rosc/rosc.h    # sleeptest
     Button.h                # debouncetest
     Button.c                # debouncetest
+    Servo.h                 # servospeedtest
+    Servo.c                 # servospeedtest
 )
 
 # Create C header file with the name <pio program>.pio.h
@@ -42,8 +44,9 @@ target_link_libraries(${PROJECT_NAME}
     hardware_adc        # ultrasonicdualfasttest
     pico_multicore      # ultrasonicdualfasttest
     hardware_rtc        # sleeptest
-    hardware_clocks     # sleeptest
-    hardware_pio        # neocycletest
+    hardware_clocks     # sleeptest, servospeedtest
+    hardware_pio        # neocycletest, servospeedtest
+    hardware_pwm        # servospeedtest
 )
 
 # Enable usb output, disable uart output

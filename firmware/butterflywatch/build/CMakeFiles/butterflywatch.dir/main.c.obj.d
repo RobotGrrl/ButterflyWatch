@@ -94,4 +94,5 @@ CMakeFiles/butterflywatch.dir/main.c.obj: \
  /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/butterflywatch/ws2812.pio.h \
  /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/butterflywatch/Board.h \
  /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/butterflywatch/UltrasonicSensor.h \
- /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/butterflywatch/Button.h
+ /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/butterflywatch/Button.h \
+ /Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/butterflywatch/Servo.h
