@@ -1,0 +1,13 @@
+# Target labels
+ PioasmBuild
+# Source files and their labels
+/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/butterflywatch/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild
+/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/butterflywatch/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild.rule
+/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/butterflywatch/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild-complete.rule
+/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/butterflywatch/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-build.rule
+/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/butterflywatch/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure.rule
+/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/butterflywatch/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-download.rule
+/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/butterflywatch/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-install.rule
+/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/butterflywatch/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir.rule
+/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/butterflywatch/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch.rule
+/Users/frankenteddy/Documents/PlatformIO/ButterflyWatch/butterflywatch/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update.rule
