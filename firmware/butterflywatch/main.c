@@ -17,8 +17,9 @@
 
 /*
 TODO:
-- gotta test the ultrasonic and neopixels
-- then add in servo code
+- (done) gotta test the ultrasonic and neopixels
+- (done) then add in servo code
+- state machine based on distance
 - integrate sleeptest code later
 */
 
@@ -41,16 +42,17 @@ void button_callback(uint gpio, uint32_t events);
 // -------------
 
 // -- neopixel related --
-static inline void put_pixel(uint32_t pixel_grb);
-static inline uint32_t urgb_u32(uint8_t r, uint8_t g, uint8_t b);
 uint8_t colour_sel = 0;
 absolute_time_t neo_update = 0;
+static inline void put_pixel(uint32_t pixel_grb);
+static inline uint32_t urgb_u32(uint8_t r, uint8_t g, uint8_t b);
+void turnOffNeopixels();
 // -------------
 
 // -- ultrasonic sensor related --
 struct UltrasonicSensor sen;
-int64_t ultrasonic_warmup_callback(alarm_id_t id, void *user_data);
 struct repeating_timer ultrasonic_timer;
+int64_t ultrasonic_warmup_callback(alarm_id_t id, void *user_data);
 bool ultrasonic_daq_callback(struct repeating_timer *t);
 // -------------
 
@@ -61,13 +63,22 @@ long map(long x, long in_min, long in_max, long out_min, long out_max);
 // -------------
 
 // -- app related --
+enum State {
+    IDLE,
+    SPRINT,
+    FLUTTER,
+    SLEEP
+};
+enum State BUTTERFLY_STATE;
+enum State BUTTERFLY_STATE_PREV;
 uint8_t PIXELS_DISPLAYED = 0; // determined by ultrasonic sensor, sent to neopixels
 // -------------
 
 
 int main() {
     stdio_init_all();
-    
+    butterfly_state = IDLE;
+
     // sensor core
     multicore_launch_core1(second_core_code);
 
@@ -102,54 +113,33 @@ int main() {
     while(true) {
 
 
-        // update the servos
-        updateServo(&wing_l);
-        updateServo(&wing_r);
+        // read from sensor core fifo
+        uint32_t dist_val = 0;
 
-        // change the speed
-        if( absolute_time_diff_us(last_speed, get_absolute_time()) >= 2000*1000 ) {
-            speed_num++;
-            uint8_t speed_val = 0;
-            switch(speed_num) {
-                case 0:
-                    speed_val = 1;
-                break;
-                case 1:
-                    speed_val = 3;
-                break;
-                case 2:
-                    speed_val = 5;
-                break;
-                case 3:
-                    speed_val = 7;
-                break;
-                case 4:
-                    speed_val = 10;
-                    speed_num = 0;
-                break;
-            }
-            wing_l.speed = speed_val;
-            wing_r.speed = speed_val;
-            last_speed = get_absolute_time();
+
+        // drain the fifo first
+        multicore_fifo_drain();
+
+
+        // pop it, we know that there will be new data from the 2nd core every 50 ms
+        multicore_fifo_pop_timeout_us(100*1000, &dist_val);
+        PIXELS_DISPLAYED = dist_val;
+
+
+        // update the state
+        if(PIXELS_DISPLAYED >= 0 && PIXELS_DISPLAYED <= 3) {
+            BUTTERFLY_STATE = FLUTTER;
+        } else if(PIXELS_DISPLAYED > 4 && PIXELS_DISPLAYED <= 6) {
+            BUTTERFLY_STATE = SPRINT;
+        } else if(PIXELS_DISPLAYED > 6 && PIXELS_DISPLAYED <= 8) {
+            BUTTERFLY_STATE = IDLE;
         }
 
 
-
-
-        // read from sensor core fifo
+        // print the dist data from sensor core
         if( absolute_time_diff_us(last_print, get_absolute_time()) >= 100*1000 ) {
             
-            uint32_t dist_val = 0;
-
-            // drain the fifo first
-            multicore_fifo_drain();
-
-            // pop it, we know that there will be new data from the 2nd core every 50 ms
-            multicore_fifo_pop_timeout_us(100*1000, &dist_val);
-
-            PIXELS_DISPLAYED = dist_val;
-
-            for(uint8_t i=0; i<8; i++) {
+            for(uint8_t i=0; i<NUM_PIXELS; i++) {
                 if(i >= dist_val) {
                     printf(". ");
                 } else {
@@ -160,9 +150,87 @@ int main() {
             printf("\r\n");
             last_print = get_absolute_time();
         }
+
+
+        // state machine
+        switch(BUTTERFLY_STATE) {
+            case IDLE: { // when sensor detects far away
+                wing_l.speed = 1;
+                wing_r.speed = 1;
+
+                if(absolute_time_diff_us(neo_update, get_absolute_time()) >= 10*1000) {
+                    for(uint i=0; i<NUM_PIXELS; ++i) {
+                        put_pixel(urgb_u32(0x55, 0x11, 0x44)); // TODO: purple?
+                    }
+                    neo_update = get_absolute_time();
+                }
+
+            }
+            break;
+            case SPRINT: { // when sensor detects medium distance
+                wing_l.speed = 10;
+                wing_r.speed = 10;
+
+                if(absolute_time_diff_us(neo_update, get_absolute_time()) >= 10*1000) {
+                    for(uint i=0; i<NUM_PIXELS; ++i) {
+                        if(i == 0 || i == 1 || i == 7 || i == 6) {
+                            put_pixel(urgb_u32(0x55, 0x11, 0x11)); // TODO: pink?
+                        } else {
+                            put_pixel(urgb_u32(0, 0, 0));
+                        }
+                    }
+                    neo_update = get_absolute_time();
+                }
+
+            }
+            break;
+            case FLUTTER: { // when sensor detects close
+                wing_l.speed = 5;
+                wing_r.speed = 5;
+
+                if(absolute_time_diff_us(neo_update, get_absolute_time()) >= 10*1000) {
+                    for(uint i=0; i<NUM_PIXELS; ++i) {
+                        if(i%2 == 0) {
+                            put_pixel(urgb_u32(0x44, 0x44, 0x11)); // TODO: yellow?
+                        } else {
+                            put_pixel(urgb_u32(0, 0, 0));
+                        }
+                    }
+                    neo_update = get_absolute_time();
+                }
+
+
+            }
+            break;
+            case SLEEP: { // when button has been pressed
+                if(BUTTERFLY_STATE_PREV == SLEEP) break;
+                // set the servos to up position
+                wing_l.speed = 3;
+                wing_r.speed = 3;
+                wing_l.pos = SERVO_MAX;
+                wing_r.pos = SERVO_MIN;
+                wing_l.direction = false;
+                wing_r.direction = true;
+                
+                // turn off neopixels
+                turnOffNeopixels();
+                
+                // TODO: do we need to turn off the repeating interrupts?
+                
+                // turn off led
+                
+                // set an alarm to go to sleep in 1000 ms (waiting for servos)
+
+            }
+            break;
+        }
+        BUTTERFLY_STATE_PREV = BUTTERFLY_STATE;
         // --
 
 
+        // update the servos
+        updateServo(&wing_l);
+        updateServo(&wing_r);
 
 
         // -- neopixel button related --
@@ -239,7 +307,6 @@ int main() {
             
         }
         // --
-
 
 
     } // end of while
@@ -374,5 +441,15 @@ static inline uint32_t urgb_u32(uint8_t r, uint8_t g, uint8_t b) {
             ((uint32_t) (r) << 8) |
             ((uint32_t) (g) << 16) |
             (uint32_t) (b);
+}
+
+void turnOffNeopixels() {
+    // turn all off
+    if(absolute_time_diff_us(neo_update, get_absolute_time()) >= 10*1000) {
+        for(uint i=0; i<NUM_PIXELS; ++i) {
+            put_pixel(urgb_u32(0, 0, 0));
+        }
+        neo_update = get_absolute_time();
+    }
 }
 // -------------
