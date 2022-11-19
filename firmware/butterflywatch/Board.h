@@ -9,8 +9,8 @@
 
 #define DEBOUNCE_DEL        200     // ms to wait for button debounce
 #define NUM_PIXELS          8
-#define SERVO_MAX           2400
-#define SERVO_MIN           600
+#define SERVO_MAX           2300    // left: down
+#define SERVO_MIN           700     // left: up
 #define SERVO_HOME          1600
 #define ULTRASONIC_WARMUP   400     // ms to delay for sensor warm up
 #define ULTRASONIC_RATE     50      // sample every X ms

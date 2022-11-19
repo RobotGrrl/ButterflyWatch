@@ -44,6 +44,8 @@ void button_callback(uint gpio, uint32_t events);
 // -- neopixel related --
 uint8_t colour_sel = 0;
 absolute_time_t neo_update = 0;
+absolute_time_t neo_frame_update = 0;
+uint8_t neo_frame = 0;
 static inline void put_pixel(uint32_t pixel_grb);
 static inline uint32_t urgb_u32(uint8_t r, uint8_t g, uint8_t b);
 void turnOffNeopixels();
@@ -77,7 +79,7 @@ uint8_t PIXELS_DISPLAYED = 0; // determined by ultrasonic sensor, sent to neopix
 
 int main() {
     stdio_init_all();
-    butterfly_state = IDLE;
+    BUTTERFLY_STATE = IDLE;
 
     // sensor core
     multicore_launch_core1(second_core_code);
@@ -100,11 +102,10 @@ int main() {
     printf("Button ready\r\n");
     
     // servo related
-    initServo(&wing_l, SERVO_L_PIN, SERVO_MAX, 5);
-    initServo(&wing_r, SERVO_R_PIN, SERVO_MIN, 5);
-    wing_l.direction = false;
-    wing_r.direction = true;
-
+    initServo(&wing_l, SERVO_L_PIN, SERVO_MIN, 5);
+    initServo(&wing_r, SERVO_R_PIN, SERVO_MAX, 5);
+    wing_l.direction = true;
+    wing_r.direction = false;
     startServoTimer();
     printf("Servos ready\r\n");
 
@@ -154,51 +155,94 @@ int main() {
 
         // state machine
         switch(BUTTERFLY_STATE) {
-            case IDLE: { // when sensor detects far away
-                wing_l.speed = 1;
-                wing_r.speed = 1;
-
-                if(absolute_time_diff_us(neo_update, get_absolute_time()) >= 10*1000) {
-                    for(uint i=0; i<NUM_PIXELS; ++i) {
-                        put_pixel(urgb_u32(0x55, 0x11, 0x44)); // TODO: purple?
-                    }
-                    neo_update = get_absolute_time();
-                }
-
-            }
-            break;
-            case SPRINT: { // when sensor detects medium distance
-                wing_l.speed = 10;
-                wing_r.speed = 10;
-
-                if(absolute_time_diff_us(neo_update, get_absolute_time()) >= 10*1000) {
-                    for(uint i=0; i<NUM_PIXELS; ++i) {
-                        if(i == 0 || i == 1 || i == 7 || i == 6) {
-                            put_pixel(urgb_u32(0x55, 0x11, 0x11)); // TODO: pink?
-                        } else {
-                            put_pixel(urgb_u32(0, 0, 0));
-                        }
-                    }
-                    neo_update = get_absolute_time();
-                }
-
-            }
-            break;
-            case FLUTTER: { // when sensor detects close
+            case IDLE: { // far away
                 wing_l.speed = 5;
                 wing_r.speed = 5;
 
                 if(absolute_time_diff_us(neo_update, get_absolute_time()) >= 10*1000) {
                     for(uint i=0; i<NUM_PIXELS; ++i) {
-                        if(i%2 == 0) {
-                            put_pixel(urgb_u32(0x44, 0x44, 0x11)); // TODO: yellow?
+                        if(i == neo_frame) {
+                            put_pixel(urgb_u32(0x55, 0x11, 0x44)); // purple
                         } else {
-                            put_pixel(urgb_u32(0, 0, 0));
+                            put_pixel(urgb_u32(0x00, 0x00, 0x00));
                         }
                     }
+
+                    if(absolute_time_diff_us(neo_frame_update, get_absolute_time()) >= 100*1000) {
+                        neo_frame++;
+                        if(neo_frame > 8) neo_frame = 0;
+                        neo_frame_update = get_absolute_time();
+                    }
+
                     neo_update = get_absolute_time();
                 }
 
+            }
+            break;
+            case SPRINT: { // medium distance
+                wing_l.speed = 15;
+                wing_r.speed = 15;
+
+                if(absolute_time_diff_us(neo_update, get_absolute_time()) >= 10*1000) {
+                    for(uint i=0; i<NUM_PIXELS; ++i) {
+                        
+                        if(neo_frame == 0) {
+                            if(i == 0 || i == 1 || i == 7 || i == 6) {
+                                put_pixel(urgb_u32(0xAA, 0x22, 0x33)); // pink
+                            } else {
+                                put_pixel(urgb_u32(0, 0, 0));
+                            }
+                        } else if(neo_frame == 1) {
+                            if(i == 2 || i == 3 || i == 4 || i == 5) {
+                                put_pixel(urgb_u32(0xAA, 0x22, 0x33)); // pink
+                            } else {
+                                put_pixel(urgb_u32(0, 0, 0));
+                            }
+                        }
+                    }
+
+                    if(absolute_time_diff_us(neo_frame_update, get_absolute_time()) >= 250*1000) {
+                        neo_frame++;
+                        if(neo_frame > 1) neo_frame = 0;
+                        neo_frame_update = get_absolute_time();
+                    }
+
+                    neo_update = get_absolute_time();
+                }
+
+            }
+            break;
+            case FLUTTER: { // close up
+                wing_l.speed = 20;
+                wing_r.speed = 20;
+
+                if(absolute_time_diff_us(neo_update, get_absolute_time()) >= 10*1000) {
+                    for(uint i=0; i<NUM_PIXELS; ++i) {
+                        
+                        if(neo_frame == 0) {
+                            if(i%2 == 0) {
+                                put_pixel(urgb_u32(0xCC, 0x44, 0x11)); // yellow
+                            } else {
+                                put_pixel(urgb_u32(0, 0, 0));
+                            }
+                        } else if(neo_frame == 1) {
+                            if(i%2 == 0) {
+                                put_pixel(urgb_u32(0, 0, 0));
+                            } else {
+                                put_pixel(urgb_u32(0xCC, 0x44, 0x11)); // yellow
+                            }
+                        }
+                        
+                    }
+
+                    if(absolute_time_diff_us(neo_frame_update, get_absolute_time()) >= 250*1000) {
+                        neo_frame++;
+                        if(neo_frame > 1) neo_frame = 0;
+                        neo_frame_update = get_absolute_time();
+                    }
+                    
+                    neo_update = get_absolute_time();
+                }
 
             }
             break;
@@ -207,8 +251,8 @@ int main() {
                 // set the servos to up position
                 wing_l.speed = 3;
                 wing_r.speed = 3;
-                wing_l.pos = SERVO_MAX;
-                wing_r.pos = SERVO_MIN;
+                wing_l.pulse = SERVO_MAX;
+                wing_r.pulse = SERVO_MIN;
                 wing_l.direction = false;
                 wing_r.direction = true;
                 
@@ -330,7 +374,7 @@ void stopServoTimer() {
 }
 
 void startServoTimer() {
-    add_repeating_timer_ms(10, servo_timer_callback, NULL, &servo_timer); // 10 ms
+    add_repeating_timer_ms(1, servo_timer_callback, NULL, &servo_timer);
 }
 // -------------
 
