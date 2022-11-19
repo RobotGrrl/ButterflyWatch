@@ -60,6 +60,8 @@ Discarded input sections
  .text.map      0x0000000000000000       0x18 CMakeFiles/butterflywatch.dir/main.c.obj
  .text.turnOffNeopixels
                 0x0000000000000000       0x50 CMakeFiles/butterflywatch.dir/main.c.obj
+ .bss.colour_sel
+                0x0000000000000000        0x1 CMakeFiles/butterflywatch.dir/main.c.obj
  .bss.last_speed
                 0x0000000000000000        0x8 CMakeFiles/butterflywatch.dir/main.c.obj
  .bss.speed_num
@@ -1203,9 +1205,9 @@ Discarded input sections
  .text.pio_sm_drain_tx_fifo
                 0x0000000000000000       0x40 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .bss.claimed   0x0000000000000000        0x1 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
- .text          0x0000000000000000        0x0 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//cc88T02f.o
- .data          0x0000000000000000        0x0 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//cc88T02f.o
- .bss           0x0000000000000000        0x0 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//cc88T02f.o
+ .text          0x0000000000000000        0x0 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccgMklk5.o
+ .data          0x0000000000000000        0x0 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccgMklk5.o
+ .bss           0x0000000000000000        0x0 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccgMklk5.o
  .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-calloc.o)
@@ -1421,11 +1423,11 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//cc88T02f.o
+ .boot2         0x0000000010000000      0x100 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccgMklk5.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x0000000010000100     0x85a0
+.text           0x0000000010000100     0x8480
                 0x0000000010000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x0000000010000100       0xd4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1494,690 +1496,690 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
                 0x0000000010000324       0x40 CMakeFiles/butterflywatch.dir/main.c.obj
                 0x0000000010000324                ultrasonic_daq_callback
  .text.debounce_callback
-                0x0000000010000364       0x24 CMakeFiles/butterflywatch.dir/main.c.obj
+                0x0000000010000364       0x54 CMakeFiles/butterflywatch.dir/main.c.obj
                 0x0000000010000364                debounce_callback
  .text.second_core_code
-                0x0000000010000388       0xc8 CMakeFiles/butterflywatch.dir/main.c.obj
-                0x0000000010000388                second_core_code
+                0x00000000100003b8       0xc8 CMakeFiles/butterflywatch.dir/main.c.obj
+                0x00000000100003b8                second_core_code
  .text.button_callback
-                0x0000000010000450       0x64 CMakeFiles/butterflywatch.dir/main.c.obj
-                0x0000000010000450                button_callback
+                0x0000000010000480       0x64 CMakeFiles/butterflywatch.dir/main.c.obj
+                0x0000000010000480                button_callback
  .text.ultrasonic_warmup_callback
-                0x00000000100004b4       0x3c CMakeFiles/butterflywatch.dir/main.c.obj
-                0x00000000100004b4                ultrasonic_warmup_callback
+                0x00000000100004e4       0x3c CMakeFiles/butterflywatch.dir/main.c.obj
+                0x00000000100004e4                ultrasonic_warmup_callback
  .text.startup.main
-                0x00000000100004f0      0x6d0 CMakeFiles/butterflywatch.dir/main.c.obj
-                0x00000000100004f0                main
+                0x0000000010000520      0x580 CMakeFiles/butterflywatch.dir/main.c.obj
+                0x0000000010000520                main
  .text.initUltrasonicSensor
-                0x0000000010000bc0       0x18 CMakeFiles/butterflywatch.dir/UltrasonicSensor.c.obj
-                0x0000000010000bc0                initUltrasonicSensor
+                0x0000000010000aa0       0x18 CMakeFiles/butterflywatch.dir/UltrasonicSensor.c.obj
+                0x0000000010000aa0                initUltrasonicSensor
  .text.updateUltrasonicSensor
-                0x0000000010000bd8       0x94 CMakeFiles/butterflywatch.dir/UltrasonicSensor.c.obj
-                0x0000000010000bd8                updateUltrasonicSensor
+                0x0000000010000ab8       0x94 CMakeFiles/butterflywatch.dir/UltrasonicSensor.c.obj
+                0x0000000010000ab8                updateUltrasonicSensor
  .text.initButton
-                0x0000000010000c6c       0x14 CMakeFiles/butterflywatch.dir/Button.c.obj
-                0x0000000010000c6c                initButton
+                0x0000000010000b4c       0x14 CMakeFiles/butterflywatch.dir/Button.c.obj
+                0x0000000010000b4c                initButton
  .text.updateButton
-                0x0000000010000c80       0x30 CMakeFiles/butterflywatch.dir/Button.c.obj
-                0x0000000010000c80                updateButton
+                0x0000000010000b60       0x30 CMakeFiles/butterflywatch.dir/Button.c.obj
+                0x0000000010000b60                updateButton
  .text.updateServo
-                0x0000000010000cb0       0xa4 CMakeFiles/butterflywatch.dir/Servo.c.obj
-                0x0000000010000cb0                updateServo
+                0x0000000010000b90       0xa4 CMakeFiles/butterflywatch.dir/Servo.c.obj
+                0x0000000010000b90                updateServo
  .text.setServo
-                0x0000000010000d54      0x168 CMakeFiles/butterflywatch.dir/Servo.c.obj
-                0x0000000010000d54                setServo
+                0x0000000010000c34      0x168 CMakeFiles/butterflywatch.dir/Servo.c.obj
+                0x0000000010000c34                setServo
  .text.initServo
-                0x0000000010000ebc       0x30 CMakeFiles/butterflywatch.dir/Servo.c.obj
-                0x0000000010000ebc                initServo
+                0x0000000010000d9c       0x30 CMakeFiles/butterflywatch.dir/Servo.c.obj
+                0x0000000010000d9c                initServo
  .text.gpio_default_irq_handler
-                0x0000000010000eec      0x248 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010000dcc      0x248 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_set_function
-                0x0000000010001134       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010001134                gpio_set_function
+                0x0000000010001014       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010001014                gpio_set_function
  .text.gpio_set_pulls
-                0x0000000010001164       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010001164                gpio_set_pulls
+                0x0000000010001044       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010001044                gpio_set_pulls
  .text.gpio_set_irq_enabled_with_callback
-                0x0000000010001194       0xb0 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010001194                gpio_set_irq_enabled_with_callback
+                0x0000000010001074       0xb0 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010001074                gpio_set_irq_enabled_with_callback
  .text.gpio_set_input_enabled
-                0x0000000010001244       0x28 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010001244                gpio_set_input_enabled
+                0x0000000010001124       0x28 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010001124                gpio_set_input_enabled
  .text.gpio_init
-                0x000000001000126c       0x3c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x000000001000126c                gpio_init
+                0x000000001000114c       0x3c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x000000001000114c                gpio_init
  .text.hw_claim_lock
-                0x00000000100012a8       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x00000000100012a8                hw_claim_lock
+                0x0000000010001188       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x0000000010001188                hw_claim_lock
  .text.hw_claim_unlock
-                0x00000000100012c0       0x14 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x00000000100012c0                hw_claim_unlock
+                0x00000000100011a0       0x14 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x00000000100011a0                hw_claim_unlock
  .text.hw_claim_or_assert
-                0x00000000100012d4       0x44 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x00000000100012d4                hw_claim_or_assert
+                0x00000000100011b4       0x44 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x00000000100011b4                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x0000000010001318       0x9c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x0000000010001318                hw_claim_unused_from_range
+                0x00000000100011f8       0x9c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x00000000100011f8                hw_claim_unused_from_range
  .text.running_on_fpga
-                0x00000000100013b4       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x00000000100013b4                running_on_fpga
+                0x0000000010001294       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x0000000010001294                running_on_fpga
  .text.spin_locks_reset
-                0x00000000100013c4       0x1c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x00000000100013c4                spin_locks_reset
+                0x00000000100012a4       0x1c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100012a4                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x00000000100013e0       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x00000000100013e0                next_striped_spin_lock_num
+                0x00000000100012c0       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100012c0                next_striped_spin_lock_num
  .text.spin_lock_claim_unused
-                0x00000000100013f8       0x20 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x00000000100013f8                spin_lock_claim_unused
+                0x00000000100012d8       0x20 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100012d8                spin_lock_claim_unused
  .text.irq_set_enabled
-                0x0000000010001418       0x24 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001418                irq_set_enabled
+                0x00000000100012f8       0x24 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100012f8                irq_set_enabled
  .text.irq_is_enabled
-                0x000000001000143c       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x000000001000143c                irq_is_enabled
+                0x000000001000131c       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x000000001000131c                irq_is_enabled
  .text.irq_set_pending
-                0x0000000010001454       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001454                irq_set_pending
+                0x0000000010001334       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001334                irq_set_pending
  .text.irq_has_shared_handler
-                0x0000000010001464       0x2c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001464                irq_has_shared_handler
+                0x0000000010001344       0x2c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001344                irq_has_shared_handler
  .text.irq_get_vtable_handler
-                0x0000000010001490       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001490                irq_get_vtable_handler
+                0x0000000010001370       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001370                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x00000000100014a0       0x54 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100014a0                irq_set_exclusive_handler
+                0x0000000010001380       0x54 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001380                irq_set_exclusive_handler
  .text.irq_add_shared_handler
-                0x00000000100014f4      0x1e4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100014f4                irq_add_shared_handler
+                0x00000000100013d4      0x1e4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100013d4                irq_add_shared_handler
  .text.irq_remove_handler
-                0x00000000100016d8      0x1b4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100016d8                irq_remove_handler
+                0x00000000100015b8      0x1b4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100015b8                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x000000001000188c       0xb4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x000000001000188c                irq_add_tail_to_free_list
+                0x000000001000176c       0xb4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x000000001000176c                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x0000000010001940       0x24 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001940                irq_init_priorities
+                0x0000000010001820       0x24 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001820                irq_init_priorities
  .text.user_irq_claim_unused
-                0x0000000010001964       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001964                user_irq_claim_unused
+                0x0000000010001844       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001844                user_irq_claim_unused
  .text.lock_init
-                0x0000000010001994       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x0000000010001994                lock_init
+                0x0000000010001874       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x0000000010001874                lock_init
  .text.timer_pool_entry_comparator
-                0x00000000100019a4       0x34 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x00000000100019a4                timer_pool_entry_comparator
+                0x0000000010001884       0x34 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001884                timer_pool_entry_comparator
  .text.repeating_timer_callback
-                0x00000000100019d8       0x1c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100018b8       0x1c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.sleep_until_callback
-                0x00000000100019f4       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100018d4       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock.isra.0
-                0x0000000010001a24      0x100 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001904      0x100 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x0000000010001b24      0x1c8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001a04      0x1c8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_add_alarm_at.constprop.0
-                0x0000000010001cec      0x11c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001bcc      0x11c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x0000000010001e08       0x64 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001e08                alarm_pool_init_default
+                0x0000000010001ce8       0x64 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001ce8                alarm_pool_init_default
  .text.alarm_pool_get_default
-                0x0000000010001e6c        0x8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001e6c                alarm_pool_get_default
+                0x0000000010001d4c        0x8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001d4c                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at
-                0x0000000010001e74      0x194 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001e74                alarm_pool_add_alarm_at
+                0x0000000010001d54      0x194 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001d54                alarm_pool_add_alarm_at
  .text.alarm_pool_add_repeating_timer_us
-                0x0000000010002008      0x22c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010002008                alarm_pool_add_repeating_timer_us
+                0x0000000010001ee8      0x22c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001ee8                alarm_pool_add_repeating_timer_us
  .text.best_effort_wfe_or_timeout
-                0x0000000010002234       0xd4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010002234                best_effort_wfe_or_timeout
+                0x0000000010002114       0xd4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010002114                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x0000000010002308       0xb8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100021e8       0xb8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x00000000100023c0       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100023c0                hardware_alarm_claim
+                0x00000000100022a0       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100022a0                hardware_alarm_claim
  .text.time_us_64
-                0x00000000100023d8       0x14 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100023d8                time_us_64
+                0x00000000100022b8       0x14 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100022b8                time_us_64
  .text.hardware_alarm_set_callback
-                0x00000000100023ec       0x8c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100023ec                hardware_alarm_set_callback
+                0x00000000100022cc       0x8c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100022cc                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x0000000010002478       0xe0 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010002478                hardware_alarm_set_target
+                0x0000000010002358       0xe0 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010002358                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x0000000010002558       0x3c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010002558                hardware_alarm_cancel
+                0x0000000010002438       0x3c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010002438                hardware_alarm_cancel
  .text.ph_merge_nodes
-                0x0000000010002594       0x68 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010002474       0x68 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x00000000100025fc       0x3c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000100025fc                ph_post_alloc_init
+                0x00000000100024dc       0x3c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100024dc                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x0000000010002638       0x90 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010002638                ph_merge_two_pass
+                0x0000000010002518       0x90 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010002518                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x00000000100026c8       0xf8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100025a8       0xf8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x00000000100027c0       0xfc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000100027c0                ph_remove_head
+                0x00000000100026a0       0xfc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100026a0                ph_remove_head
  .text.ph_remove_and_free_node
-                0x00000000100028bc       0x7c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000100028bc                ph_remove_and_free_node
+                0x000000001000279c       0x7c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x000000001000279c                ph_remove_and_free_node
  .text.mutex_init
-                0x0000000010002938       0x1c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000010002938                mutex_init
+                0x0000000010002818       0x1c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010002818                mutex_init
  .text.recursive_mutex_init
-                0x0000000010002954       0x1c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000010002954                recursive_mutex_init
+                0x0000000010002834       0x1c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010002834                recursive_mutex_init
  .text.critical_section_init
-                0x0000000010002970       0x20 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x0000000010002970                critical_section_init
+                0x0000000010002850       0x20 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x0000000010002850                critical_section_init
  .text.runtime_init
-                0x0000000010002990       0xf0 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010002990                runtime_init
- .text.exit     0x0000000010002a80        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010002a80                exit
- .text.panic    0x0000000010002a84       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010002a84                panic
+                0x0000000010002870       0xf0 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010002870                runtime_init
+ .text.exit     0x0000000010002960        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010002960                exit
+ .text.panic    0x0000000010002964       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010002964                panic
  .text.hard_assertion_failure
-                0x0000000010002ab4        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010002ab4                hard_assertion_failure
+                0x0000000010002994        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010002994                hard_assertion_failure
  .text.clocks_init
-                0x0000000010002ac0      0x2bc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x0000000010002ac0                clocks_init
+                0x00000000100029a0      0x2bc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00000000100029a0                clocks_init
  .text.clock_get_hz
-                0x0000000010002d7c        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x0000000010002d7c                clock_get_hz
+                0x0000000010002c5c        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000000010002c5c                clock_get_hz
  .text.pll_init
-                0x0000000010002d88       0xb0 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x0000000010002d88                pll_init
+                0x0000000010002c68       0xb0 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x0000000010002c68                pll_init
  .text.watchdog_start_tick
-                0x0000000010002e38       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010002e38                watchdog_start_tick
+                0x0000000010002d18       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010002d18                watchdog_start_tick
  .text.watchdog_reboot
-                0x0000000010002e48       0x98 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010002e48                watchdog_reboot
+                0x0000000010002d28       0x98 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010002d28                watchdog_reboot
  .text.xosc_init
-                0x0000000010002ee0       0x28 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x0000000010002ee0                xosc_init
+                0x0000000010002dc0       0x28 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x0000000010002dc0                xosc_init
  .text._out_null
-                0x0000000010002f08        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002de8        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x0000000010002f0c       0x9c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002dec       0x9c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x0000000010002fa8      0x1cc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002e88      0x1cc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_char
-                0x0000000010003174       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010003054       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x0000000010003184       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._etoa    0x0000000010003194      0x44c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x00000000100035e0      0x398 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010003064       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._etoa    0x0000000010003074      0x44c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x00000000100034c0      0x398 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x0000000010003978      0xb04 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010003858      0xb04 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.vfctprintf
-                0x000000001000447c       0x20 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x000000001000447c                vfctprintf
+                0x000000001000435c       0x20 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x000000001000435c                vfctprintf
  .text.weak_raw_vprintf
-                0x000000001000449c       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x000000001000449c                weak_raw_vprintf
- .text          0x00000000100044cc       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x000000001000437c       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x000000001000437c                weak_raw_vprintf
+ .text          0x00000000100043ac       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x00000000100044dc       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x00000000100044dc                rom_func_lookup
+                0x00000000100043bc       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x00000000100043bc                rom_func_lookup
  .text.rom_data_lookup
-                0x00000000100044ec       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x00000000100044ec                rom_data_lookup
+                0x00000000100043cc       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x00000000100043cc                rom_data_lookup
  .text.rom_funcs_lookup
-                0x00000000100044fc       0x44 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x00000000100044fc                rom_funcs_lookup
+                0x00000000100043dc       0x44 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x00000000100043dc                rom_funcs_lookup
  .text.__wrap___aeabi_idiv
-                0x0000000010004540       0x50 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010004540                __wrap___aeabi_idivmod
-                0x0000000010004540                divmod_s32s32
-                0x0000000010004540                div_s32s32
-                0x0000000010004540                __wrap___aeabi_idiv
-                0x0000000010004548                divmod_s32s32_unsafe
-                0x0000000010004574                divmod_s32s32_savestate
+                0x0000000010004420       0x50 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010004420                __wrap___aeabi_idivmod
+                0x0000000010004420                divmod_s32s32
+                0x0000000010004420                div_s32s32
+                0x0000000010004420                __wrap___aeabi_idiv
+                0x0000000010004428                divmod_s32s32_unsafe
+                0x0000000010004454                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x0000000010004590       0x4c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010004590                __wrap___aeabi_uidiv
-                0x0000000010004590                __wrap___aeabi_uidivmod
-                0x0000000010004590                div_u32u32
-                0x0000000010004590                divmod_u32u32
-                0x0000000010004598                divmod_u32u32_unsafe
-                0x00000000100045c0                divmod_u32u32_savestate
+                0x0000000010004470       0x4c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010004470                __wrap___aeabi_uidiv
+                0x0000000010004470                __wrap___aeabi_uidivmod
+                0x0000000010004470                div_u32u32
+                0x0000000010004470                divmod_u32u32
+                0x0000000010004478                divmod_u32u32_unsafe
+                0x00000000100044a0                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x00000000100045dc      0x434 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x00000000100045dc                __wrap___aeabi_ldivmod
-                0x00000000100045dc                div_s64s64
-                0x00000000100045dc                divmod_s64s64
-                0x0000000010004614                divmod_u64u64
-                0x0000000010004614                div_u64u64
-                0x0000000010004614                __wrap___aeabi_uldivmod
-                0x0000000010004624                divmod_u64u64_savestate
-                0x000000001000464c                divmod_s64s64_unsafe
-                0x00000000100046d4                divmod_u64u64_unsafe
+                0x00000000100044bc      0x434 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x00000000100044bc                __wrap___aeabi_ldivmod
+                0x00000000100044bc                div_s64s64
+                0x00000000100044bc                divmod_s64s64
+                0x00000000100044f4                divmod_u64u64
+                0x00000000100044f4                div_u64u64
+                0x00000000100044f4                __wrap___aeabi_uldivmod
+                0x0000000010004504                divmod_u64u64_savestate
+                0x000000001000452c                divmod_s64s64_unsafe
+                0x00000000100045b4                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x0000000010004a10       0x80 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004a10                __wrap___aeabi_drsub
-                0x0000000010004a16                __wrap___aeabi_dsub
-                0x0000000010004a28                __wrap___aeabi_dadd
-                0x0000000010004a3a                __wrap___aeabi_ddiv
-                0x0000000010004a76                __wrap___aeabi_dmul
+                0x00000000100048f0       0x80 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x00000000100048f0                __wrap___aeabi_drsub
+                0x00000000100048f6                __wrap___aeabi_dsub
+                0x0000000010004908                __wrap___aeabi_dadd
+                0x000000001000491a                __wrap___aeabi_ddiv
+                0x0000000010004956                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x0000000010004a90       0x6c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004a90                __wrap___aeabi_cdrcmple
-                0x0000000010004aa0                __wrap___aeabi_cdcmple
-                0x0000000010004aa0                __wrap___aeabi_cdcmpeq
+                0x0000000010004970       0x6c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004970                __wrap___aeabi_cdrcmple
+                0x0000000010004980                __wrap___aeabi_cdcmple
+                0x0000000010004980                __wrap___aeabi_cdcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x0000000010004afc        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004afc                __wrap___aeabi_dcmplt
+                0x00000000100049dc        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x00000000100049dc                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x0000000010004b08       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004b08                __wrap___aeabi_dcmple
+                0x00000000100049e8       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x00000000100049e8                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x0000000010004b18       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004b18                __wrap___aeabi_dcmpge
+                0x00000000100049f8       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x00000000100049f8                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x0000000010004b28        0xa CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004b28                __wrap___aeabi_dcmpgt
+                0x0000000010004a08        0xa CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004a08                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x0000000010004b32       0x1c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004b32                __wrap___aeabi_dcmpun
- *fill*         0x0000000010004b4e        0x2 
+                0x0000000010004a12       0x1c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004a12                __wrap___aeabi_dcmpun
+ *fill*         0x0000000010004a2e        0x2 
  .text.__wrap___aeabi_i2d
-                0x0000000010004b50       0x38 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004b50                __wrap___aeabi_ui2d
-                0x0000000010004b58                __wrap___aeabi_i2d
+                0x0000000010004a30       0x38 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004a30                __wrap___aeabi_ui2d
+                0x0000000010004a38                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x0000000010004b88       0x48 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004b88                __wrap___aeabi_d2iz
-                0x0000000010004b88                double2int_z
+                0x0000000010004a68       0x48 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004a68                __wrap___aeabi_d2iz
+                0x0000000010004a68                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x0000000010004bd0       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004bd0                double2uint
-                0x0000000010004bd0                __wrap___aeabi_d2uiz
+                0x0000000010004ab0       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004ab0                double2uint
+                0x0000000010004ab0                __wrap___aeabi_d2uiz
  .text.__aeabi_double_init
-                0x0000000010004be8       0x94 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000010004be8                __aeabi_double_init
+                0x0000000010004ac8       0x94 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000010004ac8                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x0000000010004c7c       0x2c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004c7c                double_table_shim_on_use_helper
+                0x0000000010004b5c       0x2c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004b5c                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x0000000010004ca8       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004ca8                drsub_shim
-                0x0000000010004cae                dsub_shim
+                0x0000000010004b88       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004b88                drsub_shim
+                0x0000000010004b8e                dsub_shim
  .text.dadd_shim
-                0x0000000010004cb8      0x15c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004cb8                dadd_shim
+                0x0000000010004b98      0x15c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004b98                dadd_shim
  .text.dmul_shim
-                0x0000000010004e14      0x15c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004e14                dmul_shim
+                0x0000000010004cf4      0x15c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004cf4                dmul_shim
  .text.ddiv_shim
-                0x0000000010004f70      0x1b0 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004f70                ddiv_shim
+                0x0000000010004e50      0x1b0 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004e50                ddiv_shim
  .text.double2uint_shim
-                0x0000000010005120        0xe CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010005120                double2uint_shim
-                0x0000000010005122                double2ufix_shim
- *fill*         0x000000001000512e        0x2 
+                0x0000000010005000        0xe CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010005000                double2uint_shim
+                0x0000000010005002                double2ufix_shim
+ *fill*         0x000000001000500e        0x2 
  .text.double2uint64_shim
-                0x0000000010005130       0x70 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010005130                double2uint64_shim
-                0x0000000010005132                double2ufix64_shim
-                0x0000000010005152                d2fix_a
+                0x0000000010005010       0x70 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010005010                double2uint64_shim
+                0x0000000010005012                double2ufix64_shim
+                0x0000000010005032                d2fix_a
  .text.dunpacks
-                0x00000000100051a0       0x3c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100051a0                dunpacks
+                0x0000000010005080       0x3c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010005080                dunpacks
  .text.__aeabi_lmul
-                0x00000000100051dc       0x32 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x00000000100051dc                __wrap___aeabi_lmul
- *fill*         0x000000001000520e        0x2 
+                0x00000000100050bc       0x32 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x00000000100050bc                __wrap___aeabi_lmul
+ *fill*         0x00000000100050ee        0x2 
  .text.__wrap___aeabi_farithmetic
-                0x0000000010005210       0x48 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x0000000010005210                __wrap___aeabi_frsub
-                0x0000000010005216                __wrap___aeabi_fsub
-                0x000000001000521c                __wrap___aeabi_fadd
-                0x0000000010005222                __wrap___aeabi_fdiv
-                0x000000001000524a                __wrap___aeabi_fmul
+                0x00000000100050f0       0x48 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x00000000100050f0                __wrap___aeabi_frsub
+                0x00000000100050f6                __wrap___aeabi_fsub
+                0x00000000100050fc                __wrap___aeabi_fadd
+                0x0000000010005102                __wrap___aeabi_fdiv
+                0x000000001000512a                __wrap___aeabi_fmul
  .text.__wrap___aeabi_cfcmple
-                0x0000000010005258       0x50 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x0000000010005258                __wrap___aeabi_cfrcmple
-                0x0000000010005264                __wrap___aeabi_cfcmpeq
-                0x0000000010005264                __wrap___aeabi_cfcmple
+                0x0000000010005138       0x50 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x0000000010005138                __wrap___aeabi_cfrcmple
+                0x0000000010005144                __wrap___aeabi_cfcmpeq
+                0x0000000010005144                __wrap___aeabi_cfcmple
  .text.__wrap___aeabi_fcmpgt
-                0x00000000100052a8        0xa CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x00000000100052a8                __wrap___aeabi_fcmpgt
+                0x0000000010005188        0xa CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x0000000010005188                __wrap___aeabi_fcmpgt
  .text.__wrap___aeabi_ui2f
-                0x00000000100052b2        0xa CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x00000000100052b2                __wrap___aeabi_ui2f
+                0x0000000010005192        0xa CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x0000000010005192                __wrap___aeabi_ui2f
  .text.__wrap___aeabi_i2f
-                0x00000000100052bc       0x44 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x00000000100052bc                __wrap___aeabi_i2f
+                0x000000001000519c       0x44 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x000000001000519c                __wrap___aeabi_i2f
  .text.__wrap___aeabi_f2iz
-                0x0000000010005300       0x4e CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x0000000010005300                __wrap___aeabi_f2iz
-                0x0000000010005300                float2int_z
- *fill*         0x000000001000534e        0x2 
+                0x00000000100051e0       0x4e CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x00000000100051e0                __wrap___aeabi_f2iz
+                0x00000000100051e0                float2int_z
+ *fill*         0x000000001000522e        0x2 
  .text.float2int
-                0x0000000010005350       0x14 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x0000000010005350                float2int
+                0x0000000010005230       0x14 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x0000000010005230                float2int
  .text.__wrap___aeabi_f2uiz
-                0x0000000010005364        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x0000000010005364                __wrap___aeabi_f2uiz
+                0x0000000010005244        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x0000000010005244                __wrap___aeabi_f2uiz
  .text.__aeabi_float_init
-                0x0000000010005370       0x64 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x0000000010005370                __aeabi_float_init
+                0x0000000010005250       0x64 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000010005250                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x00000000100053d4       0x2c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x00000000100053d4                float_table_shim_on_use_helper
+                0x00000000100052b4       0x2c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x00000000100052b4                float_table_shim_on_use_helper
  .text.float232_shims
-                0x0000000010005400       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x0000000010005400                float2int_shim
-                0x0000000010005402                float2fix_shim
- .text          0x0000000010005418       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010005418                __aeabi_mem_init
- .text.memset   0x0000000010005428        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010005428                __wrap_memset
- .text.memcpy   0x0000000010005434        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010005434                __wrap___aeabi_memcpy
-                0x0000000010005434                __wrap_memcpy
+                0x00000000100052e0       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x00000000100052e0                float2int_shim
+                0x00000000100052e2                float2fix_shim
+ .text          0x00000000100052f8       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x00000000100052f8                __aeabi_mem_init
+ .text.memset   0x0000000010005308        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010005308                __wrap_memset
+ .text.memcpy   0x0000000010005314        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010005314                __wrap___aeabi_memcpy
+                0x0000000010005314                __wrap_memcpy
  .text.stdio_out_chars_no_crlf
-                0x0000000010005440       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010005320       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x0000000010005450       0xb4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010005330       0xb4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x0000000010005504       0x64 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100053e4       0x64 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string.isra.0
-                0x0000000010005568       0xfc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010005448       0xfc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x0000000010005664       0xa0 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010005664                __wrap_putchar
+                0x0000000010005544       0xa0 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010005544                __wrap_putchar
  .text.__wrap_puts
-                0x0000000010005704       0x3c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010005704                __wrap_puts
+                0x00000000100055e4       0x3c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100055e4                __wrap_puts
  .text.stdio_set_driver_enabled
-                0x0000000010005740       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010005740                stdio_set_driver_enabled
+                0x0000000010005620       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010005620                stdio_set_driver_enabled
  .text.__wrap_vprintf
-                0x0000000010005770       0xd8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010005770                __wrap_vprintf
+                0x0000000010005650       0xd8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010005650                __wrap_vprintf
  .text.__wrap_printf
-                0x0000000010005848       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010005848                __wrap_printf
+                0x0000000010005728       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010005728                __wrap_printf
  .text.stdio_init_all
-                0x0000000010005860        0x8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010005860                stdio_init_all
+                0x0000000010005740        0x8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010005740                stdio_init_all
  .text.resetd_init
-                0x0000000010005868        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010005748        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_reset
-                0x000000001000586c        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x000000001000574c        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_open
-                0x0000000010005878       0x28 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010005758       0x28 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_xfer_cb
-                0x00000000100058a0        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010005780        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_control_xfer_cb
-                0x00000000100058a4       0x64 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010005784       0x64 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.usbd_app_driver_get_cb
-                0x0000000010005908        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x0000000010005908                usbd_app_driver_get_cb
+                0x00000000100057e8        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000100057e8                usbd_app_driver_get_cb
  .text.tud_cdc_line_coding_cb
-                0x0000000010005914       0x34 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x0000000010005914                tud_cdc_line_coding_cb
+                0x00000000100057f4       0x34 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000100057f4                tud_cdc_line_coding_cb
  .text.stdio_usb_in_chars
-                0x0000000010005948       0x68 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010005948                stdio_usb_in_chars
+                0x0000000010005828       0x68 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010005828                stdio_usb_in_chars
  .text.stdio_usb_out_chars
-                0x00000000100059b0       0xe4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010005890       0xe4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.timer_task
-                0x0000000010005a94       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .text.usb_irq  0x0000000010005aac       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010005974       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .text.usb_irq  0x000000001000598c       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.low_priority_worker_irq
-                0x0000000010005abc       0x24 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x000000001000599c       0x24 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.stdio_usb_init
-                0x0000000010005ae0       0xb0 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010005ae0                stdio_usb_init
+                0x00000000100059c0       0xb0 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x00000000100059c0                stdio_usb_init
  .text.tud_descriptor_device_cb
-                0x0000000010005b90        0x8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010005b90                tud_descriptor_device_cb
+                0x0000000010005a70        0x8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010005a70                tud_descriptor_device_cb
  .text.tud_descriptor_configuration_cb
-                0x0000000010005b98        0x8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010005b98                tud_descriptor_configuration_cb
+                0x0000000010005a78        0x8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010005a78                tud_descriptor_configuration_cb
  .text.tud_descriptor_string_cb
-                0x0000000010005ba0       0x74 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010005ba0                tud_descriptor_string_cb
+                0x0000000010005a80       0x74 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010005a80                tud_descriptor_string_cb
  .text.dcd_rp2040_irq
-                0x0000000010005c14      0x21c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005af4      0x21c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .text.dcd_int_enable
-                0x0000000010005e30        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005e30                dcd_int_enable
+                0x0000000010005d10        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005d10                dcd_int_enable
  .text.dcd_set_address
-                0x0000000010005e3c       0x14 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005e3c                dcd_set_address
+                0x0000000010005d1c       0x14 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005d1c                dcd_set_address
  .text.dcd_connect
-                0x0000000010005e50       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005e50                dcd_connect
+                0x0000000010005d30       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005d30                dcd_connect
  .text.dcd_init
-                0x0000000010005e60      0x144 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005e60                dcd_init
+                0x0000000010005d40      0x144 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005d40                dcd_init
  .text.dcd_edpt0_status_complete
-                0x0000000010005fa4       0x1c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005fa4                dcd_edpt0_status_complete
+                0x0000000010005e84       0x1c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005e84                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x0000000010005fc0       0xf0 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005fc0                dcd_edpt_open
+                0x0000000010005ea0       0xf0 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005ea0                dcd_edpt_open
  .text.dcd_edpt_close_all
-                0x00000000100060b0       0xbc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100060b0                dcd_edpt_close_all
+                0x0000000010005f90       0xbc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005f90                dcd_edpt_close_all
  .text.dcd_edpt_xfer
-                0x000000001000616c       0x24 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x000000001000616c                dcd_edpt_xfer
+                0x000000001000604c       0x24 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x000000001000604c                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x0000000010006190       0x38 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010006190                dcd_edpt_stall
+                0x0000000010006070       0x38 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010006070                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x00000000100061c8       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100061c8                dcd_edpt_clear_stall
+                0x00000000100060a8       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100060a8                dcd_edpt_clear_stall
  .text._hw_endpoint_buffer_control_update32.part.0.isra.0
-                0x00000000100061f8       0x1c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x00000000100060d8       0x1c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
  .text.rp2040_usb_init
-                0x0000000010006214       0x4c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000010006214                rp2040_usb_init
+                0x00000000100060f4       0x4c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x00000000100060f4                rp2040_usb_init
  .text.hw_endpoint_reset_transfer
-                0x0000000010006260        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000010006260                hw_endpoint_reset_transfer
+                0x0000000010006140        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010006140                hw_endpoint_reset_transfer
  .text._hw_endpoint_buffer_control_update32
-                0x000000001000626c       0x44 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x000000001000626c                _hw_endpoint_buffer_control_update32
+                0x000000001000614c       0x44 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x000000001000614c                _hw_endpoint_buffer_control_update32
  .text.hw_endpoint_xfer_start
-                0x00000000100062b0      0x138 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x00000000100062b0                hw_endpoint_xfer_start
+                0x0000000010006190      0x138 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010006190                hw_endpoint_xfer_start
  .text.hw_endpoint_xfer_continue
-                0x00000000100063e8      0x1e4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x00000000100063e8                hw_endpoint_xfer_continue
+                0x00000000100062c8      0x1e4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x00000000100062c8                hw_endpoint_xfer_continue
  .text.tud_mounted
-                0x00000000100065cc       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100065cc                tud_mounted
+                0x00000000100064ac       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100064ac                tud_mounted
  .text.tud_suspended
-                0x00000000100065dc       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100065dc                tud_suspended
+                0x00000000100064bc       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100064bc                tud_suspended
  .text.tud_inited
-                0x00000000100065ec        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100065ec                tud_inited
+                0x00000000100064cc        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100064cc                tud_inited
  .text.tud_init
-                0x00000000100065f8       0xd8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100065f8                tud_init
+                0x00000000100064d8       0xd8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100064d8                tud_init
  .text.tud_task
-                0x00000000100066d0      0x8ec CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100066d0                tud_task
+                0x00000000100065b0      0x8ec CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100065b0                tud_task
  .text.dcd_event_bus_signal
-                0x0000000010006fbc      0x120 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006fbc                dcd_event_bus_signal
+                0x0000000010006e9c      0x120 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006e9c                dcd_event_bus_signal
  .text.dcd_event_bus_reset
-                0x00000000100070dc       0x54 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100070dc                dcd_event_bus_reset
+                0x0000000010006fbc       0x54 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006fbc                dcd_event_bus_reset
  .text.dcd_event_setup_received
-                0x0000000010007130       0x50 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010007130                dcd_event_setup_received
+                0x0000000010007010       0x50 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010007010                dcd_event_setup_received
  .text.dcd_event_xfer_complete
-                0x0000000010007180       0x68 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010007180                dcd_event_xfer_complete
+                0x0000000010007060       0x68 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010007060                dcd_event_xfer_complete
  .text.usbd_open_edpt_pair
-                0x00000000100071e8       0x80 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100071e8                usbd_open_edpt_pair
+                0x00000000100070c8       0x80 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100070c8                usbd_open_edpt_pair
  .text.usbd_edpt_open
-                0x0000000010007268       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010007268                usbd_edpt_open
+                0x0000000010007148       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010007148                usbd_edpt_open
  .text.usbd_edpt_claim
-                0x0000000010007298       0x64 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010007298                usbd_edpt_claim
+                0x0000000010007178       0x64 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010007178                usbd_edpt_claim
  .text.usbd_edpt_release
-                0x00000000100072fc       0x4c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100072fc                usbd_edpt_release
+                0x00000000100071dc       0x4c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100071dc                usbd_edpt_release
  .text.usbd_edpt_xfer
-                0x0000000010007348       0x48 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010007348                usbd_edpt_xfer
+                0x0000000010007228       0x48 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010007228                usbd_edpt_xfer
  .text.tud_control_status
-                0x0000000010007390       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010007390                tud_control_status
+                0x0000000010007270       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010007270                tud_control_status
  .text.tud_control_xfer
-                0x00000000100073c0       0xbc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x00000000100073c0                tud_control_xfer
+                0x00000000100072a0       0xbc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x00000000100072a0                tud_control_xfer
  .text.usbd_control_reset
-                0x000000001000747c       0x14 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x000000001000747c                usbd_control_reset
+                0x000000001000735c       0x14 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x000000001000735c                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x0000000010007490        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010007490                usbd_control_set_complete_callback
+                0x0000000010007370        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010007370                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x000000001000749c       0x1c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x000000001000749c                usbd_control_set_request
+                0x000000001000737c       0x1c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x000000001000737c                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x00000000100074b8       0xfc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x00000000100074b8                usbd_control_xfer_cb
+                0x0000000010007398       0xfc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010007398                usbd_control_xfer_cb
  .text.tud_cdc_n_connected
-                0x00000000100075b4       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100075b4                tud_cdc_n_connected
+                0x0000000010007494       0x30 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010007494                tud_cdc_n_connected
  .text.tud_cdc_n_available
-                0x00000000100075e4       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100075e4                tud_cdc_n_available
+                0x00000000100074c4       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100074c4                tud_cdc_n_available
  .text.tud_cdc_n_read
-                0x00000000100075fc       0x70 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100075fc                tud_cdc_n_read
+                0x00000000100074dc       0x70 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100074dc                tud_cdc_n_read
  .text.tud_cdc_n_write_flush
-                0x000000001000766c       0x78 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x000000001000766c                tud_cdc_n_write_flush
+                0x000000001000754c       0x78 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x000000001000754c                tud_cdc_n_write_flush
  .text.tud_cdc_n_write
-                0x00000000100076e4       0x34 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100076e4                tud_cdc_n_write
+                0x00000000100075c4       0x34 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100075c4                tud_cdc_n_write
  .text.tud_cdc_n_write_available
-                0x0000000010007718       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010007718                tud_cdc_n_write_available
+                0x00000000100075f8       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100075f8                tud_cdc_n_write_available
  .text.cdcd_init
-                0x0000000010007730       0x7c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010007730                cdcd_init
+                0x0000000010007610       0x7c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010007610                cdcd_init
  .text.cdcd_reset
-                0x00000000100077ac       0x2c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100077ac                cdcd_reset
+                0x000000001000768c       0x2c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x000000001000768c                cdcd_reset
  .text.cdcd_open
-                0x00000000100077d8       0xe4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100077d8                cdcd_open
+                0x00000000100076b8       0xe4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100076b8                cdcd_open
  .text.cdcd_control_xfer_cb
-                0x00000000100078bc       0xe4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100078bc                cdcd_control_xfer_cb
+                0x000000001000779c       0xe4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x000000001000779c                cdcd_control_xfer_cb
  .text.cdcd_xfer_cb
-                0x00000000100079a0      0x148 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100079a0                cdcd_xfer_cb
+                0x0000000010007880      0x148 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010007880                cdcd_xfer_cb
  .text.tusb_init
-                0x0000000010007ae8        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010007ae8                tusb_init
+                0x00000000100079c8        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100079c8                tusb_init
  .text.tusb_inited
-                0x0000000010007af4        0x8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010007af4                tusb_inited
+                0x00000000100079d4        0x8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100079d4                tusb_inited
  .text.tu_edpt_validate
-                0x0000000010007afc       0x78 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010007afc                tu_edpt_validate
+                0x00000000100079dc       0x78 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100079dc                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x0000000010007b74       0x2c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010007b74                tu_edpt_bind_driver
+                0x0000000010007a54       0x2c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010007a54                tu_edpt_bind_driver
  .text.tu_fifo_config
-                0x0000000010007ba0       0x78 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007ba0                tu_fifo_config
+                0x0000000010007a80       0x78 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007a80                tu_fifo_config
  .text.tu_fifo_count
-                0x0000000010007c18       0x20 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007c18                tu_fifo_count
+                0x0000000010007af8       0x20 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007af8                tu_fifo_count
  .text.tu_fifo_empty
-                0x0000000010007c38       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007c38                tu_fifo_empty
+                0x0000000010007b18       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007b18                tu_fifo_empty
  .text.tu_fifo_remaining
-                0x0000000010007c48       0x1c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007c48                tu_fifo_remaining
+                0x0000000010007b28       0x1c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007b28                tu_fifo_remaining
  .text.tu_fifo_read
-                0x0000000010007c64       0x9c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007c64                tu_fifo_read
+                0x0000000010007b44       0x9c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007b44                tu_fifo_read
  .text.tu_fifo_read_n
-                0x0000000010007d00      0x100 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007d00                tu_fifo_read_n
+                0x0000000010007be0      0x100 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007be0                tu_fifo_read_n
  .text.tu_fifo_write
-                0x0000000010007e00       0x7c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007e00                tu_fifo_write
+                0x0000000010007ce0       0x7c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007ce0                tu_fifo_write
  .text.tu_fifo_write_n
-                0x0000000010007e7c      0x100 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007e7c                tu_fifo_write_n
+                0x0000000010007d5c      0x100 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007d5c                tu_fifo_write_n
  .text.tu_fifo_clear
-                0x0000000010007f7c       0x4c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007f7c                tu_fifo_clear
+                0x0000000010007e5c       0x4c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007e5c                tu_fifo_clear
  .text.tu_fifo_set_overwritable
-                0x0000000010007fc8       0x3c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007fc8                tu_fifo_set_overwritable
+                0x0000000010007ea8       0x3c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007ea8                tu_fifo_set_overwritable
  .text.startup._retrieve_unique_id_on_boot
-                0x0000000010008004       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010007ee4       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.pico_get_unique_board_id_string
-                0x0000000010008014      0x1a8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                0x0000000010008014                pico_get_unique_board_id_string
+                0x0000000010007ef4      0x1a8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010007ef4                pico_get_unique_board_id_string
  .text.flash_get_unique_id
-                0x00000000100081bc       0x40 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x00000000100081bc                flash_get_unique_id
+                0x000000001000809c       0x40 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x000000001000809c                flash_get_unique_id
  .text.adc_init
-                0x00000000100081fc       0x38 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
-                0x00000000100081fc                adc_init
+                0x00000000100080dc       0x38 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+                0x00000000100080dc                adc_init
  .text.core1_trampoline
-                0x0000000010008234        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010008114        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.core1_wrapper
-                0x0000000010008238        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x0000000010008238                core1_wrapper
+                0x0000000010008118        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010008118                core1_wrapper
  .text.multicore_fifo_push_timeout_us
-                0x0000000010008244       0x64 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x0000000010008244                multicore_fifo_push_timeout_us
+                0x0000000010008124       0x64 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010008124                multicore_fifo_push_timeout_us
  .text.multicore_fifo_pop_timeout_us
-                0x00000000100082a8       0x78 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x00000000100082a8                multicore_fifo_pop_timeout_us
+                0x0000000010008188       0x78 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010008188                multicore_fifo_pop_timeout_us
  .text.multicore_launch_core1_raw
-                0x0000000010008320       0x84 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x0000000010008320                multicore_launch_core1_raw
+                0x0000000010008200       0x84 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010008200                multicore_launch_core1_raw
  .text.multicore_launch_core1
-                0x00000000100083a4       0x4c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x00000000100083a4                multicore_launch_core1
+                0x0000000010008284       0x4c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010008284                multicore_launch_core1
  .text.pio_add_program
-                0x00000000100083f0       0xc8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x00000000100083f0                pio_add_program
+                0x00000000100082d0       0xc8 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x00000000100082d0                pio_add_program
  .text.pio_sm_set_consecutive_pindirs
-                0x00000000100084b8       0x84 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x00000000100084b8                pio_sm_set_consecutive_pindirs
+                0x0000000010008398       0x84 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x0000000010008398                pio_sm_set_consecutive_pindirs
  .text.pio_sm_init
-                0x000000001000853c       0x90 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x000000001000853c                pio_sm_init
- .text.strlen   0x00000000100085cc       0x5c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x00000000100085cc                strlen
+                0x000000001000841c       0x90 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x000000001000841c                pio_sm_init
+ .text.strlen   0x00000000100084ac       0x5c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x00000000100084ac                strlen
  *(.fini)
- .fini          0x0000000010008628        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x0000000010008628                _fini
- *fill*         0x000000001000862c        0x4 
- .fini.__stub   0x0000000010008630       0x70 linker stubs
+ .fini          0x0000000010008508        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x0000000010008508                _fini
+ *fill*         0x000000001000850c        0x4 
+ .fini.__stub   0x0000000010008510       0x70 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2189,148 +2191,147 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x00000000100086a0        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x00000000100086a0                . = ALIGN (0x4)
+ .eh_frame      0x0000000010008580        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000010008580                . = ALIGN (0x4)
 
-.glue_7         0x00000000100086a0        0x0
- .glue_7        0x00000000100086a0        0x0 linker stubs
+.glue_7         0x0000000010008580        0x0
+ .glue_7        0x0000000010008580        0x0 linker stubs
 
-.glue_7t        0x00000000100086a0        0x0
- .glue_7t       0x00000000100086a0        0x0 linker stubs
+.glue_7t        0x0000000010008580        0x0
+ .glue_7t       0x0000000010008580        0x0 linker stubs
 
-.vfp11_veneer   0x00000000100086a0        0x0
- .vfp11_veneer  0x00000000100086a0        0x0 linker stubs
+.vfp11_veneer   0x0000000010008580        0x0
+ .vfp11_veneer  0x0000000010008580        0x0 linker stubs
 
-.v4_bx          0x00000000100086a0        0x0
- .v4_bx         0x00000000100086a0        0x0 linker stubs
+.v4_bx          0x0000000010008580        0x0
+ .v4_bx         0x0000000010008580        0x0 linker stubs
 
-.iplt           0x00000000100086a0        0x0
- .iplt          0x00000000100086a0        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x0000000010008580        0x0
+ .iplt          0x0000000010008580        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x00000000100086a0      0x5e0
+.rodata         0x0000000010008580      0x5d0
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.second_core_code.str1.4
-                0x00000000100086a0       0x1b CMakeFiles/butterflywatch.dir/main.c.obj
- *fill*         0x00000000100086bb        0x1 
+                0x0000000010008580       0x1b CMakeFiles/butterflywatch.dir/main.c.obj
+ *fill*         0x000000001000859b        0x1 
  .rodata.main.str1.4
-                0x00000000100086bc       0x5a CMakeFiles/butterflywatch.dir/main.c.obj
-                                         0x5e (size before relaxing)
- *fill*         0x0000000010008716        0x2 
+                0x000000001000859c       0x48 CMakeFiles/butterflywatch.dir/main.c.obj
+                                         0x4a (size before relaxing)
  .rodata.ws2812_program
-                0x0000000010008718        0x6 CMakeFiles/butterflywatch.dir/main.c.obj
- *fill*         0x000000001000871e        0x2 
+                0x00000000100085e4        0x6 CMakeFiles/butterflywatch.dir/main.c.obj
+ *fill*         0x00000000100085ea        0x2 
  .rodata.ws2812_program_instructions
-                0x0000000010008720        0x8 CMakeFiles/butterflywatch.dir/main.c.obj
+                0x00000000100085ec        0x8 CMakeFiles/butterflywatch.dir/main.c.obj
  .rodata.updateButton.str1.4
-                0x0000000010008728       0x21 CMakeFiles/butterflywatch.dir/Button.c.obj
- *fill*         0x0000000010008749        0x3 
+                0x00000000100085f4       0x21 CMakeFiles/butterflywatch.dir/Button.c.obj
+ *fill*         0x0000000010008615        0x3 
  .rodata.spin_lock_claim_unused.str1.4
-                0x000000001000874c       0x1b CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x0000000010008767        0x1 
+                0x0000000010008618       0x1b CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x0000000010008633        0x1 
  .rodata.user_irq_claim_unused.str1.4
-                0x0000000010008768       0x1b CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x0000000010008783        0x1 
+                0x0000000010008634       0x1b CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x000000001000864f        0x1 
  .rodata.hardware_alarm_claim.str1.4
-                0x0000000010008784       0x22 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x00000000100087a6        0x2 
+                0x0000000010008650       0x22 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x0000000010008672        0x2 
  .rodata.panic.str1.4
-                0x00000000100087a8       0x10 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                                         0x12 (size before relaxing)
+                0x0000000010008674       0x12 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x0000000010008686        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x00000000100087b8        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010008688        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata._ftoa.str1.4
-                0x00000000100087c4       0x15 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x00000000100087d9        0x3 
+                0x0000000010008694       0x15 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x00000000100086a9        0x3 
  .rodata._vsnprintf
-                0x00000000100087dc      0x1e0 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x00000000100089bc        0x4 
+                0x00000000100086ac      0x1e0 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x000000001000888c        0x4 
  .rodata.pow10.0
-                0x00000000100089c0       0x50 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010008890       0x50 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.str1.4
-                0x0000000010008a10       0x44 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100088e0       0x44 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x0000000010008a54        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008924        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x0000000010008a60        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008930        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x0000000010008a6c        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000893c        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x0000000010008a78        0x2 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x0000000010008a7a        0x2 
+                0x0000000010008948        0x2 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x000000001000894a        0x2 
  .rodata._resetd_driver
-                0x0000000010008a7c       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x000000001000894c       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .rodata.str1.4
-                0x0000000010008a94       0x13 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- *fill*         0x0000000010008aa7        0x1 
+                0x0000000010008964       0x13 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ *fill*         0x0000000010008977        0x1 
  .rodata.__bi_118.0
-                0x0000000010008aa8        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010008978        0xc CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.str1.4
-                0x0000000010008ab4       0x2a CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x0000000010008ade        0x2 
+                0x0000000010008984       0x2a CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x00000000100089ae        0x2 
  .rodata.usbd_desc_cfg
-                0x0000000010008ae0       0x54 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x00000000100089b0       0x54 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_device
-                0x0000000010008b34       0x12 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x0000000010008b46        0x2 
+                0x0000000010008a04       0x12 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x0000000010008a16        0x2 
  .rodata.usbd_desc_str
-                0x0000000010008b48       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010008a18       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.dcd_rp2040_irq.str1.4
-                0x0000000010008b60       0x14 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010008a30       0x14 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata._hw_endpoint_buffer_control_update32.part.0.isra.0.str1.4
-                0x0000000010008b74       0x1f CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x0000000010008b93        0x1 
+                0x0000000010008a44       0x1f CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x0000000010008a63        0x1 
  .rodata.hw_endpoint_xfer_continue.str1.4
-                0x0000000010008b94       0x29 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x0000000010008bbd        0x3 
+                0x0000000010008a64       0x29 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x0000000010008a8d        0x3 
  .rodata.str1.4
-                0x0000000010008bc0        0x7 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x0000000010008bc7        0x1 
+                0x0000000010008a90        0x7 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x0000000010008a97        0x1 
  .rodata.tud_task
-                0x0000000010008bc8       0x8c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010008a98       0x8c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata._usbd_driver
-                0x0000000010008c54       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010008b24       0x18 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata.pio_add_program.str1.4
-                0x0000000010008c6c       0x11 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x0000000010008c80                . = ALIGN (0x4)
- *fill*         0x0000000010008c7d        0x3 
+                0x0000000010008b3c       0x11 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x0000000010008b50                . = ALIGN (0x4)
+ *fill*         0x0000000010008b4d        0x3 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x0000000010008c80                . = ALIGN (0x4)
+                0x0000000010008b50                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000010008c80        0x0
- .rel.iplt      0x0000000010008c80        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x0000000010008b50        0x0
+ .rel.iplt      0x0000000010008b50        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000010008c80                __exidx_start = .
+                0x0000000010008b50                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000000010008c80                __exidx_end = .
-                0x0000000010008c80                . = ALIGN (0x4)
-                0x0000000010008c80                __binary_info_start = .
+                0x0000000010008b50                __exidx_end = .
+                0x0000000010008b50                . = ALIGN (0x4)
+                0x0000000010008b50                __binary_info_start = .
 
-.binary_info    0x0000000010008c80       0x20
+.binary_info    0x0000000010008b50       0x20
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x0000000010008c80        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008b50        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x0000000010008c84        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008b54        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x0000000010008c88        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008b58        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x0000000010008c8c        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008b5c        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x0000000010008c90        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008b60        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x0000000010008c94        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008b64        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x0000000010008c98        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008b68        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr118
-                0x0000000010008c9c        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010008ca0                __binary_info_end = .
-                0x0000000010008ca0                . = ALIGN (0x4)
-                0x0000000010008ca0                __etext = .
+                0x0000000010008b6c        0x4 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010008b70                __binary_info_end = .
+                0x0000000010008b70                . = ALIGN (0x4)
+                0x0000000010008b70                __etext = .
 
 .ram_vector_table
                 0x0000000020000000       0xc0
@@ -2339,7 +2340,7 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
                 0x0000000020000000       0xc0 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0      0x3d8 load address 0x0000000010008ca0
+.data           0x00000000200000c0      0x3d8 load address 0x0000000010008b70
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2446,29 +2447,29 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
                 0x0000000020000498                . = ALIGN (0x4)
                 0x0000000020000498                __data_end__ = .
 
-.igot.plt       0x0000000020000498        0x0 load address 0x0000000010009078
+.igot.plt       0x0000000020000498        0x0 load address 0x0000000010008f48
  .igot.plt      0x0000000020000498        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x0000000020000498        0x0 load address 0x0000000010009078
+                0x0000000020000498        0x0 load address 0x0000000010008f48
                 0x0000000020000498                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x0000000010009078
+.scratch_x      0x0000000020040000        0x0 load address 0x0000000010008f48
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x0000000010009078                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x0000000010008f48                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x0000000010009078
+.scratch_y      0x0000000020041000        0x0 load address 0x0000000010008f48
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x0000000010009078                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x0000000010008f48                __scratch_y_source__ = LOADADDR (.scratch_y)
 
-.bss            0x0000000020000498      0xe34
+.bss            0x0000000020000498      0xe38
                 0x0000000020000498                . = ALIGN (0x4)
                 0x0000000020000498                __bss_start__ = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -2587,30 +2588,36 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
  .bss.boot2_copyout_valid
                 0x00000000200012c3        0x1 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .bss.claimed   0x00000000200012c4        0x1 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .bss.colour_sel
-                0x00000000200012c5        0x1 CMakeFiles/butterflywatch.dir/main.c.obj
-                0x00000000200012c5                colour_sel
  .bss.irq_hander_chain_free_slot_head
-                0x00000000200012c6        0x1 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .bss.itf_num   0x00000000200012c7        0x1 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000200012c5        0x1 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .bss.itf_num   0x00000000200012c6        0x1 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .bss.low_priority_irq_num
-                0x00000000200012c8        0x1 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x00000000200012c7        0x1 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .bss.neo_frame
+                0x00000000200012c8        0x1 CMakeFiles/butterflywatch.dir/main.c.obj
+                0x00000000200012c8                neo_frame
+ .bss.soaring_mode_active
                 0x00000000200012c9        0x1 CMakeFiles/butterflywatch.dir/main.c.obj
-                0x00000000200012c9                neo_frame
+                0x00000000200012c9                soaring_mode_active
+ .bss.soaring_mode_enter
+                0x00000000200012ca        0x1 CMakeFiles/butterflywatch.dir/main.c.obj
+                0x00000000200012ca                soaring_mode_enter
+ .bss.soaring_mode_exit
+                0x00000000200012cb        0x1 CMakeFiles/butterflywatch.dir/main.c.obj
+                0x00000000200012cb                soaring_mode_exit
  .bss.timer_callbacks_pending
-                0x00000000200012ca        0x1 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000200012cc        0x1 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  *(COMMON)
-                0x00000000200012cc                . = ALIGN (0x4)
- *fill*         0x00000000200012cb        0x1 
-                0x00000000200012cc                __bss_end__ = .
+                0x00000000200012d0                . = ALIGN (0x4)
+ *fill*         0x00000000200012cd        0x3 
+                0x00000000200012d0                __bss_end__ = .
 
-.heap           0x00000000200012cc      0x800
-                0x00000000200012cc                __end__ = .
-                0x00000000200012cc                end = __end__
+.heap           0x00000000200012d0      0x800
+                0x00000000200012d0                __end__ = .
+                0x00000000200012d0                end = __end__
  *(.heap*)
- .heap          0x00000000200012cc      0x800 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-                0x0000000020001acc                __HeapLimit = .
+ .heap          0x00000000200012d0      0x800 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                0x0000000020001ad0                __HeapLimit = .
 
 .stack1_dummy   0x0000000020040000      0x800
  *(.stack1*)
@@ -2620,8 +2627,8 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-non
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x0000000010009078        0x0
-                0x0000000010009078                __flash_binary_end = .
+.flash_end      0x0000000010008f48        0x0
+                0x0000000010008f48                __flash_binary_end = .
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2708,7 +2715,7 @@ LOAD CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_comm
 LOAD CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 LOAD CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.obj
 LOAD CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-LOAD /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//cc88T02f.o
+LOAD /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccgMklk5.o
 LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2836,7 +2843,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000000000008b0       0x2c CMakeFiles/butterflywatch.dir/Users/frankenteddy/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .ARM.attributes
-                0x00000000000008dc       0x22 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//cc88T02f.o
+                0x00000000000008dc       0x22 /var/folders/h3/3z26yjnj5j1fbx4yjyb_fgvm0000gn/T//ccgMklk5.o
  .ARM.attributes
                 0x00000000000008fe       0x1e /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes

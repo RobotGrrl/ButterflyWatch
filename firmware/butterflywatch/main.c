@@ -15,14 +15,6 @@
 
 #define DEBUG false
 
-/*
-TODO:
-- (done) gotta test the ultrasonic and neopixels
-- (done) then add in servo code
-- state machine based on distance
-- integrate sleeptest code later
-*/
-
 
 // -- servo related --
 struct Servo wing_l;
@@ -69,11 +61,14 @@ enum State {
     IDLE,
     SPRINT,
     FLUTTER,
-    SLEEP
+    SOARING
 };
 enum State BUTTERFLY_STATE;
 enum State BUTTERFLY_STATE_PREV;
 uint8_t PIXELS_DISPLAYED = 0; // determined by ultrasonic sensor, sent to neopixels
+bool soaring_mode_active = false;
+bool soaring_mode_enter = false;
+bool soaring_mode_exit = false;
 // -------------
 
 
@@ -128,12 +123,14 @@ int main() {
 
 
         // update the state
-        if(PIXELS_DISPLAYED >= 0 && PIXELS_DISPLAYED <= 3) {
-            BUTTERFLY_STATE = FLUTTER;
-        } else if(PIXELS_DISPLAYED > 4 && PIXELS_DISPLAYED <= 6) {
-            BUTTERFLY_STATE = SPRINT;
-        } else if(PIXELS_DISPLAYED > 6 && PIXELS_DISPLAYED <= 8) {
-            BUTTERFLY_STATE = IDLE;
+        if(BUTTERFLY_STATE != SOARING) {
+            if(PIXELS_DISPLAYED >= 0 && PIXELS_DISPLAYED <= 3) {
+                BUTTERFLY_STATE = FLUTTER;
+            } else if(PIXELS_DISPLAYED > 4 && PIXELS_DISPLAYED <= 6) {
+                BUTTERFLY_STATE = SPRINT;
+            } else if(PIXELS_DISPLAYED > 6 && PIXELS_DISPLAYED <= 8) {
+                BUTTERFLY_STATE = IDLE;
+            }
         }
 
 
@@ -156,8 +153,8 @@ int main() {
         // state machine
         switch(BUTTERFLY_STATE) {
             case IDLE: { // far away
-                wing_l.speed = 5;
-                wing_r.speed = 5;
+                wing_l.speed = 2;
+                wing_r.speed = 2;
 
                 if(absolute_time_diff_us(neo_update, get_absolute_time()) >= 10*1000) {
                     for(uint i=0; i<NUM_PIXELS; ++i) {
@@ -180,8 +177,8 @@ int main() {
             }
             break;
             case SPRINT: { // medium distance
-                wing_l.speed = 15;
-                wing_r.speed = 15;
+                wing_l.speed = 10;
+                wing_r.speed = 10;
 
                 if(absolute_time_diff_us(neo_update, get_absolute_time()) >= 10*1000) {
                     for(uint i=0; i<NUM_PIXELS; ++i) {
@@ -246,24 +243,55 @@ int main() {
 
             }
             break;
-            case SLEEP: { // when button has been pressed
-                if(BUTTERFLY_STATE_PREV == SLEEP) break;
-                // set the servos to up position
-                wing_l.speed = 3;
-                wing_r.speed = 3;
-                wing_l.pulse = SERVO_MAX;
-                wing_r.pulse = SERVO_MIN;
-                wing_l.direction = false;
-                wing_r.direction = true;
+            case SOARING: { // when button has been pressed
                 
-                // turn off neopixels
-                turnOffNeopixels();
-                
-                // TODO: do we need to turn off the repeating interrupts?
-                
-                // turn off led
-                
-                // set an alarm to go to sleep in 1000 ms (waiting for servos)
+                if(soaring_mode_exit) {
+                    // now disable it
+                    wing_l.direction = true;
+                    wing_r.direction = false;
+                    wing_l.pulse = SERVO_MAX;
+                    wing_r.pulse = SERVO_MIN;
+                    BUTTERFLY_STATE = IDLE;
+                    soaring_mode_exit = false;
+                    break;
+                }
+                if(soaring_mode_enter) {
+                    // now enable it
+                    wing_l.direction = true;
+                    wing_r.direction = true;
+                    wing_l.speed = 70;
+                    wing_r.speed = 70;
+                    wing_l.pulse = SERVO_MAX;
+                    wing_r.pulse = SERVO_MAX;
+                    soaring_mode_enter = false;
+                }
+
+                if(absolute_time_diff_us(neo_update, get_absolute_time()) >= 10*1000) {
+                    for(uint i=0; i<NUM_PIXELS; ++i) {
+                        
+                        if(neo_frame == 0) {
+                            if(i == 0 || i == 1 || i == 7 || i == 6) {
+                                put_pixel(urgb_u32(0x33, 0xAA, 0x33)); // green
+                            } else {
+                                put_pixel(urgb_u32(0, 0, 0));
+                            }
+                        } else if(neo_frame == 1) {
+                            if(i == 2 || i == 3 || i == 4 || i == 5) {
+                                put_pixel(urgb_u32(0x33, 0xAA, 0x33)); // green
+                            } else {
+                                put_pixel(urgb_u32(0, 0, 0));
+                            }
+                        }
+                    }
+
+                    if(absolute_time_diff_us(neo_frame_update, get_absolute_time()) >= 250*1000) {
+                        neo_frame++;
+                        if(neo_frame > 1) neo_frame = 0;
+                        neo_frame_update = get_absolute_time();
+                    }
+
+                    neo_update = get_absolute_time();
+                }
 
             }
             break;
@@ -277,80 +305,8 @@ int main() {
         updateServo(&wing_r);
 
 
-        // -- neopixel button related --
+        // button related
         updateButton(&btn);
-
-        if(btn.status == true) {
-
-            gpio_put(LED_PIN, true);
-
-            switch(colour_sel) {
-                case 0: {
-                    if(absolute_time_diff_us(neo_update, get_absolute_time()) >= 10*1000) {
-                        for(uint i=0; i<NUM_PIXELS; ++i) {
-                            if(i<PIXELS_DISPLAYED) {
-                                put_pixel(urgb_u32(0x11, 0, 0));
-                            } else {
-                                put_pixel(urgb_u32(0, 0, 0));
-                            }
-                        }
-                        neo_update = get_absolute_time();
-                    }
-                }
-                break;
-                case 1: {
-                    if(absolute_time_diff_us(neo_update, get_absolute_time()) >= 10*1000) {
-                        for(uint i=0; i<NUM_PIXELS; ++i) {
-                            if(i<PIXELS_DISPLAYED) {
-                                put_pixel(urgb_u32(0, 0x11, 0));
-                            } else {
-                                put_pixel(urgb_u32(0, 0, 0));
-                            }
-                        }
-                        neo_update = get_absolute_time();
-                    }
-                }
-                break;
-                case 2: {
-                    if(absolute_time_diff_us(neo_update, get_absolute_time()) >= 10*1000) {
-                        for(uint i=0; i<NUM_PIXELS; ++i) {
-                            if(i<PIXELS_DISPLAYED) {
-                                put_pixel(urgb_u32(0, 0, 0x11));
-                            } else {
-                                put_pixel(urgb_u32(0, 0, 0));
-                            }
-                        }
-                        neo_update = get_absolute_time();
-                    }
-                }
-                break;
-            }
-            
-        } else {
-
-            gpio_put(LED_PIN, false);
-            
-            // turn all off
-            if(absolute_time_diff_us(neo_update, get_absolute_time()) >= 10*1000) {
-                for(uint i=0; i<NUM_PIXELS; ++i) {
-                    put_pixel(urgb_u32(0, 0, 0));
-                }
-                neo_update = get_absolute_time();
-            }
-
-            // do this only once when the button changes from on to off
-            if(btn.prev_status == true) {
-                printf("colour_sel = %d\r\n", colour_sel);
-                colour_sel++;
-                if(colour_sel > 2) colour_sel = 0;
-            }
-            btn.prev_status = false;
-
-            // Q: 3) is the above an acceptable way of mixing event driven inside of looping?
-            // Q: 4) should my Button.c code be handling this more than here in main? is it messy?
-            
-        }
-        // --
 
 
     } // end of while
@@ -460,6 +416,19 @@ int64_t debounce_callback(alarm_id_t id, void *user_data) {
     btn.status = !btn.status;
     btn.pressed = true;
     btn.clicks++;
+
+    // app related
+    soaring_mode_active = !soaring_mode_active;
+    BUTTERFLY_STATE = SOARING;
+    // there is likely a better way of tracking entering / exiting the state
+    if(soaring_mode_active) {
+        soaring_mode_enter = true;
+        soaring_mode_exit = false;
+    } else {
+        soaring_mode_enter = false;
+        soaring_mode_exit = true;
+    }
+
     return 0;
 }
 
